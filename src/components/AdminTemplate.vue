@@ -57,7 +57,7 @@
                             </div>
                         </li>
                     </router-link>
-                    <router-link to="/admin/stats">
+                    <router-link to="/admin/list-users">
                         <li class="flex p-4 hover:bg-orange-100">
                             <fa icon="users" />
                             <div class="ml-2 overflow-hidden">
