@@ -23,7 +23,7 @@
                 <p class="p-4 font-bold hover:bg-orange-100">Hi, Elvis</p>
                 <p class="pt-0 pr-4 pl-4 font-extralight">Super Admin</p>
                 <ul role="list">
-                    <router-link to="/admin/stats">
+                    <router-link to="/admin/branches">
                         <li class="flex p-4 hover:bg-orange-100">
                             <fa icon="church" />
                             <div class="ml-2 overflow-hidden">
@@ -41,7 +41,7 @@
                         </li>
                     </router-link>
                     <router-link to="/admin/stats">
-                        <li class="flex p-4 hover:bg-orange-100">
+                        <li class="flex p-4 hover:bg-orange-100" title="coming soon">
                             <i class="fas fa-chart-pie"></i>
                             <fa icon="calendar-week" />
                             <div class="ml-2 overflow-hidden">
@@ -71,7 +71,7 @@
                         <p class="text-sm truncate">Logout </p>
                         </div>
                     </li>
-                    <li class="grid p-4 v-screen justify-items-center">
+                    <li class="grid p-4 v-screen justify-items-center" title="coming soon">
                         <div class="bg-gray-600 hover:bg-orange-600 rounded-full p-2 text-white">
                             <fa icon="angle-double-left" />
                         </div>
