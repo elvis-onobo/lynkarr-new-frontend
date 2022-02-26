@@ -57,6 +57,14 @@
                             </div>
                         </li>
                     </router-link>
+                    <router-link to="/admin/stats">
+                        <li class="flex p-4 hover:bg-orange-100">
+                            <fa icon="users" />
+                            <div class="ml-2 overflow-hidden">
+                            <p class="text-sm truncate">User Management</p>
+                            </div>
+                        </li>
+                    </router-link>
                     <li class="flex p-4 hover:bg-orange-100" @click="showLogoutModal">
                         <fa icon="sign-out-alt" />
                         <div class="ml-2 overflow-hidden">
