@@ -23,6 +23,14 @@
                 <p class="p-4 font-bold hover:bg-orange-100">Hi, Elvis</p>
                 <p class="pt-0 pr-4 pl-4 font-extralight">Super Admin</p>
                 <ul role="list">
+                    <router-link to="/admin/dashboard">
+                        <li class="flex p-4 hover:bg-orange-100">
+                            <fa icon="dashboard" />
+                            <div class="ml-2 overflow-hidden">
+                            <p class="text-sm truncate">Dashboard</p>
+                            </div>
+                        </li>
+                    </router-link>
                     <router-link to="/admin/branches">
                         <li class="flex p-4 hover:bg-orange-100">
                             <fa icon="church" />
