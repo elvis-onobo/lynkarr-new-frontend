@@ -1,5 +1,5 @@
 import { createWebHistory, createRouter } from "vue-router";
-import LandingPage from '../components/LandingPage.vue'
+import Login from '../components/Login.vue'
 import AdminTemplate from '../components/AdminTemplate.vue'
 import Stats from '../components/Stats.vue'
 import CreateUser from '../components/Users/CreateUser.vue'
@@ -12,7 +12,7 @@ const history = createWebHistory()
 const router = createRouter({
     history,
     routes: [
-        { path: '/', component: LandingPage},
+        { path: '/', component: Login},
         { path: '/admin', component: AdminTemplate, children: [
             { path: 'dashboard', component: Dashboard, name:'dashboard'},
             { path: 'stats', component: Stats, name:'stats'},
