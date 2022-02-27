@@ -1,16 +1,16 @@
 <template>
     <div class="col-span-10 flex bg-orange-50">
         <div class="grid grid-cols-4">
-            <div>
+            <div class="col-span-2">
                 <pie-chart :data="[['Blueberry', 44], ['Strawberry', 23], ['Blackberry', 12], ['Realberry', 50]]"></pie-chart>
             </div>
-            <div>
+            <div class="col-span-2">
                 <bar-chart :data="[['Blueberry', 44], ['Strawberry', 23], ['Blackberry', 12], ['Realberry', 50]]"></bar-chart>
             </div>
-            <div>
+            <div class="col-span-2">
                 <column-chart :data="[['Blueberry', 44], ['Strawberry', 23], ['Blackberry', 12], ['Realberry', 50]]"></column-chart>
             </div>
-            <div>
+            <div class="col-span-2">
                 <area-chart :data="{'2021-01-01': 11, '2021-01-02': 6}"></area-chart>
             </div>
         </div>
