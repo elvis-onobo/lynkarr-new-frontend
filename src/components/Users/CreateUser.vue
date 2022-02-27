@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-sm col-span-5 p-4 bg-orange-50 rounded-sm drop-shadow-xl h-full outline outline-offset-1 outline-1">
+    <div class="col-span-5 p-4 bg-orange-50 rounded-sm drop-shadow-xl h-full outline outline-offset-1 outline-1">
         <div class="grid grid-cols-1 p-4 divide-y-2 divide-gray-200 divide-solid">
             <p class="text-3xl font-semibold"><fa icon="user" /> Create a User</p>
             <form class="">
