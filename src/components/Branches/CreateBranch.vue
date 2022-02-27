@@ -75,6 +75,8 @@ export default {
               imageUrl: this.imageUrl,
             })
             
+            // ! Write checks in case not created and no error is thrown
+
             this.$router.push({ name: 'branches'})
         } catch (error) {
             console.log('>>>>>>>>>>> ', error)

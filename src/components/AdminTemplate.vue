@@ -39,15 +39,36 @@
                             </div>
                         </li>
                     </router-link>
-                    <router-link to="/admin/stats">
-                        <li class="flex p-4 hover:bg-orange-100">
-                            <i class="fas fa-chart-pie"></i>
+                        <!-- <router-link to="/admin/stats"> -->
+                        <li class="flex p-4 hover:bg-orange-100" @click="showStatsMenu = !showStatsMenu">
                             <fa icon="chart-pie" />
                             <div class="ml-2 overflow-hidden">
                             <p class="text-sm truncate">Stats</p>
                             </div>
                         </li>
-                    </router-link>
+                        <!-- </router-link> -->
+
+                        <!-- children for stats -->
+                        <div v-if="showStatsMenu" class="pl-4">
+                            <router-link to="/admin/stats/children">
+                            <li class="flex p-4 hover:bg-orange-100">
+                                <fa icon="child" />
+                                <div class="ml-2 overflow-hidden">
+                                <p class="text-sm truncate">Children</p>
+                                </div>
+                            </li>
+                            </router-link>
+                            <router-link to="/admin/stats/adults">
+                            <li class="flex p-4 hover:bg-orange-100">
+                                <fa icon="user" />
+                                <div class="ml-2 overflow-hidden">
+                                <p class="text-sm truncate">Others</p>
+                                </div>
+                            </li>
+                            </router-link>
+                        </div>
+                        <!-- children for stats -->
+
                     <router-link to="/admin/stats">
                         <li class="flex p-4 hover:bg-orange-100" title="coming soon">
                             <i class="fas fa-chart-pie"></i>
@@ -103,7 +124,8 @@ export default {
     name: 'AdminTemplate',
     data(){
         return {
-            count: 0
+            count: 0,
+            showStatsMenu: false
         }
     },
     methods:{
