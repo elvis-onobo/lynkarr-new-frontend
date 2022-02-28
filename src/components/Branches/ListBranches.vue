@@ -10,150 +10,38 @@
             </router-link>
         </div>
         <div class="grid grid-cols-12 justify-items-center">
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
+            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2" v-for="church in churches" :key="church.uuid">
                 <a href="" class="hover:pointer-events-auto">
                     <span class="text-7xl">
                         <fa icon="church" />
                     </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
-                </a>
-            </div>
-            <div class="col-span-2 justify-center p-5 bg-white drop-shadow-xl mb-2">
-                <a href="" class="hover:pointer-events-auto">
-                    <span class="text-7xl">
-                        <fa icon="church" />
-                    </span>
-                    <p>TCN Iganmu</p>
+                    <p>{{ church.center_name }}</p>
                 </a>
             </div>
         </div>
     </div>
 </template>
+
+<script>
+import { HTTP } from '../../axios-config'
+
+export default {
+    name: 'ListBranches',
+    data(){
+        return {
+            churches: []
+        }
+    },
+    async mounted(){
+        try { 
+            const res = await HTTP.get(`api/fetch-church-centers`)
+
+            if(res.status === 200){
+                this.churches = res.data.data
+            }
+        } catch (error) {
+            console.log('>>>>>>>> ', error);
+        }
+    }
+}
+</script>
