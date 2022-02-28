@@ -97,8 +97,10 @@ export default {
                 if(res.status === 200){
                     this.ageRange = res.data.data
                 }
+                this.$toast.success(`Attendance record added successfully!`)
             } catch (error) {
                 console.log('>>>> ', error)
+                this.$toast.error(error.message)
             }
         }
     },

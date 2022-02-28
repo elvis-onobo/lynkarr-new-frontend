@@ -19,8 +19,10 @@ export default {
         localStorage.setItem("token", res.data.data.token);
 
         this.$router.push({ name: "dashboard" })
+        this.$toast.success(`Login Successful!`)
       } catch (error) {
         // ! REPORT ERRORS USING TOAST AND SENTRY
+        this.$toast.error(error.message)
         console.log('>>>>>>> error login in', error)
       }
     }

@@ -9,6 +9,8 @@ import VueSweetalert2 from 'vue-sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import VueChartkick from 'vue-chartkick'
 import 'chartkick/chart.js'
+import VueToast from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-sugar.css';
 
 library.add(fas)
 
@@ -22,5 +24,10 @@ createApp(App)
 .use(router)
 .use(VueSweetalert2, options)
 .use(VueChartkick)
+.use(VueToast, {
+  position: 'top',
+  dismissible: true,
+
+})
 .component('fa', FontAwesomeIcon)
 .mount('#app')
