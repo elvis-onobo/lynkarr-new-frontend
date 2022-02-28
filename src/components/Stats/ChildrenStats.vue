@@ -55,7 +55,7 @@ export default {
     data(){
         return {
             churchId:1,
-            eventDate:'2022-02-20',
+            eventDate:'2022-02-28',
             totalChildrenObj: {},
             ageOneToFive: {},
             ageSixToNine: {},

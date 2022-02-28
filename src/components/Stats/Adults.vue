@@ -39,7 +39,7 @@ export default {
         return {
             count: 0,
             churchId:1,
-            eventDate:'2022-02-20',
+            eventDate:'2022-02-28',
             teenagers:{},
             adults:{},
             alterCall: {},

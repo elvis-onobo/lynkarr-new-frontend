@@ -9,6 +9,7 @@ import CreateBranch from '../components/Branches/CreateBranch.vue'
 import Dashboard from '../components/Dashboard.vue'
 import Adults from '../components/Stats/Adults.vue'
 import ChildrenStats from '../components/Stats/ChildrenStats.vue'
+import AddStats from '../components/Stats/AddStats.vue'
 
 const history = createWebHistory()
 const router = createRouter({
@@ -25,6 +26,7 @@ const router = createRouter({
             { path: 'user-management', component: CreateUser, name:'user-management'},
             { path: 'branches', component: ListBranches, name:'branches'},
             { path: 'create-branch', component: CreateBranch, name:'createBranch'},
+            { path: 'stats/add', component: AddStats, name:'addStats'},
         ]},
     ]
 })
