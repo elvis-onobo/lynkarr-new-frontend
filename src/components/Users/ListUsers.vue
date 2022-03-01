@@ -45,9 +45,7 @@ export default {
 
         this.data = res.data.data
       } catch (error) {
-        // ! REPORT ERRORS USING TOAST AND SENTRY
         this.$toast.error(error.message)
-        console.log('>>>>>>> error login in', error)
       }
     },
     convertDate(date){

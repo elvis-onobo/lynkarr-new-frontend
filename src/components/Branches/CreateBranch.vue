@@ -61,26 +61,26 @@ export default {
     return {
       centerName: "",
       address: "",
-      residentPastor:"",
-      imageUrl: ""
+      residentPastor: "",
+      imageUrl: "",
     };
   },
   methods: {
     async createBranch() {
-        try {
-            const res = await HTTP.post("api/create-church-center", {
-              centerName: this.centerName,
-              address: this.address,
-              residentPastor: this.residentPastor,
-              imageUrl: this.imageUrl,
-            })
-            
-            // ! Write checks in case not created and no error is thrown
+      try {
+        const res = await HTTP.post("api/create-church-center", {
+          centerName: this.centerName,
+          address: this.address,
+          residentPastor: this.residentPastor,
+          imageUrl: this.imageUrl,
+        });
 
-            this.$router.push({ name: 'branches'})
-        } catch (error) {
-            console.log('>>>>>>>>>>> ', error)
-        }
+        // ! Write checks in case not created and no error is thrown
+
+        this.$router.push({ name: "branches" });
+      } catch (error) {
+        this.$toast.error(error.message);
+      }
     },
   },
 };
