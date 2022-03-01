@@ -17,6 +17,12 @@
                         <td>{{user.last_name}}</td>
                         <td>{{user.userRole.role}}</td>
                         <td>{{convertDate(user.created_at)}}</td>
+                        <button class="bg-gray-800 hover:bg-orange-600 rounded-sm p-1 mr-2 text-white">
+                            Edit
+                        </button>
+                        <button class="bg-gray-800 hover:bg-orange-600 rounded-sm p-1 text-white">
+                            Deactivate
+                        </button>
                     </tr>
                 </tbody>
             </table>
