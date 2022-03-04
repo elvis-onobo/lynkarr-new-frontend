@@ -12,7 +12,7 @@
   >
     <div class="grid grid-cols-4">
       <router-link to="/admin/create-branch">
-        <div class="col-span-2 p-5 drop-shadow-xl mb-2">
+        <div class="col-span-2 p-3 drop-shadow-xl mb-2">
           <button
             class="
               bg-gray-800
@@ -20,8 +20,6 @@
               rounded-sm
               p-2
               text-white
-              mt-2
-              m-2
             "
           >
             Add Centre

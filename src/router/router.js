@@ -15,7 +15,7 @@ const history = createWebHistory()
 const router = createRouter({
     history,
     routes: [
-        { path: '/', component: Login},
+        { path: '/', name:"login", component: Login},
         { path: '/admin', component: AdminTemplate, children: [
             { path: 'dashboard', component: Dashboard, name:'dashboard'},
             { path: 'stats', component: Stats, name:'stats' },
@@ -27,7 +27,16 @@ const router = createRouter({
             { path: 'branches', component: ListBranches, name:'branches'},
             { path: 'create-branch', component: CreateBranch, name:'createBranch'},
             { path: 'stats/add', component: AddStats, name:'addStats'},
-        ]},
+        ],
+        beforeEnter: (to, from, next) => {
+            if (localStorage.getItem('token')) {
+                next()
+            } else {
+                next('/')
+            }
+        }
+    },
+    // { path: '/:pathMatch(.*)*', name: 'login', component: Login },
     ]
 })
 

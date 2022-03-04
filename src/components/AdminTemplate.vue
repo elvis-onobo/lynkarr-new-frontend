@@ -167,8 +167,20 @@ export default {
         icon: "warning",
         showCancelButton: true,
         confirmButtonText: "Yes, Log me out!",
-      });
+      }).then((result) => {
+        if (result.value) {
+          this.logoutUser()
+        }
+      })
     },
+    async logoutUser(){
+        localStorage.removeItem('token')
+        // this.$store.dispatch('user', null)
+        // this.$store.dispatch('token', null)
+        // this.$store.dispatch('business', null)
+
+        this.$router.push('/')
+      },
   },
 };
 </script>

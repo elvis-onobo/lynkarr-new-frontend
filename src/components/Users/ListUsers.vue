@@ -1,5 +1,5 @@
 <template>
-    <div class="col-span-9 p-4 bg-orange-50 rounded-sm drop-shadow-xl h-96 overflow-auto">
+    <div class="col-span-9 p-3 bg-orange-50 rounded-sm drop-shadow-xl h-96 overflow-auto">
         <div class="grid grid-cols-1">
             <router-link to="/admin/create-user">
                 <div class=" drop-shadow-xl mb-2">
@@ -9,7 +9,7 @@
                 </div>
             </router-link>
         </div>
-        <div class="grid grid-cols-1 p-4">
+        <div class="grid grid-cols-1 p-3">
             <table class="table-auto">
                 <tbody class="divide-y-2 divide-gray-200 divide-solid">
                     <tr :value="user.id" :key="user.id" v-for="user in data">
