@@ -1,35 +1,3 @@
-<script>
-import { HTTP } from "../axios-config";
-
-export default {
-  name: "Login",
-  data() {
-    return {
-      date: new Date().getFullYear(),
-      email: "",
-      password: "",
-    };
-  },
-  methods: {
-    async login() {
-      try {
-        const res = await HTTP.post("login", {
-          password: this.password,
-          email: this.email,
-        });
-
-        localStorage.setItem("token", res.data.data.token);
-
-        this.$toast.success(`Login Successful!`);
-
-        this.$router.push({ name: "dashboard" });
-      } catch (error) {
-        this.$toast.error(error.message);
-      }
-    },
-  },
-};
-</script>
 
 <template>
   <div
@@ -77,6 +45,41 @@ export default {
     </div>
   </div>
 </template>
+
+
+<script>
+import { HTTP } from "../axios-config";
+
+export default {
+  name: "Login",
+  data() {
+    return {
+      date: new Date().getFullYear(),
+      email: "",
+      password: "",
+    };
+  },
+  methods: {
+    async login() {
+      try {
+        const res = await HTTP.post('login', {
+          password: this.password,
+          email: this.email,
+        });
+
+        localStorage.setItem('token', res.data.data.token.token)
+        this.$store.commit('formatUserData', res.data.data)
+     
+        this.$toast.success(`Login Successful!`)
+
+        this.$router.push({ name: "dashboard" })
+      } catch (error) {
+        this.$toast.error(error.message)
+      }
+    },
+  },
+};
+</script>
 
 <style scoped>
 .bgImg {

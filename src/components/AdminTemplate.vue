@@ -18,11 +18,11 @@
             justify-items-center justify-self-center
           "
         >
-          <p>Dashboard</p>
+          <p>{{ $store.state.selectedPage }}</p>
         </div>
         <div class="flex v-screen place-items-center">
           <div>
-            <p class="mr-1">Super Admin</p>
+            <p class="mr-1">{{  $store.state.role.role }}</p>
           </div>
           <div>
             <i class="fas fa-user"></i>
@@ -32,19 +32,19 @@
     </nav>
     <div class="grid grid-cols-12 gap-4">
       <div class="p-2 col-span-2">
-        <p class="p-4 font-bold hover:bg-orange-100">Hi, Elvis</p>
-        <p class="pt-0 pr-4 pl-4 font-extralight">Super Admin</p>
+        <p class="p-4 font-bold hover:bg-orange-100">Hello, {{  $store.state.user.first_name }}!</p>
+        <p class="pt-0 pr-4 pl-4 font-extralight">{{  $store.state.role.role }}</p>
         <ul role="list">
           <!-- <router-link to="/admin/dashboard">
-                        <li class="flex p-4 hover:bg-orange-100">
-                            <fa icon="dashboard" />
-                            <div class="ml-2 overflow-hidden">
-                            <p class="text-sm truncate">Dashboard</p>
-                            </div>
-                        </li>
-                    </router-link> -->
+                  <li class="flex p-4 hover:bg-orange-100">
+                      <fa icon="dashboard" />
+                      <div class="ml-2 overflow-hidden">
+                      <p class="text-sm truncate">Dashboard</p>
+                      </div>
+                  </li>
+              </router-link> -->
           <router-link to="/admin/branches">
-            <li class="flex p-4 hover:bg-orange-100">
+            <li class="flex p-4 hover:bg-orange-100" @click="$store.commit('selectedPage', 'Church Centers')">
               <fa icon="church" />
               <div class="ml-2 overflow-hidden">
                 <p class="text-sm truncate">Branches</p>
@@ -66,7 +66,7 @@
           <!-- children for stats -->
           <div v-if="showStatsMenu" class="pl-4">
             <router-link to="/admin/stats/add">
-              <li class="flex p-4 hover:bg-orange-100">
+              <li class="flex p-4 hover:bg-orange-100" @click="$store.commit('selectedPage', 'Add Stats')">
                 <fa icon="plus" />
                 <div class="ml-2 overflow-hidden">
                   <p class="text-sm truncate">Add Stats</p>
@@ -74,7 +74,7 @@
               </li>
             </router-link>
             <router-link to="/admin/stats/children">
-              <li class="flex p-4 hover:bg-orange-100">
+              <li class="flex p-4 hover:bg-orange-100" @click="$store.commit('selectedPage', 'Children Stats')">
                 <fa icon="child" />
                 <div class="ml-2 overflow-hidden">
                   <p class="text-sm truncate">Children</p>
@@ -82,7 +82,7 @@
               </li>
             </router-link>
             <router-link to="/admin/stats/adults">
-              <li class="flex p-4 hover:bg-orange-100">
+              <li class="flex p-4 hover:bg-orange-100" @click="$store.commit('selectedPage', 'Adult Stats')">
                 <fa icon="user" />
                 <div class="ml-2 overflow-hidden">
                   <p class="text-sm truncate">Adults</p>
@@ -93,7 +93,7 @@
           <!-- children for stats -->
 
           <router-link to="/admin/stats">
-            <li class="flex p-4 hover:bg-orange-100" title="coming soon">
+            <li class="flex p-4 hover:bg-orange-100" title="coming soon" @click="$store.commit('selectedPage', 'Events')">
               <i class="fas fa-chart-pie"></i>
               <fa icon="calendar-week" />
               <div class="ml-2 overflow-hidden">
@@ -102,7 +102,7 @@
             </li>
           </router-link>
           <router-link to="/admin/stats">
-            <li class="flex p-4 hover:bg-orange-100">
+            <li class="flex p-4 hover:bg-orange-100" @click="$store.commit('selectedPage', 'Roles & Privileges')">
               <fa icon="key" />
               <div class="ml-2 overflow-hidden">
                 <p class="text-sm truncate">Roles & Privileges</p>
@@ -110,7 +110,7 @@
             </li>
           </router-link>
           <router-link to="/admin/list-users">
-            <li class="flex p-4 hover:bg-orange-100">
+            <li class="flex p-4 hover:bg-orange-100" @click="$store.commit('selectedPage', 'User Management')">
               <fa icon="users" />
               <div class="ml-2 overflow-hidden">
                 <p class="text-sm truncate">User Management</p>
@@ -175,13 +175,13 @@ export default {
     },
     async logoutUser(){
         localStorage.removeItem('token')
-        // this.$store.dispatch('user', null)
-        // this.$store.dispatch('token', null)
-        // this.$store.dispatch('business', null)
 
         this.$router.push('/')
       },
   },
+  computed: {
+    // ...mapGetters(['user', 'token', 'role', 'churchId'])
+  }
 };
 </script>
 

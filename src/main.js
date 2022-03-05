@@ -11,6 +11,7 @@ import VueChartkick from 'vue-chartkick'
 import 'chartkick/chart.js'
 import VueToast from 'vue-toast-notification';
 import 'vue-toast-notification/dist/theme-sugar.css';
+import store from './store/index'
 
 library.add(fas)
 
@@ -27,7 +28,7 @@ createApp(App)
 .use(VueToast, {
   position: 'top',
   dismissible: true,
-
 })
+.use(store)
 .component('fa', FontAwesomeIcon)
 .mount('#app')

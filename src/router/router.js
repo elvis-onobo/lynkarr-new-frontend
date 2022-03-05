@@ -15,7 +15,7 @@ const history = createWebHistory()
 const router = createRouter({
     history,
     routes: [
-        { path: '/', name:"login", component: Login},
+        { path: '/', name:'login', component: Login},
         { path: '/admin', component: AdminTemplate, children: [
             { path: 'dashboard', component: Dashboard, name:'dashboard'},
             { path: 'stats', component: Stats, name:'stats' },
@@ -36,7 +36,7 @@ const router = createRouter({
             }
         }
     },
-    // { path: '/:pathMatch(.*)*', name: 'login', component: Login },
+    // { path: '/:pathMatch(.*)*', name: 'login', component: Login }
     ]
 })
 
