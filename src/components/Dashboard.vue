@@ -1,7 +1,7 @@
 <template>
-  <div class="col-span-10 flex bg-orange-50">
-    <div class="grid grid-cols-4">
-      <div class="col-span-2 m-3 p-2">
+  <div class="col-span-10 bg-orange-50">
+    <div class="grid grid-cols-2 gap-4 m-4">
+      <div class="max-w-full">
         <pie-chart
           :data="[
             ['Blueberry', 44],
@@ -12,7 +12,7 @@
         ></pie-chart>
         <p>Church Population Comparison</p>
       </div>
-      <div class="col-span-2 m-3 p-2">
+      <div class="">
         <bar-chart
           :data="[
             ['Blueberry', 44],
@@ -22,7 +22,7 @@
           ]"
         ></bar-chart>
       </div>
-      <div class="col-span-2 m-3 p-2">
+      <div class="">
         <column-chart
           :data="[
             ['Blueberry', 44],
@@ -32,7 +32,7 @@
           ]"
         ></column-chart>
       </div>
-      <div class="col-span-2 m-3 p-2">
+      <div class="">
         <column-chart
           :data="[
             ['Blueberry', 44],

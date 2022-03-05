@@ -1,7 +1,21 @@
 
 <template>
-  <div class="col-span-10 flex bg-orange-50">
-    <div class="grid grid-cols-3 gap-6 m-4">
+  <div class="col-span-10  bg-orange-50">
+    <div class="grid grid-cols-1">
+      <div class="m-2 p-2" @submit.prevent="filterResults">
+        <form class="flex">
+          <input type="date" class="form-control" v-model="eventDate" />
+          <select class="form-select p-2">
+            <option value="" disabled>Select Service</option>
+            <option value="">First Service</option>
+          </select>
+          <button
+            class="bg-gray-800 hover:bg-gray-600 rounded-sm p-2 text-white"
+          >Filter</button>
+        </form>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-1 m-4">
       <div class="h-full max-w-full grid place-items-center">
         <pie-chart
           :data="[
@@ -69,7 +83,7 @@ export default {
     return {
       count: 0,
       churchId: 1,
-      eventDate: "2022-02-28",
+      eventDate: '',
       teenagers: {},
       adults: {},
       alterCall: {},
@@ -77,6 +91,34 @@ export default {
       eLibrary: {},
       firstTimers: {},
     };
+  },
+  methods: {
+    async filterResults() {
+      try {
+        const res = await HTTP.get(
+          `api/total-stats?churchId=${this.churchId}&eventDate=${this.eventDate}`
+        );
+
+      if (res.status === 200) {
+        // Stats
+        const { teenagers } = res.data.data;
+        const { adults } = res.data.data;
+        const { alterCall } = res.data.data;
+        const { converts } = res.data.data;
+        const { eLibrary } = res.data.data;
+        const { firstTimers } = res.data.data;
+
+        this.teenagers = teenagers;
+        this.adults = adults;
+        this.alterCall = alterCall;
+        this.converts = converts;
+        this.eLibrary = eLibrary;
+        this.firstTimers = firstTimers;
+      }
+      } catch (error) {
+        this.$toast.error(error.message);
+      }
+    },
   },
   async mounted() {
     try {
