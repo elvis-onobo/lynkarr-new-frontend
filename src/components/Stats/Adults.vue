@@ -5,9 +5,15 @@
       <div class="m-2 p-2" @submit.prevent="filterResults">
         <form class="flex gap-2">
           <input type="date" class="form-control" v-model="eventDate" />
-          <select class="form-select p-2">
-            <option value="" disabled>Select Service</option>
-            <option value="">First Service</option>
+          <select class="form-select p-2" v-model="serviceType">
+            <option disabled>Select a Service Type</option>
+            <option
+              :value="value"
+              v-for="(value, key) in churchServices"
+              :key="key"
+            >
+              {{ key }}
+            </option>
           </select>
           <button
             class="bg-gray-800 hover:bg-gray-600 rounded-sm p-2 text-white"
@@ -90,13 +96,14 @@ export default {
       converts: {},
       eLibrary: {},
       firstTimers: {},
+      serviceType:''
     };
   },
   methods: {
     async filterResults() {
       try {
         const res = await HTTP.get(
-          `api/total-stats?churchId=${this.churchId}&eventDate=${this.eventDate}`
+          `api/total-stats?churchId=${this.churchId}&eventDate=${this.eventDate}&serviceType=${this.serviceType}`
         );
 
       if (res.status === 200) {
@@ -119,11 +126,23 @@ export default {
         this.$toast.error(error.message);
       }
     },
+    async getChurchServices() {
+      try {
+        const res = await HTTP.get(`api/church-services`);
+
+        if (res.status === 200) {
+          this.churchServices = res.data.data;
+        }
+      } catch (error) {
+        this.$toast.error(error.message);
+      }
+    },
   },
   async mounted() {
     try {
+      await this.getChurchServices()
       const res = await HTTP.get(
-        `api/total-stats?churchId=${this.churchId}&eventDate=${this.eventDate}`
+          `api/total-stats?churchId=${this.churchId}&eventDate=${this.eventDate}&serviceType=${this.serviceType}`
       );
 
       if (res.status === 200) {
