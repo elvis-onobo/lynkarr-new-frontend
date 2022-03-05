@@ -3,7 +3,7 @@
   <div class="col-span-10 bg-orange-50">
     <div class="grid grid-cols-1">
       <div class="m-2 p-2" @submit.prevent="filterResults">
-        <form class="flex">
+        <form class="flex gap-2">
           <input type="date" class="form-control" v-model="eventDate" />
           <select class="form-select p-2">
             <option value="" disabled>Select Service</option>
@@ -109,7 +109,7 @@ export default {
   name: "ChildrenStats",
   data() {
     return {
-      churchId: 1,
+      churchId: this.$store.state.churchId,
       eventDate: "",
       totalChildrenObj: {},
       ageOneToFive: {},
