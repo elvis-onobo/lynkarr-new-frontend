@@ -1,7 +1,21 @@
 
 <template>
-  <div class="col-span-10 flex bg-orange-50">
-    <div class="grid grid-cols-3 gap-6 m-4">
+  <div class="col-span-10 bg-orange-50">
+    <div class="grid grid-cols-1">
+      <div class="m-2 p-2" @submit.prevent="filterResults">
+        <form class="flex">
+          <input type="date" class="form-control" v-model="eventDate" />
+          <select class="form-select p-2">
+            <option value="" disabled>Select Service</option>
+            <option value="">First Service</option>
+          </select>
+          <button
+            class="bg-gray-800 hover:bg-gray-600 rounded-sm p-2 text-white"
+          >Filter</button>
+        </form>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-1 m-4">
       <div
         class="
           place-items-center
@@ -14,7 +28,9 @@
         "
       >
         <div class="grid max-w-full text-white justify-items-center">
-          <span class="text-3xl font-semibold">{{ totalChildren.total }}</span>
+          <span class="text-3xl font-semibold">{{
+            totalChildren.total || 0
+          }}</span>
           <p>Total</p>
         </div>
       </div>
@@ -30,7 +46,9 @@
         "
       >
         <div class="grid max-w-full text-white v-screen justify-items-center">
-          <span class="text-3xl font-semibold">{{ totalChildren.male }}</span>
+          <span class="text-3xl font-semibold">{{
+            totalChildren.male || 0
+          }}</span>
           <p>Male</p>
         </div>
       </div>
@@ -46,7 +64,9 @@
         "
       >
         <div class="grid max-w-full text-white v-screen justify-items-center">
-          <span class="text-3xl font-semibold">{{ totalChildren.female }}</span>
+          <span class="text-3xl font-semibold">{{
+            totalChildren.female || 0
+          }}</span>
           <p>Female</p>
         </div>
       </div>
@@ -90,13 +110,38 @@ export default {
   data() {
     return {
       churchId: 1,
-      eventDate: "2022-02-28",
+      eventDate: "",
       totalChildrenObj: {},
       ageOneToFive: {},
       ageSixToNine: {},
       ageTenToTwelve: {},
       totalChildren: {},
+      // him: new Date().toDateString()
     };
+  },
+  methods: {
+    async filterResults() {
+      try {
+        const res = await HTTP.get(
+          `api/total-stats?churchId=${this.churchId}&eventDate=${this.eventDate}`
+        );
+
+        if (res.status === 200) {
+          // Stats
+          const { children } = res.data.data;
+          const { ageOneToFive } = children;
+          const { ageSixToNine } = children;
+          const { ageTenToTwelve } = children;
+          const { totalChildren } = children;
+          this.ageOneToFive = ageOneToFive;
+          this.ageSixToNine = ageSixToNine;
+          this.ageTenToTwelve = ageTenToTwelve;
+          this.totalChildren = totalChildren;
+        }
+      } catch (error) {
+        this.$toast.error(error.message);
+      }
+    },
   },
   async mounted() {
     try {
