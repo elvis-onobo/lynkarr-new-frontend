@@ -1,88 +1,62 @@
 
 <template>
-  <div
-    class="
-      grid
-      place-items-center
-      h-screen
-      bg-gray-600
-      center-center
-      font-normal
-      bgImg
-    "
-  >
-    <div class="grid place-items-center">
-      <div class="m-2 grid place-items-center">
-        <img class="" src="../assets/images/tcn-logono-bg.png" />
-        <p class="text-2xl text-white">Welcome to</p>
-        <p class="text-5xl text-orange-600 font-bold">The Covenant Nation</p>
-        <p class="text-2xl text-white">Analytics Platform</p>
+  <div class="container">
+    <div class="grid grid-cols-2 gap-2 font-normal">
+      <div class="place-items-center h-screen v-screen items-center">
+        <p class="text-5xl">Get Your Morrni Working Right</p>
+        <p class="text-2xl">The better way to save.</p>
       </div>
-      <form class="mt-2" @submit.prevent="login">
-        <input
-          type="email"
-          name="email"
-          v-model="email"
-          placeholder="E-mail"
-          class="p-2 mr-2 rounded-sm"
-          autofocus
-        />
-        <input
-          type="password"
-          name="password"
-          v-model="password"
-          class="p-2 mr-2 rounded-sm"
-          placeholder="Password"
-        />
-        <button
-          class="bg-orange-600 hover:bg-gray-600 rounded-sm p-2 text-white"
-          @click="login"
-        >
-          Login
-        </button>
-      </form>
-      <p class="text-white mt-12">&copy; {{ date }}, The Covenant Nation</p>
+      <div class="rounded-lg outline outline-solid outline-1">
+        <p class="text-5xl">Get Your Morrni Working Right</p>
+        <p class="text-2xl">The better way to save.</p>
+      </div>
+    </div>
+
+    <div class='grid grid-cols-3 gap-4 place-items-center m-4'>
+      <div class='p-5 rounded-2xl bg-gray-100'>
+        <div class='p-4 rounded-md'>
+          <fa icon="pen" class='bg-sky-200 p-4 rounded-md' /> 
+          <p class='text-3xl'>Register</p>
+        </div>
+        <p class='pl-4 pr-4'>
+          Automated Savings Build a dedicated savings faster on your terms automatically or manually.
+        </p>
+        <div class='p-4 rounded-md'>
+          <fa icon="arrow-right" class='bg-pink-200 p-2 rounded-full' /> 
+        </div>
+      </div>
+
+      <div class='p-5 rounded-2xl bg-gray-100'>
+        <div class='p-4 rounded-md'>
+          <fa icon="box" class='bg-sky-200 p-4 rounded-md' /> 
+          <p class='text-3xl'>Save</p>
+        </div>
+        <p class='pl-4 pr-4'>
+          Automated Savings Build a dedicated savings faster on your terms automatically or manually.
+        </p>
+        <div class='p-4 rounded-md'>
+          <fa icon="arrow-right" class='bg-pink-200 p-2 rounded-full' /> 
+        </div>
+      </div>
+
+      <div class='p-5 rounded-2xl bg-gray-100'>
+        <div class='p-4 rounded-md'>
+          <fa icon="money-bill" class='bg-sky-200 p-4 rounded-md' /> 
+          <p class='text-3xl'>Earn</p>
+        </div>
+        <p class='pl-4 pr-4'>
+          Automated Savings Build a dedicated savings faster on your terms automatically or manually.
+        </p>
+        <div class='p-4 rounded-md'>
+          <fa icon="arrow-right" class='bg-pink-200 p-2 rounded-full' /> 
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
-
 <script>
-import { HTTP } from "../axios-config";
-
-export default {
-  name: "Login",
-  data() {
-    return {
-      date: new Date().getFullYear(),
-      email: "",
-      password: "",
-    };
-  },
-  methods: {
-    async login() {
-      try {
-        const res = await HTTP.post('login', {
-          password: this.password,
-          email: this.email,
-        });
-
-        localStorage.setItem('token', res.data.data.token.token)
-        this.$store.commit('formatUserData', res.data.data)
-     
-        this.$toast.success(`Login Successful!`)
-
-        this.$router.push({ name: "dashboard" })
-      } catch (error) {
-        this.$toast.error(error.message)
-      }
-    },
-  },
-};
 </script>
 
 <style scoped>
-.bgImg {
-  background: url("../assets/images/tcn.jpg") no-repeat center center;
-}
 </style>
