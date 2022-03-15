@@ -1,155 +1,236 @@
 
 <template>
-  <div class="grid place-items-center font-serif">
-    <div class="container">
-      <div class="grid grid-cols-2 gap-1 place-items-center h-screen">
-        <div class="place-items-center center-center p-6 m-6">
-          <p class="text-5xl bg-gradient-to-tr to-violet-600 font-bold">Give Your Customers all the Options</p>
-          <p class="text-1xl mt-2">
-            Setup multiple payment methods with just the click of a button instead of multiple lines of code.
-          </p>
-          <button class="p-2 bg-purple-600 text-white rounded-md hover:bg-fuchsia-600 mt-2">Register</button>
-        </div>
-
-        <div class="place-items-center center-center flex">
-          <div class="rounded-full p-20 bg-purple-600"></div>
-          <div class="rounded-full p-20 bg-pink-600"></div>
-        </div>
+  <div class="font-sans">
+    <nav class="p-2 flex items-center place-content-between">
+      <div class="w-24 visible md:invisible">
+        <img src="../assets/images/tcn-logono-bg.png" />
       </div>
+      <!-- <div class="item-right invisible md:visible">
+        <ul class="flex space-x-2">
+          <li>Login</li>
+          <li>About Us</li>
+        </ul>
+      </div> -->
 
-
-      <div class="grid place-items-center bg-gray-100 rounded-lg p-4 v-screen align-middle m-6">
-        <div class="grid place-items-center">
-          <p class="text-2xl p-4 font-serif">
-            Receive payments with these and more... From one convenient stack
-          </p>
-        </div>
-        <div class="flex gap-2 content-center">
-          <div>
-            <img src="../assets/images/flutterwave.png" class="w-80" />
-          </div>
-          <div>
-            <img src="../assets/images/paystack.png" class="w-80" />
-          </div>
-          <div>
-            <img src="../assets/images/voguepay.svg" class="w-52" />
-          </div>
-          <div>
-            <img src="../assets/images/stripe-cropped.svg" class="w-36" />
-          </div>
-          <div>
-            <img src="../assets/images/wise.png" class="w-48" />
-          </div>
-        </div>
+      <!-- Mobile Menu: Hide On Big Screens -->
+      <div class="w-24 visible md:invisible">
+        <fa icon="bars" class="bg-purple-200 p-4 rounded-md" />
       </div>
-
-      <div class='grid grid-cols-3 gap-4 place-items-center m-6 '>
-        <div class='p-5 rounded-2xl bg-gray-100'>
-          <div class='p-4 rounded-md'>
-            <fa icon="pen" class='bg-purple-200 p-4 rounded-md' /> 
-            <p class='text-3xl'>Sign Up</p>
-          </div>
-          <p class='pl-4 pr-4'>
-           It all begins with a step. A decision to start and everything else falls in place.
-          </p>
-          <div class='p-4 rounded-md'>
-            <fa icon="arrow-right" class='bg-pink-200 p-2 rounded-full' /> 
-          </div>
-        </div>
-
-        <div class='p-5 rounded-2xl bg-gray-100'>
-          <div class='p-4 rounded-md'>
-            <fa icon="box" class='bg-purple-200 p-4 rounded-md' /> 
-            <p class='text-3xl'>Activate a Service</p>
-          </div>
-          <p class='pl-4 pr-4'>
-            Activate any of the payment services that you woul like your custoners to be able to use.
-          </p>
-          <div class='p-4 rounded-md'>
-            <fa icon="arrow-right" class='bg-pink-200 p-2 rounded-full' /> 
-          </div>
-        </div>
-
-        <div class='p-5 rounded-2xl bg-gray-100'>
-          <div class='p-4 rounded-md'>
-            <fa icon="money-bill" class='bg-purple-200 p-4 rounded-md' /> 
-            <p class='text-3xl'>Receive Payments</p>
-          </div>
-          <p class='pl-4 pr-4'>
-            Sit back, relax, and watch the money come in on one sleek dashboard.
-          </p>
-          <div class='p-4 rounded-md'>
-            <fa icon="arrow-right" class='bg-pink-200 p-2 rounded-full' /> 
-          </div>
-        </div>
-      </div>
-
-      <div class="grid place-items-center bg-pink-100 rounded-lg p-4 v-screen align-middle m-6">
-        <div class="grid grid-cols-2 gap-1 content-center">
-          <div class="grid place-items-center">
-            <p class="text-2xl p-4 ">
-              Join the waitlist
-            </p>
-          </div>
-          <div>
-            <form class="">
-              <input text="emai;" class="rounded-md p-2 mr-2" placeholder="E-mail" autofocus />
-              <input text="text" class="rounded-md p-2 mr-2" placeholder="Name" />
-              <button class="p-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 mt-2">Join</button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid place-items-center justify-between rounded-lg p-4 v-screen align-middle m-6">
-        <div class="grid grid-cols-5 gap-1 content-center p-4">
-          <div>
-            <img src="../assets/images/tcn-logono-bg.png" class="w-24" />
-          </div>          
-          
-          <div class="">
-            <p class="font-bold">Products</p>
-            <a href="http://" >PayBanner</a>
-          </div>
-
-          <div class="">
-            <p class="font-bold">Company</p>
-            <p><a href="http://" >About</a></p>
-            <p><a href="http://" >FAQs</a></p>
-            <p><a href="http://" >Blog</a></p>
-          </div>
-
-          <div class="">
-            <p class="font-bold">Legal</p>
-            <p><a href="http://" >Terms and Conditions</a></p>
-            <p><a href="http://" >Privacy</a></p>
-            <p><a href="http://" >Security</a></p>
-          </div>
-
-          <div class="">
-            <p class="font-bold">Let's Get Social</p>
-            <div class="grid">
-              <fa icon="facebook" /> 
-              <fa icon="instagram" /> 
-              <fa icon="whatsapp" />
-              <div class="text-">
-                <p>16 Ebun Oluwa Street, Shomolu, Lagos</p>
-                <p>service@digitalboss.com</p>
-                <p>+234 803 910 1861</p>
+    </nav>
+    <div class="md:grid place-items-center">
+      <div class="container">
+        <div class="grid gap-1 h-screen place-items-center">
+          <div
+            class="
+              grid
+              md:grid-cols-2
+              place-items-center
+              space-y-2 space-x-2
+              text-center
+            "
+          >
+            <div>
+              <p class="text-5xl font-bold">Buy Assets The Easy Way</p>
+              <blockquote class="text-sm">
+                There's only one way to eat an elephant:
+                <strong>a bit at a time</strong> - Desmond Tutu.
+              </blockquote>
+              <div class="space-x-2 text-white mt-2">
+                <button class="p-2 bg-black rounded-md hover:bg-gray-100">
+                  Register
+                </button>
+                <button class="p-2 bg-black rounded-md hover:bg-gray-100">
+                  Login
+                </button>
               </div>
+            </div>
+            <div>
+              <img src="../assets/logo.png" />
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="grid place-items-center">
-          <div class="grid place-items-center center-center">
-            <p class="p-20">
-              Piggyvest (formerly piggybank.ng) is the leading online savings & investing platform in Nigeria. For over 5 years,
-              our customers have saved and invested billions of Naira that they would normally be tempted to spend.
-            </p>
+    <div class="grid place-items-center mt-4 bg-slate-50">
+      <div class="container">
+        <div class="grid place-items-center p-8">
+          <p class="text-3xl">Why AssetifyMe?</p>
+          <p class="text-center">
+            It can be really hard to buy lands and houses upfront, but it is
+            really easy to buy lands and houses in installments. With
+            AssetifyMe.com you can now buy lands and houses from the most
+            reliable real estate companies in Nigeria at
+            <strong>no extra cost</strong>. Our platform allows you to make
+            payments installmentally in a way that suits your budget and takes
+            away the pressure from you. Whether you are in Lagos, London or
+            Lousiana.
+          </p>
+          <button
+            class="p-2 bg-black text-white rounded-md hover:bg-gray-100 mt-2"
+          >
+            Start Buying
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container place-items-center">
+      <div
+        class="
+          md:grid
+          grid-cols-3
+          gap-4
+          place-items-center
+          m-6
+          space-y-5
+          md:space-y-0
+        "
+      >
+        <div class="p-5 rounded-2xl bg-fuchsia-50">
+          <div class="p-4 rounded-md">
+            <fa icon="pen" class="bg-blue-600 text-white p-4 rounded-md" />
+            <p class="text-3xl">Sign Up</p>
+          </div>
+          <p class="pl-4 pr-4">
+            It all begins with a step. A decision to start and everything else
+            falls in place.
+          </p>
+          <div class="p-4 rounded-md">
+            <fa
+              icon="arrow-right"
+              class="bg-black text-white p-2 rounded-full"
+            />
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50">
+          <div class="p-4 rounded-md">
+            <fa icon="calendar" class="bg-black text-white p-4 rounded-md" />
+            <p class="text-3xl">Setup a Plan</p>
+          </div>
+          <p class="pl-4 pr-4">
+            Setup a daily, weekly, monthly or even yearly payment plan for the
+            asset you want.
+          </p>
+          <div class="p-4 rounded-md">
+            <fa
+              icon="arrow-right"
+              class="bg-black text-white p-2 rounded-full"
+            />
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50">
+          <div class="p-4 rounded-md">
+            <fa icon="house" class="bg-black text-white p-4 rounded-md" />
+            <p class="text-3xl">Claim Your Asset</p>
+          </div>
+          <p class="pl-4 pr-4">
+            Claim your asset and all documents on completion of payment.
+          </p>
+          <div class="p-4 rounded-md">
+            <fa
+              icon="arrow-right"
+              class="bg-black text-white p-2 rounded-full"
+            />
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="grid place-items-center rounded-lg p-4 v-screen align-middle m-6">
+    <div class="grid place-items-center">
+      <p class="md:text-2xl text-sm p-4 font-serif">
+        In partnership with the best
+      </p>
+    </div>
+    <div class="flex gap-2 content-center items-center">
+      <div>
+        <img src="../assets/images/landwey-logo.png" class="w-50" />
+      </div>
+      <div>
+        <img src="../assets/images/adron-logo.png" class="w-20" />
+      </div>
+      <div>
+        <img src="../assets/images/pwan-homes-logo.png" class="w-52" />
+      </div>
+      <div>
+        <img src="../assets/images/revolution-plus-logo.png" class="w-32" />
+      </div>
+    </div>
+  </div>
+
+  <div class="md:grid gap-1 m-10 p-10 rounded-md place-items-center">
+    <div>
+      <p class="md:text-2xl text-xs text-center">
+        All your payments are processed and secured by 
+      </p>
+    </div>
+    <div>
+      <img src="../assets/images/paystack.png" />
+    </div>
+  </div>
+
+  <div
+    class="
+      md:grid
+      place-items-center
+      justify-between
+      rounded-lg
+      md:p-4
+      v-screen
+      align-middle
+      m-6
+    "
+  >
+    <div class="md:grid md:grid-cols-5 grid-cols-2 gap-1 content-center p-4 text-xs">
+      <div>
+        <img src="../assets/images/tcn-logono-bg.png" class="w-24" />
+      </div>
+
+      <div class="">
+        <p class="font-bold">Products</p>
+        <a href="http://">PayBanner</a>
+      </div>
+
+      <div class="">
+        <p class="font-bold">Company</p>
+        <p><a href="http://">About</a></p>
+        <p><a href="http://">FAQs</a></p>
+        <p><a href="http://">Blog</a></p>
+      </div>
+
+      <div class="">
+        <p class="font-bold">Legal</p>
+        <p><a href="http://">Terms and Conditions</a></p>
+        <p><a href="http://">Privacy</a></p>
+        <p><a href="http://">Security</a></p>
+      </div>
+
+      <div class="">
+        <p class="font-bold">Let's Get Social</p>
+        <div class="grid">
+          <fa icon="facebook" />
+          <fa icon="instagram" />
+          <fa icon="whatsapp" />
+          <div class="text-">
+            <p>16 Ebun Oluwa Street, Shomolu, Lagos</p>
+            <p>service@digitalboss.com</p>
+            <p>+234 803 910 1861</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid gap-1 place-items-center">
+      <p class="md:p-20 pl-8 pr-8 text-center text-sm">
+        AssetifyMe is the leading property marketing and payment collection platform in Nigeria. We operate in
+        partnership with the elite property firms to bring you the best deals and the ability to pay for them
+        fast and conveniently. Assetifyme is a property of DigitalBoss Africa, registered with the Corporate Affairs
+        Commision of Nigeria with registration number RC3300055.
+      </p>
     </div>
   </div>
 </template>
