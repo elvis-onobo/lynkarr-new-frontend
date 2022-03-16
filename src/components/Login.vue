@@ -33,7 +33,7 @@
               <div class="grid place-items-center invisible md:visible">
                 <img src="../assets/images/tcn-logono-bg.png" class="w-32" />
               </div>
-              <p class="text-5xl font-bold">Buy Assets The Easy Way</p>
+              <p class="text-5xl font-bold">Buy Assets the Easy Way</p>
               <blockquote class="text-sm">
                 There's only one way to eat an elephant:
                 <strong>a bit at a time</strong> - Desmond Tutu.
@@ -76,6 +76,12 @@
           </button>
         </div>
       </div>
+    </div>
+
+    <div class="grid h-52  mt-4 rounded-lg items-center place-items-center">
+      <p class="text-5xl font-extrabold p-10 bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-500">
+        Start owning an asset with as little as &#8358;1000
+      </p>
     </div>
 
     <div
@@ -178,7 +184,7 @@
     </div>
     
     <div class="bg-slate-100 rounded-md p-8">
-      <p class="font-bold">Refer and Earn</p>
+      <p class="font-bold">Agent A</p>
       <p class="text-justify text-sm">
         Refer your friends and family and if
         they buy a property from any of our partners AssetifyMe, you will receive a commission.
@@ -198,7 +204,7 @@
   </div>
 
   <footer class="text-xs m-10">
-    <div class="grid grid-cols-2 md:grid-cols-5 space-y-2 items-center text-center">
+    <div class="grid grid-cols-2 md:grid-cols-5 space-y-2 md:space-y-0 items-center md:items-start text-center">
       <div class="grid col-span-2 md:col-span-1 place-items-center">
         <img src="../assets/images/tcn-logono-bg.png" class="w-24" />
       </div>
@@ -208,6 +214,7 @@
         <p>Buy in Bits</p>
         <p>Asset Padi</p>
         <p>Spot Swap</p>
+        <p>Agent A</p>
       </div>
 
       <div>
@@ -257,4 +264,8 @@
 </script>
 
 <style scoped>
+.bgImg {
+  background: url("../assets/images/naira.jpeg") no-repeat center center;
+  border-radius: 10px;
+}
 </style>
