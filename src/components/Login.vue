@@ -39,7 +39,7 @@
                 <strong>a bit at a time</strong> - Desmond Tutu.
               </blockquote>
               <div class="space-x-2 text-white mt-2">
-                <button class="p-2 bg-black rounded-md hover:bg-gray-100">
+                <button class="p-2 bg-blue-900 rounded-md hover:bg-gray-100">
                   Register
                 </button>
                 <button class="p-2 bg-black rounded-md hover:bg-gray-100">
@@ -55,7 +55,7 @@
       </div>
     </div>
 
-    <div class="grid place-items-center mt-4 bg-green-50">
+    <div class="grid place-items-center mt-4 bg-blue-900 text-white">
       <div class="container">
         <div class="grid place-items-center p-8">
           <p class="text-3xl">Why AssetifyMe?</p>
@@ -70,7 +70,7 @@
             Lousiana.
           </p>
           <button
-            class="p-2 bg-black text-white rounded-md hover:bg-gray-100 mt-2"
+            class="p-2 bg-black text-white rounded-md hover:bg-blue-700 mt-2"
           >
             Start Buying
           </button>
@@ -79,7 +79,7 @@
     </div>
 
     <div class="grid h-52  mt-4 rounded-lg items-center place-items-center">
-      <p class="text-5xl font-extrabold p-10 bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-500">
+      <p class="text-5xl font-extrabold p-10 bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-violet-700">
         Start owning an asset with as little as <span class="underline underline-offset-1">&#8358;1000</span>
       </p>
     </div>
@@ -95,9 +95,9 @@
         md:space-y-0
       "
     >
-      <div class="p-5 rounded-2xl bg-green-50">
+      <div class="p-5 rounded-2xl bg-blue-50">
         <div class="p-4 rounded-md">
-          <fa icon="pen" class="bg-green-500 text-white p-4 rounded-md" />
+          <fa icon="pen" class="bg-blue-900 text-white p-4 rounded-md" />
           <p class="text-3xl font-semibold">Sign Up</p>
         </div>
         <p class="pl-4 pr-4">
@@ -105,13 +105,13 @@
           falls in place.
         </p>
         <div class="p-4 rounded-md">
-          <fa icon="arrow-right" class="bg-green-300 text-white p-2 rounded-full" />
+          <fa icon="arrow-right" class="bg-blue-300 text-white p-2 rounded-full" />
         </div>
       </div>
 
-      <div class="p-5 rounded-2xl bg-green-50">
+      <div class="p-5 rounded-2xl bg-blue-50">
         <div class="p-4 rounded-md">
-          <fa icon="calendar" class="bg-green-500 text-white p-4 rounded-md" />
+          <fa icon="calendar" class="bg-blue-900 text-white p-4 rounded-md" />
           <p class="text-3xl font-semibold">Setup a Plan</p>
         </div>
         <p class="pl-4 pr-4">
@@ -119,20 +119,20 @@
           asset you want.
         </p>
         <div class="p-4 rounded-md">
-          <fa icon="arrow-right" class="bg-green-300 text-white p-2 rounded-full" />
+          <fa icon="arrow-right" class="bg-blue-300 text-white p-2 rounded-full" />
         </div>
       </div>
 
-      <div class="p-5 rounded-2xl bg-green-50">
+      <div class="p-5 rounded-2xl bg-blue-50">
         <div class="p-4 rounded-md">
-          <fa icon="house" class="bg-green-500 text-white p-4 rounded-md" />
+          <fa icon="house" class="bg-blue-900 text-white p-4 rounded-md" />
           <p class="text-3xl font-semibold">Claim Your Asset</p>
         </div>
         <p class="pl-4 pr-4">
           Claim your asset and all documents on completion of payment.
         </p>
         <div class="p-4 rounded-md">
-          <fa icon="arrow-right" class="bg-green-300 text-white p-2 rounded-full" />
+          <fa icon="arrow-right" class="bg-blue-300 text-white p-2 rounded-full" />
         </div>
       </div>
     </div>
@@ -161,7 +161,7 @@
   </div>
 
   <div class="md:grid md:grid-cols-4 md:gap-2 text-center p-8 rounded-md place-items-center space-y-4 md:space-y-0">
-    <div class="bg-green-100 rounded-md p-8">
+    <div class="bg-blue-100 rounded-md p-8">
       <p class="font-extrabold">Buy in Bits</p>
       <p class="text-justify text-sm">
         Pay for lands and houses in bits according to your budget daily, weekly, monthly or even yearly
@@ -169,21 +169,21 @@
       </p>
     </div>
 
-    <div class="bg-green-100 rounded-md p-8">
+    <div class="bg-blue-100 rounded-md p-8">
       <p class="font-extrabold">Asset Padi</p>
       <p class="text-justify text-sm">
         Herness the power of working as a group. Invite your friends, form a clique and purchase assets together.
       </p>
     </div>
 
-    <div class="bg-green-100 rounded-md p-8">
+    <div class="bg-blue-100 rounded-md p-8">
       <p class="font-extrabold">Spot Swap</p>
       <p class="text-justify text-sm">
         If you are in a fix and need money ASAP, you can swap your spot on the system automatically.
       </p>
     </div>
     
-    <div class="bg-green-100 rounded-md p-8">
+    <div class="bg-blue-100 rounded-md p-8">
       <p class="font-extrabold">Agent A</p>
       <p class="text-justify text-sm">
         Refer your friends and family and if
