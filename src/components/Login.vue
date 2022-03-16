@@ -31,7 +31,7 @@
           >
             <div>
               <div class="grid place-items-center invisible md:visible">
-                <img src="../assets/images/tcn-logono-bg.png" class="w-32" />
+                <img src="../assets/images/assetifyme-logo.png" class="w-32" />
               </div>
               <p class="text-5xl font-bold">Buy Assets the Easy Way</p>
               <blockquote class="text-sm">
@@ -206,7 +206,7 @@
   <footer class="text-xs m-10">
     <div class="grid grid-cols-2 md:grid-cols-5 space-y-2 md:space-y-0 items-center md:items-start text-center">
       <div class="grid col-span-2 md:col-span-1 place-items-center">
-        <img src="../assets/images/tcn-logono-bg.png" class="w-24" />
+        <img src="../assets/images/assetifyme-logo.png" class="w-24" />
       </div>
 
       <div>
