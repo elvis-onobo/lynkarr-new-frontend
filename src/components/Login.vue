@@ -19,7 +19,7 @@
     </nav>
     <div class="md:grid place-items-center">
       <div class="container">
-        <div class="grid gap-1 h-screen place-items-center">
+        <div class="grid gap-1 place-items-center">
           <div
             class="
               grid
@@ -30,6 +30,9 @@
             "
           >
             <div>
+              <div class="grid place-items-center invisible md:visible">
+                <img src="../assets/images/tcn-logono-bg.png" class="w-32" />
+              </div>
               <p class="text-5xl font-bold">Buy Assets The Easy Way</p>
               <blockquote class="text-sm">
                 There's only one way to eat an elephant:
@@ -45,7 +48,7 @@
               </div>
             </div>
             <div>
-              <img src="../assets/logo.png" />
+              <img src="../assets/images/couble-buying-house.jpg" />
             </div>
           </div>
         </div>
@@ -151,10 +154,42 @@
     </div>
   </div>
 
+  <div class="md:grid md:grid-cols-4 md:gap-2 text-center p-8 rounded-md place-items-center space-y-4 md:space-y-0">
+    <div class="bg-slate-100 rounded-md p-8">
+      <p class="font-bold">Buy in Bits</p>
+      <p class="text-justify text-sm">
+        Pay for lands and houses in bits according to your budget daily, weekly, monthly or even yearly
+        with automatic deductions.
+      </p>
+    </div>
+
+    <div class="bg-slate-100 rounded-md p-8">
+      <p class="font-bold">Asset Padi</p>
+      <p class="text-justify text-sm">
+        Herness the power of working as a group. Invite your friends, form a clique and purchase assets together.
+      </p>
+    </div>
+
+    <div class="bg-slate-100 rounded-md p-8">
+      <p class="font-bold">Spot Swap</p>
+      <p class="text-justify text-sm">
+        If you are in a fix and need money ASAP, you can swap your spot on the system automatically.
+      </p>
+    </div>
+    
+    <div class="bg-slate-100 rounded-md p-8">
+      <p class="font-bold">Refer and Earn</p>
+      <p class="text-justify text-sm">
+        Refer your friends and family and if
+        they buy a property from any of our partners AssetifyMe, you will receive a commission.
+      </p>
+    </div>
+  </div>
+
   <div class="md:grid gap-1 m-10 p-10 rounded-md place-items-center">
     <div>
       <p class="md:text-2xl text-xs text-center">
-        All your payments are processed and secured by
+        All payments are processed and secured by
       </p>
     </div>
     <div>
@@ -162,44 +197,25 @@
     </div>
   </div>
 
-  <div
-    class="
-      md:grid
-      place-items-center
-      justify-between
-      rounded-lg
-      md:p-4
-      v-screen
-      align-middle
-      m-6
-    "
-  >
-    <div
-      class="
-        md:grid md:grid-cols-5
-        grid-cols-2
-        gap-1
-        content-center
-        p-4
-        text-xs
-      "
-    >
-      <div>
+  <footer class="text-xs m-10">
+    <div class="grid grid-cols-2 md:grid-cols-5 space-y-2 items-center text-center">
+      <div class="grid col-span-2 md:col-span-1 place-items-center">
         <img src="../assets/images/tcn-logono-bg.png" class="w-24" />
       </div>
 
-      <div class="">
+      <div>
         <p class="font-bold">Products</p>
-        <a href="http://">PayBanner</a>
+        <p>Buy in Bits</p>
+        <p>Asset Padi</p>
+        <p>Spot Swap</p>
       </div>
 
-      <div class="">
+      <div>
         <p class="font-bold">Company</p>
         <p><a href="http://">About</a></p>
         <p><a href="http://">FAQs</a></p>
-        <p><a href="http://">Blog</a></p>
       </div>
-
+    
       <div class="">
         <p class="font-bold">Legal</p>
         <p><a href="http://">Terms and Conditions</a></p>
@@ -221,10 +237,9 @@
         </div>
       </div>
     </div>
-
-    <div class="grid gap-1 place-items-center">
-      <p class="md:p-20 pl-8 pr-8 text-center text-sm">
-        AssetifyMe is the leading property marketing and payment collection
+    <div class="grid gap-1 place-items-center mt-2">
+      <p class="md:p-20 pl-8 pr-8 md:text-center text-sm text-justify">
+        AssetifyMe is the leading property marketing and property payment collection
         platform in Nigeria. We operate in partnership with the elite property
         firms to bring you the best deals and the ability to pay for them fast
         and conveniently. AssetifyMe is a property of DigitalBoss Africa,
@@ -232,7 +247,10 @@
         registration number RC3300055.
       </p>
     </div>
-  </div>
+  </footer>
+
+
+
 </template>
 
 <script>
