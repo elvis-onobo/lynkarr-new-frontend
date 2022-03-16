@@ -1,6 +1,45 @@
 <template>
-  <div class="col-span-10 bg-orange-50">
-    <div class="grid grid-cols-2 gap-4 m-4">
+  <div class="">
+    <div class="flex items-center justify-between p-2">
+      <div class="w-28">
+        <img src="../assets/images/tcn-logono-bg.png" />
+      </div>
+
+      <div class="">
+        <ul class="flex space-x-2">
+          <li>Property Listing</li>
+          <li>Account</li>
+          <li>Logout</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="grid place-items-center justify-items-center p-4">
+      <ul class="flex space-x-2">
+        <li>Property Listing</li>
+        <li>Account</li>
+        <li>Logout</li>
+      </ul>
+    </div>
+
+    <div class="md:grid grid-cols-2 place-items-center">
+      <div class="m-10 bg-fuchsia-200 rounded-md p-5 text-center">
+        <pie-chart
+          :data="[
+            ['Paid', 44],
+            ['Unpaid', 23]
+          ]"
+        ></pie-chart>
+        <p>57% Paid</p>
+      </div>
+
+
+    </div>
+    <!-- </div> -->
+
+    <!-- <div class="grid grid-cols-2 gap-4 m-4">
       <div class="max-w-full">
         <pie-chart
           :data="[
@@ -42,7 +81,7 @@
           ]"
         ></column-chart>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

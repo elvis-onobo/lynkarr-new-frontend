@@ -17,9 +17,9 @@ library.add(fas)
 
 // sweet alert button colour config
 const options = {
-    confirmButtonColor: '#4B5563',
-    cancelButtonColor: '#EA5933',
-  };
+  confirmButtonColor: '#4B5563',
+  cancelButtonColor: '#EA5933',
+};
 
 createApp(App)
 .use(router)

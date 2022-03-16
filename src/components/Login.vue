@@ -75,66 +75,55 @@
       </div>
     </div>
 
-    <div class="container place-items-center">
-      <div
-        class="
-          md:grid
-          grid-cols-3
-          gap-4
-          place-items-center
-          m-6
-          space-y-5
-          md:space-y-0
-        "
-      >
-        <div class="p-5 rounded-2xl bg-fuchsia-50">
-          <div class="p-4 rounded-md">
-            <fa icon="pen" class="bg-blue-600 text-white p-4 rounded-md" />
-            <p class="text-3xl">Sign Up</p>
-          </div>
-          <p class="pl-4 pr-4">
-            It all begins with a step. A decision to start and everything else
-            falls in place.
-          </p>
-          <div class="p-4 rounded-md">
-            <fa
-              icon="arrow-right"
-              class="bg-black text-white p-2 rounded-full"
-            />
-          </div>
+    <div
+      class="
+        md:grid
+        grid-cols-3
+        gap-4
+        place-items-center
+        m-6
+        space-y-5
+        md:space-y-0
+      "
+    >
+      <div class="p-5 rounded-2xl bg-slate-50">
+        <div class="p-4 rounded-md">
+          <fa icon="pen" class="bg-black text-white p-4 rounded-md" />
+          <p class="text-3xl">Sign Up</p>
         </div>
-
-        <div class="p-5 rounded-2xl bg-slate-50">
-          <div class="p-4 rounded-md">
-            <fa icon="calendar" class="bg-black text-white p-4 rounded-md" />
-            <p class="text-3xl">Setup a Plan</p>
-          </div>
-          <p class="pl-4 pr-4">
-            Setup a daily, weekly, monthly or even yearly payment plan for the
-            asset you want.
-          </p>
-          <div class="p-4 rounded-md">
-            <fa
-              icon="arrow-right"
-              class="bg-black text-white p-2 rounded-full"
-            />
-          </div>
+        <p class="pl-4 pr-4">
+          It all begins with a step. A decision to start and everything else
+          falls in place.
+        </p>
+        <div class="p-4 rounded-md">
+          <fa icon="arrow-right" class="bg-black text-white p-2 rounded-full" />
         </div>
+      </div>
 
-        <div class="p-5 rounded-2xl bg-slate-50">
-          <div class="p-4 rounded-md">
-            <fa icon="house" class="bg-black text-white p-4 rounded-md" />
-            <p class="text-3xl">Claim Your Asset</p>
-          </div>
-          <p class="pl-4 pr-4">
-            Claim your asset and all documents on completion of payment.
-          </p>
-          <div class="p-4 rounded-md">
-            <fa
-              icon="arrow-right"
-              class="bg-black text-white p-2 rounded-full"
-            />
-          </div>
+      <div class="p-5 rounded-2xl bg-slate-50">
+        <div class="p-4 rounded-md">
+          <fa icon="calendar" class="bg-black text-white p-4 rounded-md" />
+          <p class="text-3xl">Setup a Plan</p>
+        </div>
+        <p class="pl-4 pr-4">
+          Setup a daily, weekly, monthly or even yearly payment plan for the
+          asset you want.
+        </p>
+        <div class="p-4 rounded-md">
+          <fa icon="arrow-right" class="bg-black text-white p-2 rounded-full" />
+        </div>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-slate-50">
+        <div class="p-4 rounded-md">
+          <fa icon="house" class="bg-black text-white p-4 rounded-md" />
+          <p class="text-3xl">Claim Your Asset</p>
+        </div>
+        <p class="pl-4 pr-4">
+          Claim your asset and all documents on completion of payment.
+        </p>
+        <div class="p-4 rounded-md">
+          <fa icon="arrow-right" class="bg-black text-white p-2 rounded-full" />
         </div>
       </div>
     </div>
@@ -143,7 +132,7 @@
   <div class="grid place-items-center rounded-lg p-4 v-screen align-middle m-6">
     <div class="grid place-items-center">
       <p class="md:text-2xl text-sm p-4 font-serif">
-        In partnership with the best
+        In partnership with some of the best
       </p>
     </div>
     <div class="flex gap-2 content-center items-center">
@@ -165,7 +154,7 @@
   <div class="md:grid gap-1 m-10 p-10 rounded-md place-items-center">
     <div>
       <p class="md:text-2xl text-xs text-center">
-        All your payments are processed and secured by 
+        All your payments are processed and secured by
       </p>
     </div>
     <div>
@@ -185,7 +174,16 @@
       m-6
     "
   >
-    <div class="md:grid md:grid-cols-5 grid-cols-2 gap-1 content-center p-4 text-xs">
+    <div
+      class="
+        md:grid md:grid-cols-5
+        grid-cols-2
+        gap-1
+        content-center
+        p-4
+        text-xs
+      "
+    >
       <div>
         <img src="../assets/images/tcn-logono-bg.png" class="w-24" />
       </div>
@@ -226,10 +224,12 @@
 
     <div class="grid gap-1 place-items-center">
       <p class="md:p-20 pl-8 pr-8 text-center text-sm">
-        AssetifyMe is the leading property marketing and payment collection platform in Nigeria. We operate in
-        partnership with the elite property firms to bring you the best deals and the ability to pay for them
-        fast and conveniently. Assetifyme is a property of DigitalBoss Africa, registered with the Corporate Affairs
-        Commision of Nigeria with registration number RC3300055.
+        AssetifyMe is the leading property marketing and payment collection
+        platform in Nigeria. We operate in partnership with the elite property
+        firms to bring you the best deals and the ability to pay for them fast
+        and conveniently. AssetifyMe is a property of DigitalBoss Africa,
+        registered with the Corporate Affairs Commision of Nigeria with
+        registration number RC3300055.
       </p>
     </div>
   </div>

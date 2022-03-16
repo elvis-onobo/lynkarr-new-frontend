@@ -16,8 +16,8 @@ const router = createRouter({
     history,
     routes: [
         { path: '/', name:'login', component: Login},
+        { path: '/dashboard', component: Dashboard, name:'dashboard'},
         { path: '/admin', component: AdminTemplate, children: [
-            { path: 'dashboard', component: Dashboard, name:'dashboard'},
             { path: 'stats', component: Stats, name:'stats' },
             { path: 'stats/adults', component: Adults, name:'adults'},
             { path: 'stats/children', component: ChildrenStats, name:'childrenStats'},
