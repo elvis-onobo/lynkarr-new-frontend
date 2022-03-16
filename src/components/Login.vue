@@ -3,7 +3,7 @@
   <div class="font-sans">
     <nav class="p-2 flex items-center place-content-between">
       <div class="w-24 visible md:invisible">
-        <img src="../assets/images/tcn-logono-bg.png" />
+        <img src="../assets/images/assetifyme-logo.png" />
       </div>
       <!-- <div class="item-right invisible md:visible">
         <ul class="flex space-x-2">
@@ -48,14 +48,14 @@
               </div>
             </div>
             <div>
-              <img src="../assets/images/couble-buying-house.jpg" />
+              <img src="../assets/images/buy_house.png" />
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="grid place-items-center mt-4 bg-slate-50">
+    <div class="grid place-items-center mt-4 bg-green-50">
       <div class="container">
         <div class="grid place-items-center p-8">
           <p class="text-3xl">Why AssetifyMe?</p>
@@ -80,7 +80,7 @@
 
     <div class="grid h-52  mt-4 rounded-lg items-center place-items-center">
       <p class="text-5xl font-extrabold p-10 bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-500">
-        Start owning an asset with as little as &#8358;1000
+        Start owning an asset with as little as <span class="underline underline-offset-1">&#8358;1000</span>
       </p>
     </div>
 
@@ -95,44 +95,44 @@
         md:space-y-0
       "
     >
-      <div class="p-5 rounded-2xl bg-slate-50">
+      <div class="p-5 rounded-2xl bg-green-50">
         <div class="p-4 rounded-md">
-          <fa icon="pen" class="bg-black text-white p-4 rounded-md" />
-          <p class="text-3xl">Sign Up</p>
+          <fa icon="pen" class="bg-green-500 text-white p-4 rounded-md" />
+          <p class="text-3xl font-semibold">Sign Up</p>
         </div>
         <p class="pl-4 pr-4">
           It all begins with a step. A decision to start and everything else
           falls in place.
         </p>
         <div class="p-4 rounded-md">
-          <fa icon="arrow-right" class="bg-black text-white p-2 rounded-full" />
+          <fa icon="arrow-right" class="bg-green-300 text-white p-2 rounded-full" />
         </div>
       </div>
 
-      <div class="p-5 rounded-2xl bg-slate-50">
+      <div class="p-5 rounded-2xl bg-green-50">
         <div class="p-4 rounded-md">
-          <fa icon="calendar" class="bg-black text-white p-4 rounded-md" />
-          <p class="text-3xl">Setup a Plan</p>
+          <fa icon="calendar" class="bg-green-500 text-white p-4 rounded-md" />
+          <p class="text-3xl font-semibold">Setup a Plan</p>
         </div>
         <p class="pl-4 pr-4">
           Setup a daily, weekly, monthly or even yearly payment plan for the
           asset you want.
         </p>
         <div class="p-4 rounded-md">
-          <fa icon="arrow-right" class="bg-black text-white p-2 rounded-full" />
+          <fa icon="arrow-right" class="bg-green-300 text-white p-2 rounded-full" />
         </div>
       </div>
 
-      <div class="p-5 rounded-2xl bg-slate-50">
+      <div class="p-5 rounded-2xl bg-green-50">
         <div class="p-4 rounded-md">
-          <fa icon="house" class="bg-black text-white p-4 rounded-md" />
-          <p class="text-3xl">Claim Your Asset</p>
+          <fa icon="house" class="bg-green-500 text-white p-4 rounded-md" />
+          <p class="text-3xl font-semibold">Claim Your Asset</p>
         </div>
         <p class="pl-4 pr-4">
           Claim your asset and all documents on completion of payment.
         </p>
         <div class="p-4 rounded-md">
-          <fa icon="arrow-right" class="bg-black text-white p-2 rounded-full" />
+          <fa icon="arrow-right" class="bg-green-300 text-white p-2 rounded-full" />
         </div>
       </div>
     </div>
@@ -161,30 +161,30 @@
   </div>
 
   <div class="md:grid md:grid-cols-4 md:gap-2 text-center p-8 rounded-md place-items-center space-y-4 md:space-y-0">
-    <div class="bg-slate-100 rounded-md p-8">
-      <p class="font-bold">Buy in Bits</p>
+    <div class="bg-green-100 rounded-md p-8">
+      <p class="font-extrabold">Buy in Bits</p>
       <p class="text-justify text-sm">
         Pay for lands and houses in bits according to your budget daily, weekly, monthly or even yearly
         with automatic deductions.
       </p>
     </div>
 
-    <div class="bg-slate-100 rounded-md p-8">
-      <p class="font-bold">Asset Padi</p>
+    <div class="bg-green-100 rounded-md p-8">
+      <p class="font-extrabold">Asset Padi</p>
       <p class="text-justify text-sm">
         Herness the power of working as a group. Invite your friends, form a clique and purchase assets together.
       </p>
     </div>
 
-    <div class="bg-slate-100 rounded-md p-8">
-      <p class="font-bold">Spot Swap</p>
+    <div class="bg-green-100 rounded-md p-8">
+      <p class="font-extrabold">Spot Swap</p>
       <p class="text-justify text-sm">
         If you are in a fix and need money ASAP, you can swap your spot on the system automatically.
       </p>
     </div>
     
-    <div class="bg-slate-100 rounded-md p-8">
-      <p class="font-bold">Agent A</p>
+    <div class="bg-green-100 rounded-md p-8">
+      <p class="font-extrabold">Agent A</p>
       <p class="text-justify text-sm">
         Refer your friends and family and if
         they buy a property from any of our partners AssetifyMe, you will receive a commission.
@@ -194,7 +194,7 @@
 
   <div class="md:grid gap-1 m-10 p-10 rounded-md place-items-center">
     <div>
-      <p class="md:text-2xl text-xs text-center">
+      <p class="md:text-2xl text-xs text-center font-semibold">
         All payments are processed and secured by
       </p>
     </div>
@@ -210,7 +210,7 @@
       </div>
 
       <div>
-        <p class="font-bold">Products</p>
+        <p class="font-extrabold">Products</p>
         <p>Buy in Bits</p>
         <p>Asset Padi</p>
         <p>Spot Swap</p>
@@ -218,20 +218,20 @@
       </div>
 
       <div>
-        <p class="font-bold">Company</p>
+        <p class="font-extrabold">Company</p>
         <p><a href="http://">About</a></p>
         <p><a href="http://">FAQs</a></p>
       </div>
     
       <div class="">
-        <p class="font-bold">Legal</p>
+        <p class="font-extrabold">Legal</p>
         <p><a href="http://">Terms and Conditions</a></p>
         <p><a href="http://">Privacy</a></p>
         <p><a href="http://">Security</a></p>
       </div>
 
       <div class="">
-        <p class="font-bold">Let's Get Social</p>
+        <p class="font-extrabold">Let's Get Social</p>
         <div class="grid">
           <fa icon="facebook" />
           <fa icon="instagram" />

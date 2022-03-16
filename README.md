@@ -9,3 +9,6 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 ## Packages in use
 https://github.com/avil13/vue-sweetalert2
 https://sweetalert2.github.io/#usage
+
+# Illustrations
+https://undraw.co/search
