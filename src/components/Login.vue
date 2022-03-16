@@ -138,7 +138,7 @@
     </div>
   </div>
 
-  <div class="grid place-items-center rounded-lg p-4 v-screen align-middle m-6">
+  <div class="grid place-items-center rounded-lg p-4 v-screen align-middle m-6 grayscale">
     <div class="grid place-items-center">
       <p class="md:text-2xl text-sm p-4 font-serif">
         In partnership with some of the best
