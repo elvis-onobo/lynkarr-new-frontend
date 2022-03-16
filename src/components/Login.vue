@@ -79,7 +79,7 @@
     </div>
 
     <div class="grid h-52  mt-4 rounded-lg items-center place-items-center">
-      <p class="text-5xl font-extrabold p-10 bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-violet-700">
+      <p class="text-5xl font-extrabold p-10 bg-clip-text text-blue-900">
         Start owning an asset with as little as <span class="underline underline-offset-1">&#8358;1000</span>
       </p>
     </div>
@@ -96,6 +96,9 @@
       "
     >
       <div class="p-5 rounded-2xl bg-blue-50">
+        <div> 
+          
+        </div>
         <div class="p-4 rounded-md">
           <fa icon="pen" class="bg-blue-900 text-white p-4 rounded-md" />
           <p class="text-3xl font-semibold">Sign Up</p>
@@ -192,7 +195,7 @@
     </div>
   </div>
 
-  <div class="md:grid gap-1 m-10 p-10 rounded-md place-items-center">
+  <div class="md:grid gap-1 m-10 p-10 rounded-md place-items-center grayscale ">
     <div>
       <p class="md:text-2xl text-xs text-center font-semibold">
         All payments are processed and secured by
