@@ -3,11 +3,12 @@
     <div class="col-span-1">
       <div class="w-full p-8 md:p-0">
         <div class="rounded-md bg-blue-50 p-8 space-y-2">
-          <p class="font-extrabold">Your Deposit Account</p>
+          <p class="font-extrabold">Notifications</p>
           <hr />
-          <p>Wema Bank</p>
-          <p>1122334455</p>
-          <p>AssetifyMe/Elvis Onobo</p>
+
+          <p>Login <input type="checkbox" role="switch" class="default:ring-2" checked /></p>
+          <p>Deposit <input type="checkbox" role="switch" class="default:ring-2" checked /></p>
+          <p>Company Updates <input type="checkbox" role="switch" class="default:ring-2" checked /></p>
         </div>
       </div>
 

@@ -28,10 +28,9 @@
         <router-link :to="{ name: 'accounts' }">
             <li class="hover:bg-blue-50 p-2 rounded-md">Accounts</li>
         </router-link>
-
-        <li class="hover:bg-blue-50 p-2 rounded-md">Wallet</li>
-        <li class="hover:bg-blue-50 p-2 rounded-md">Transactions</li>
-        <li class="hover:bg-blue-50 p-2 rounded-md">Settings</li>
+        <router-link :to="{ name: 'settings' }">
+            <li class="hover:bg-blue-50 p-2 rounded-md">Settings</li>
+        </router-link>
         <li class="hover:bg-blue-50 p-2 rounded-md" @click="showLogoutModal">Logout</li>
       </ul>
     </div>

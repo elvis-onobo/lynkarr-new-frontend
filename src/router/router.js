@@ -5,6 +5,7 @@ import Dashboard from '../components/Users/Dashboard.vue'
 import Properties from '../components/Users/Properties.vue'
 import MyAssets from '../components/Users/MyAssets.vue'
 import Accounts from '../components/Users/Accounts.vue'
+import Settings from '../components/Users/Settings.vue'
 
 const history = createWebHistory()
 const router = createRouter({
@@ -16,6 +17,7 @@ const router = createRouter({
             { path: 'properties', component: Properties, name:'properties'},
             { path: 'my-assets', component: MyAssets, name:'myAssets'},
             { path: 'accounts', component: Accounts, name:'accounts'},
+            { path: 'settings', component: Settings, name:'settings'},
         ],
         // beforeEnter: (to, from, next) => {
         //     if (localStorage.getItem('token')) {
