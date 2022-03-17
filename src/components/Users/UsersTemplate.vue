@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto">
-    <div class="flex items-center justify-between p-2">
+    <div class="flex items-center justify-between p-2 ">
       <div class="w-20">
         <img src="../../assets/images/assetifyme-logo.png" />
       </div>
