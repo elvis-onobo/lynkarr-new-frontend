@@ -1,8 +1,8 @@
 <template>
-  <div class="">
+  <div class="container mx-auto">
     <div class="flex items-center justify-between p-2">
-      <div class="w-28">
-        <img src="../assets/images/tcn-logono-bg.png" />
+      <div class="w-20">
+        <img src="../assets/images/assetifyme-logo.png" />
       </div>
 
       <div class="">
@@ -18,9 +18,9 @@
 
     <div class="grid place-items-center justify-items-center p-4">
       <ul class="flex space-x-2">
-        <li>Property Listing</li>
-        <li>Account</li>
-        <li>Logout</li>
+        <li class="hover:bg-blue-50 p-2 rounded-md">Property Listing</li>
+        <li class="hover:bg-blue-50 p-2 rounded-md">Account</li>
+        <li class="hover:bg-blue-50 p-2 rounded-md">Logout</li>
       </ul>
     </div>
 
