@@ -7,25 +7,25 @@
 
       <div class="">
         <ul class="flex space-x-2">
-          <li>Property Listing</li>
-          <li>Account</li>
-          <li>Logout</li>
+          <li class="hover:bg-blue-50 p-2 rounded-md">Hi, Elvis</li>
         </ul>
       </div>
     </div>
 
     <hr />
 
-    <div class="grid place-items-center justify-items-center p-4">
-      <ul class="flex space-x-2">
-        <li class="hover:bg-blue-50 p-2 rounded-md">Property Listing</li>
-        <li class="hover:bg-blue-50 p-2 rounded-md">Account</li>
-        <li class="hover:bg-blue-50 p-2 rounded-md">Logout</li>
+    <div class="md:grid place-items-center justify-items-center p-4">
+      <ul class="grid grid-cols-3 md:flex space-x-2">
+        <li class="hover:bg-blue-50 p-2 rounded-md"><fa icon="dashboard" /> Dashboard</li>
+        <li class="hover:bg-blue-50 p-2 rounded-md"><fa icon="house" /> Properties</li>
+        <li class="hover:bg-blue-50 p-2 rounded-md"><fa icon="wallet" /> Account</li>
+        <li class="hover:bg-blue-50 p-2 rounded-md"><fa icon="cogs" /> Settings</li>
+        <li class="hover:bg-blue-50 p-2 rounded-md"><fa icon="sign-out" /> Logout</li>
       </ul>
     </div>
 
     <div class="md:grid grid-cols-2 place-items-center">
-      <div class="m-10 bg-fuchsia-200 rounded-md p-5 text-center">
+      <div class="m-10 bg-blue-50 rounded-md p-5 text-center">
         <pie-chart
           :data="[
             ['Paid', 44],
@@ -37,51 +37,6 @@
 
 
     </div>
-    <!-- </div> -->
-
-    <!-- <div class="grid grid-cols-2 gap-4 m-4">
-      <div class="max-w-full">
-        <pie-chart
-          :data="[
-            ['Blueberry', 44],
-            ['Strawberry', 23],
-            ['Blackberry', 12],
-            ['Realberry', 50],
-          ]"
-        ></pie-chart>
-        <p>Church Population Comparison</p>
-      </div>
-      <div class="">
-        <bar-chart
-          :data="[
-            ['Blueberry', 44],
-            ['Strawberry', 23],
-            ['Blackberry', 12],
-            ['Realberry', 50],
-          ]"
-        ></bar-chart>
-      </div>
-      <div class="">
-        <column-chart
-          :data="[
-            ['Blueberry', 44],
-            ['Strawberry', 23],
-            ['Blackberry', 12],
-            ['Realberry', 50],
-          ]"
-        ></column-chart>
-      </div>
-      <div class="">
-        <column-chart
-          :data="[
-            ['Blueberry', 44],
-            ['Strawberry', 23],
-            ['Blackberry', 12],
-            ['Realberry', 50],
-          ]"
-        ></column-chart>
-      </div>
-    </div> -->
   </div>
 </template>
 
