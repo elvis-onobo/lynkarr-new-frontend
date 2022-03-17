@@ -29,7 +29,7 @@
         <li class="hover:bg-blue-50 p-2 rounded-md">Account</li>
         <li class="hover:bg-blue-50 p-2 rounded-md">Payments</li>
         <li class="hover:bg-blue-50 p-2 rounded-md">Settings</li>
-        <li class="hover:bg-blue-50 p-2 rounded-md">Logout</li>
+        <li class="hover:bg-blue-50 p-2 rounded-md" @click="showLogoutModal">Logout</li>
       </ul>
     </div>
 
@@ -45,11 +45,31 @@ export default {
   name: "UsersTemplate",
   data() {
     return {
+      count: 0,
+      showStatsMenu: false,
     };
   },
   methods: {
+    showLogoutModal() {
+      this.$swal.fire({
+        text: "Are you sure to logout?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Yes, Log me out!",
+      }).then((result) => {
+        if (result.value) {
+          this.logoutUser()
+        }
+      })
+    },
+    async logoutUser(){
+        localStorage.removeItem('token')
+
+        this.$router.push('/')
+      },
   },
   computed: {
+    // ...mapGetters(['user', 'token', 'role', 'churchId'])
   }
 };
 </script>
