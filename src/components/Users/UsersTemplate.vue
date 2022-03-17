@@ -16,9 +16,16 @@
 
     <div class="md:grid p-4 place-items-center">
       <ul class="grid grid-cols-3 md:flex">
-        <li class="hover:bg-blue-50 p-2 rounded-md">Dashboard</li>
-        <li class="hover:bg-blue-50 p-2 rounded-md">Properties</li>
-        <li class="hover:bg-blue-50 p-2 rounded-md">My Assets</li>
+        <router-link :to="{ name: 'dashboard' }">
+            <li class="hover:bg-blue-50 p-2 rounded-md">Dashboard</li>
+        </router-link>
+        <router-link :to="{ name: 'properties' }">
+            <li class="hover:bg-blue-50 p-2 rounded-md">Properties</li>
+        </router-link>
+        <router-link :to="{ name: 'myAssets' }">
+            <li class="hover:bg-blue-50 p-2 rounded-md">My Assets</li>
+        </router-link>
+
         <li class="hover:bg-blue-50 p-2 rounded-md">Account</li>
         <li class="hover:bg-blue-50 p-2 rounded-md">Payments</li>
         <li class="hover:bg-blue-50 p-2 rounded-md">Settings</li>
