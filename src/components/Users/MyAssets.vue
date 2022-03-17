@@ -57,22 +57,4 @@
 </template>
 
 <script>
-export default {
-  name: "Stats",
-  data() {
-    return {
-      count: 0,
-    };
-  },
-  methods: {
-    showLogoutModal() {
-      this.$swal.fire({
-        text: "Are you sure to logout?",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonText: "Yes, Log me out!",
-      });
-    },
-  },
-};
 </script>
