@@ -22,12 +22,12 @@
                   <td>Deposit</td>
                 </tr>
                 <tr>
-                  <td>15 Jan, 2022</td>
+                  <td>13 Jan, 2022</td>
                   <td>&#8358;13000</td>
                   <td>Withdrawal</td>
                 </tr>
                 <tr>
-                  <td>12 Jan, 2022</td>
+                  <td>14 Jan, 2022</td>
                   <td>&#8358;2000</td>
                   <td>Deposit</td>
                 </tr>
@@ -37,12 +37,12 @@
                   <td>Withdrawal</td>
                 </tr>
                 <tr>
-                  <td>12 Jan, 2022</td>
+                  <td>16 Jan, 2022</td>
                   <td>&#8358;2000</td>
                   <td>Deposit</td>
                 </tr>
                 <tr>
-                  <td>15 Jan, 2022</td>
+                  <td>17 Jan, 2022</td>
                   <td>&#8358;13000</td>
                   <td>Withdrawal</td>
                 </tr>

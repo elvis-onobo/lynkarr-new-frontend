@@ -36,6 +36,10 @@
             There's only one way to eat an elephant:
             <strong>a bit at a time</strong> - Desmond Tutu.
           </blockquote>
+          <p class="text-xs p-4 md:p-0">
+            Buy lands and houses in small consistent installments that take the stress away
+            and enforces your plan so that you can achieve your dreams.
+            </p>
           <div class="space-x-2 text-white mt-2">
             <button class="p-2 bg-blue-900 rounded-md hover:bg-gray-100">
               Register
@@ -46,7 +50,7 @@
           </div>
         </div>
         <div>
-          <img src="../assets/images/buy_house.png" />
+          <img src="../assets/images/assetifyme_mockup.jpeg" />
         </div>
       </div>
     </div>
@@ -75,7 +79,10 @@
     </div>
   </div>
 
-  <div class="grid md:h-52 m-4 items-center place-items-center">
+  <div class="grid md:h-64 m-4 items-center place-items-center">
+    <div class="md:w-64">
+      <img src="../assets/images/buy_house.png" />
+    </div>
     <p class="text-5xl font-extrabold p-10 text-blue-900">
       Start owning an asset with as little as
       <span>&#8358;1000</span>
