@@ -1,6 +1,6 @@
 <template>
   <div class="md:grid grid-cols-3 md:gap-4">
-    <div class="col-span-1">
+    <div class="col-span-1 md:space-y-2">
       <div class="w-full p-8 md:p-0">
         <div class="rounded-md bg-blue-50 p-8 space-y-2">
           <p class="font-extrabold">Notifications</p>
@@ -34,6 +34,22 @@
             />
           </p>
         </div>
+      </div>
+
+      <div class="bg-blue-50 md:mt-2 m-8 md:m-0 p-8 rounded space-y-2">
+        <p class="font-extrabold">Next of Kin</p>
+        <hr />
+
+        <form class="space-y-2">
+            <div>
+                <input class="p-2" placeholder="Full Name" />
+            </div>
+
+            <div>
+                <input class="p-2" placeholder="Phone number" />
+            </div>
+            <button class="bg-black text-white p-2 rounded-md" >Submit</button>
+        </form>
       </div>
     </div>
 
