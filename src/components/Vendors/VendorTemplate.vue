@@ -28,10 +28,10 @@
         <router-link :to="{ name: 'vendor-transactions' }">
             <li class="hover:bg-blue-50 p-2 rounded-md">Transactions</li>
         </router-link>
-        <router-link :to="{ name: 'transactions' }">
+        <router-link :to="{ name: 'vendor-staff' }">
             <li class="hover:bg-blue-50 p-2 rounded-md">Staff Management</li>
         </router-link>
-        <router-link :to="{ name: 'settings' }">
+        <router-link :to="{ name: 'vendor-settings' }">
             <li class="hover:bg-blue-50 p-2 rounded-md">Settings</li>
         </router-link>
         <li class="hover:bg-blue-50 p-2 rounded-md" @click="showLogoutModal">Logout</li>
