@@ -9,7 +9,9 @@
                         <p class="text-xs">&#8358;10000</p>
                     </div>
                     <div class="col-span-1 text-white">
-                        <button class="p-2 bg-black rounded-md ">Buy</button>
+                        <router-link :to="{ name: 'setup-plan' }">
+                            <button class="p-2 bg-black rounded-md ">Buy</button>
+                        </router-link>
                     </div>
                 </div>
                 <div>

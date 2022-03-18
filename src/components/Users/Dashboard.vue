@@ -56,8 +56,10 @@
 </template>
 
 <script>
+import {useProgress} from '@marcoschulte/vue3-progress';
+
 export default {
-  name: "Stats",
+  name: "Dashboard",
   data() {
     return {
       count: 0,
@@ -65,12 +67,14 @@ export default {
   },
   methods: {
     showLogoutModal() {
+      const progress = this.$progress.start()
       this.$swal.fire({
         text: "Are you sure to logout?",
         icon: "warning",
         showCancelButton: true,
         confirmButtonText: "Yes, Log me out!",
       });
+      progress.finish()
     },
   },
 };

@@ -22,11 +22,11 @@
         <router-link :to="{ name: 'properties' }">
             <li class="hover:bg-blue-50 p-2 rounded-md">Properties</li>
         </router-link>
-        <router-link :to="{ name: 'myAssets' }">
+        <router-link :to="{ name: 'my-assets' }">
             <li class="hover:bg-blue-50 p-2 rounded-md">My Assets</li>
         </router-link>
-        <router-link :to="{ name: 'accounts' }">
-            <li class="hover:bg-blue-50 p-2 rounded-md">Accounts</li>
+        <router-link :to="{ name: 'transactions' }">
+            <li class="hover:bg-blue-50 p-2 rounded-md">Transactions</li>
         </router-link>
         <router-link :to="{ name: 'settings' }">
             <li class="hover:bg-blue-50 p-2 rounded-md">Settings</li>

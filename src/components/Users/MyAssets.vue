@@ -10,6 +10,7 @@
                     </div>
                     <div class="col-span-1 text-black">
                         <p class="text-xs">89% Done</p>
+                        <p class="text-xs">&#8358;7000 Paid</p>
                     </div>
                 </div>
                 <div>
@@ -28,6 +29,7 @@
                     </div>
                     <div class="col-span-1 text-black">
                         <p class="text-xs">89% Done</p>
+                        <p class="text-xs">&#8358;7000 Paid</p>
                     </div>
                 </div>
                 <div>
@@ -46,6 +48,7 @@
                     </div>
                     <div class="col-span-1 text-black">
                         <p class="text-xs">89% Done</p>
+                        <p class="text-xs">&#8358;7000 Paid</p>
                     </div>
                 </div>
                 <div>
