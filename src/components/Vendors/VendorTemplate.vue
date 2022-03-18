@@ -22,11 +22,14 @@
         <router-link :to="{ name: 'vendor-properties' }">
             <li class="hover:bg-blue-50 p-2 rounded-md">Properties</li>
         </router-link>
-        <router-link :to="{ name: 'my-assets' }">
-            <li class="hover:bg-blue-50 p-2 rounded-md">My Assets</li>
+        <router-link :to="{ name: 'vendor-wallet' }">
+            <li class="hover:bg-blue-50 p-2 rounded-md">Wallet</li>
+        </router-link>
+        <router-link :to="{ name: 'vendor-wallet' }">
+            <li class="hover:bg-blue-50 p-2 rounded-md">Transactions</li>
         </router-link>
         <router-link :to="{ name: 'transactions' }">
-            <li class="hover:bg-blue-50 p-2 rounded-md">Transactions</li>
+            <li class="hover:bg-blue-50 p-2 rounded-md">Staff Management</li>
         </router-link>
         <router-link :to="{ name: 'settings' }">
             <li class="hover:bg-blue-50 p-2 rounded-md">Settings</li>
