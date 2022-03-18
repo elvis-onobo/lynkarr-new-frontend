@@ -25,7 +25,7 @@
         <router-link :to="{ name: 'vendor-wallet' }">
             <li class="hover:bg-blue-50 p-2 rounded-md">Wallet</li>
         </router-link>
-        <router-link :to="{ name: 'vendor-wallet' }">
+        <router-link :to="{ name: 'vendor-transactions' }">
             <li class="hover:bg-blue-50 p-2 rounded-md">Transactions</li>
         </router-link>
         <router-link :to="{ name: 'transactions' }">

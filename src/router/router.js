@@ -11,6 +11,7 @@ import VendorTemplate from '../components/Vendors/VendorTemplate.vue'
 import VendorDashboard from '../components/Vendors/VendorDashboard.vue'
 import VendorProperties from '../components/Vendors/VendorProperties.vue'
 import VendorWallet from '../components/Vendors/VendorWallet.vue'
+import VendorTransactions from '../components/Vendors/VendorTransactions.vue'
 
 const history = createWebHistory()
 const router = createRouter({
@@ -36,7 +37,8 @@ const router = createRouter({
     { path: '/vendor', component: VendorTemplate, name: 'vendor', children: [
         { path: 'dashboard', component: VendorDashboard, name:'vendor-dashboard'},
         { path: 'properties', component: VendorProperties, name:'vendor-properties'},
-        { path: 'wallet', component: VendorWallet, name:'vendor-wallet'}
+        { path: 'wallet', component: VendorWallet, name:'vendor-wallet'},
+        { path: 'transactions', component: Transactions, name:'vendor-transactions'}
     ]}
     // { path: '/:pathMatch(.*)*', name: 'login', component: Login }
     ]
