@@ -144,7 +144,7 @@
                 <label>Upload a Legal ID</label>
                 <p class="text-xs">NIN, Driver's License, International Passport etc</p>
             </div>
-          <input type="file" class="p-2 rounded-md" placeholder="Date of Birth" />
+          <input type="file" class="rounded-md" placeholder="Date of Birth" />
         </div>
 
         <button type="submit" class="p-2 bg-black text-white rounded-md">
