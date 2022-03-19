@@ -1,5 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from '../components/Home.vue'
+import Login from '../components/Login.vue'
+import SignUp from '../components/SignUp.vue'
 import UsersTemplate from '../components/Users/UsersTemplate.vue'
 import Dashboard from '../components/Users/Dashboard.vue'
 import Properties from '../components/Users/Properties.vue'
@@ -20,6 +22,8 @@ const router = createRouter({
     history,
     routes: [
         { path: '/', name:'home', component: Home},
+        { path: '/login', name:'login', component: Login},
+        { path: '/sign-up', name:'sign-up', component: SignUp},
         { path: '/user', component: UsersTemplate, name: 'users-template', children: [
             { path: 'dashboard', component: Dashboard, name:'dashboard'},
             { path: 'properties', component: Properties, name:'properties'},

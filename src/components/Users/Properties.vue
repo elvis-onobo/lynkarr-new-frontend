@@ -6,7 +6,7 @@
                 <div class="grid grid-cols-4">
                     <div class="col-span-3">
                         <p class="font-semibold text-sm">Garden Park Estate</p>
-                        <p class="text-xs">&#8358;10000</p>
+                        <p class="text-xs">&#8358;10000/sqm</p>
                     </div>
                     <div class="col-span-1 text-white">
                         <router-link :to="{ name: 'setup-plan' }">
@@ -26,7 +26,7 @@
                 <div class="grid grid-cols-4">
                     <div class="col-span-3">
                         <p class="font-semibold text-sm">Garden Park Estate</p>
-                        <p class="text-xs">&#8358;10000</p>
+                        <p class="text-xs">&#8358;10000/sqm</p>
                     </div>
                     <div class="col-span-1 text-white">
                         <button class="p-2 bg-black rounded-md ">Buy</button>
@@ -44,7 +44,7 @@
                 <div class="grid grid-cols-4">
                     <div class="col-span-3">
                         <p class="font-semibold text-sm">Garden Park Estate</p>
-                        <p class="text-xs">&#8358;10000</p>
+                        <p class="text-xs">&#8358;10000/sqm</p>
                     </div>
                     <div class="col-span-1 text-white">
                         <button class="p-2 bg-black rounded-md ">Buy</button>

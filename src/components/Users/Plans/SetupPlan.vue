@@ -2,7 +2,7 @@
     <div class="md:grid place-items-center gap-1">
         <p class="font-extrabold text-center">Setup Your Payment Plan</p>
         <div class="outline outline-solid outline-blue-50 rounded-md m-8">
-            <img src="../../../assets/images/buy_house.png" class="object-cover h-48 w-96">
+            <img src="../../../assets/images/Adron-house.jpeg" class="object-cover h-48 w-96">
             <div class="p-4 md:grid md:grid-cols-4 gap-2">
                 <div class="col-span-3 md:p-2">
                     <form class="space-y-2">

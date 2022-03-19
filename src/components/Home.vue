@@ -41,12 +41,17 @@
             and enforces your plan so that you can achieve your dreams.
             </p>
           <div class="space-x-2 text-white mt-2">
+            <router-link :to="{ name: 'sign-up' }">
             <button class="p-2 bg-blue-900 rounded-md hover:bg-gray-100">
-              Register
+              Sign Up
             </button>
+            </router-link>
+
+            <router-link :to="{ name: 'login' }">
             <button class="p-2 bg-black rounded-md hover:bg-gray-100">
               Login
             </button>
+            </router-link>
           </div>
         </div>
         <div>
