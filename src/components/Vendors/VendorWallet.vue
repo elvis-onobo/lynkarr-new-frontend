@@ -25,21 +25,22 @@
               <div>
                 <input
                   type="text"
-                  class="bg-blue-50 p-2 rounded-md"
+                  class="bg-blue-50 p-2 rounded-md w-full"
                   placeholder="Amount"
+                  autofocus
                 />
               </div>
 
               <div>
                 <input
                   type="text"
-                  class="bg-blue-50 p-2 rounded-md"
+                  class="bg-blue-50 p-2 rounded-md w-full"
                   placeholder="Purpose of Withdrawal"
                 />
               </div>
 
               <div>
-                <select class="bg-blue-50 p-2 md:w-full">
+                <select class="bg-blue-50 p-2 w-full">
                   <option value="" disabled>Select Account</option>
                   <option value="">Access Bank</option>
                   <option value="">Zenith Bank</option>
@@ -61,13 +62,13 @@
               <div>
                 <input
                   type="text"
-                  class="bg-blue-50 p-2 rounded-md"
+                  class="bg-blue-50 p-2 rounded-md w-full"
                   placeholder="Account Number"
                 />
               </div>
 
               <div>
-                <select class="bg-blue-50 p-2 md:w-full">
+                <select class="bg-blue-50 p-2 w-full">
                   <option value="">Access Bank</option>
                   <option value="">Zenith Bank</option>
                 </select>

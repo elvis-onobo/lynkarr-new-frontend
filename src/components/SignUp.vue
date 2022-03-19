@@ -60,7 +60,7 @@
           </div>
 
           <router-link :to="{ name: 'dashboard' }">
-            <button type="submit" class="bg-black rounded-md p-2 mt-2 text-white">
+            <button type="submit" class="bg-black rounded-md p-2 mt-2 text-white hover:bg-gray-600">
                 Sign Up
             </button>
           </router-link>

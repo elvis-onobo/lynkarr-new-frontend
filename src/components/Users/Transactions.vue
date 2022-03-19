@@ -1,5 +1,5 @@
 <template>
-  <div class="md:grid place-items-center md:gap-4">
+  <div class="grid place-items-center md:gap-4">
     <div
       class="
         bg-blue-50

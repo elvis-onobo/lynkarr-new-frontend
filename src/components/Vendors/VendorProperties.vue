@@ -7,7 +7,7 @@
                 </div>
 
                 <div>
-                    <input type="text" class="bg-blue-50 p-2 rounded-md" placeholder="Price" />
+                    <input type="text" class="bg-blue-50 p-2 rounded-md" placeholder="Price Per Sqm" />
                 </div>
 
                 <div>

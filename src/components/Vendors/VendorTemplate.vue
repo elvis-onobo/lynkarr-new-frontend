@@ -29,7 +29,7 @@
             <li class="hover:bg-blue-50 p-2 rounded-md">Transactions</li>
         </router-link>
         <router-link :to="{ name: 'vendor-staff' }">
-            <li class="hover:bg-blue-50 p-2 rounded-md">Staff Management</li>
+            <li class="hover:bg-blue-50 p-2 rounded-md">Staff</li>
         </router-link>
         <router-link :to="{ name: 'vendor-settings' }">
             <li class="hover:bg-blue-50 p-2 rounded-md">Settings</li>

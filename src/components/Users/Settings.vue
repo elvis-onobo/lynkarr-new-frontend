@@ -36,7 +36,7 @@
         </div>
       </div>
 
-      <div class="bg-blue-50 md:mt-2 m-8 md:m-0 p-8 rounded space-y-2">
+      <div class="bg-blue-50 m-8 md:m-0 p-8 rounded-md space-y-2">
         <p class="font-extrabold">Next of Kin</p>
         <hr />
 
@@ -58,8 +58,7 @@
         h-full
         md:w-full
         rounded-md
-        ml-8
-        mr-8
+        ml-8 mr-8
         md:ml-0 md:mr-0
         p-8
         overflow-auto
@@ -112,6 +111,7 @@
       class="
         h-full
         md:w-full
+        mt-4 md:mt-0
         rounded-md
         ml-8
         mr-8

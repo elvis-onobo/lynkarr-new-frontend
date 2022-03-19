@@ -42,13 +42,13 @@
             </p>
           <div class="space-x-2 text-white mt-2">
             <router-link :to="{ name: 'sign-up' }">
-            <button class="p-2 bg-blue-900 rounded-md hover:bg-gray-100">
+            <button class="p-2 bg-blue-900 rounded-md hover:bg-gray-600">
               Sign Up
             </button>
             </router-link>
 
             <router-link :to="{ name: 'login' }">
-            <button class="p-2 bg-black rounded-md hover:bg-gray-100">
+            <button class="p-2 bg-black rounded-md hover:bg-gray-600">
               Login
             </button>
             </router-link>
@@ -76,7 +76,7 @@
           Lousiana.
         </p>
         <button
-          class="p-2 bg-black text-white rounded-md hover:bg-blue-700 mt-2"
+          class="p-2 bg-black text-white rounded-md hover:bg-gray-600 mt-2"
         >
           Start Buying
         </button>

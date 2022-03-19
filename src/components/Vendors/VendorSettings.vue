@@ -109,6 +109,7 @@
         ml-8
         mr-8
         md:ml-0 md:mr-0
+        mt-4 md:mt-0
         p-8
         overflow-auto
         bg-blue-50

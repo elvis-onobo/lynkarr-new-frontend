@@ -35,7 +35,7 @@
             />
           </div>
           <router-link :to="{ name: 'dashboard' }">
-          <button type="submit" class="bg-black rounded-md mt-2 p-2 text-white">
+          <button type="submit" class="bg-black rounded-md mt-2 p-2 text-white hover:bg-gray-600">
             Login
           </button>
           </router-link>
