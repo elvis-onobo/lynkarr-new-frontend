@@ -1,13 +1,13 @@
 <template>
-  <div class="grid place-items-center space-y-4">
+  <div class="grid place-items-center space-y-4 text-blue-magenta-900">
     <div class="md:col-span-3">
       <form class="flex space-x-2">
         <input
           type="text"
-          class="bg-blue-50 p-2 rounded-md"
+          class="bg-blue-magenta-100 p-2 rounded-md"
           placeholder="User E-mail"
         />
-        <button class="p-2 bg-black text-white rounded-md hover:bg-gray-600">
+        <button class="p-2 bg-blue-magenta-900 text-white rounded-md hover:bg-gray-600">
           <fa icon="search" />
         </button>
       </form>
@@ -15,9 +15,9 @@
 
     <div
       class="
-        bg-blue-50
+        bg-blue-magenta-100
         md:outline
-        outline-solid outline-blue-50
+        outline-solid outline-blue-magenta-100
         h-full
         w-4/6
         rounded-md
@@ -45,13 +45,13 @@
             <td>trx1ahnsj23n</td>
             <td class="space-x-2">
               <button
-                class="p-2 bg-black text-white rounded-md hover:bg-gray-600"
+                class="p-2 bg-blue-magenta-900 text-white rounded-md hover:bg-gray-600"
                 title="Add Staff"
               >
                 <fa icon="pen" />
               </button>
               <button
-                class="p-2 bg-black text-white rounded-md hover:bg-gray-600"
+                class="p-2 bg-blue-magenta-900 text-white rounded-md hover:bg-gray-600"
                 title="Remove Staff"
               >
                 <fa icon="trash" />

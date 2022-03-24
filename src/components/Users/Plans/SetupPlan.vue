@@ -18,7 +18,7 @@
                                 <option>Yearly</option>
                             </select>
                         </div>
-                        <button type="submit" class="p-2 text-white bg-black rounded-md">Submit</button>
+                        <button type="submit" class="p-2 text-white bg-blue-magenta-900 rounded-md">Submit</button>
                     </form>
                 </div>
                 <div class="col-span-1 pt-2">

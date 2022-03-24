@@ -2,7 +2,7 @@
   <div class="md:grid grid-cols-3 md:gap-4">
     <div class="col-span-1 md:space-y-2">
       <div class="w-full p-8 md:p-0">
-        <div class="rounded-md bg-blue-50 p-8 space-y-2">
+        <div class="rounded-md bg-blue-magenta-100 p-8 space-y-2">
           <p class="font-extrabold">Notifications</p>
           <hr />
 
@@ -36,19 +36,19 @@
         </div>
       </div>
 
-      <div class="bg-blue-50 m-8 md:m-0 p-8 rounded-md space-y-2">
+      <div class="bg-blue-magenta-100 m-8 md:m-0 p-8 rounded-md space-y-2">
         <p class="font-extrabold">Next of Kin</p>
         <hr />
 
         <form class="space-y-2">
             <div>
-                <input class="p-2" placeholder="Full Name" />
+                <input class="p-2 rounded-md" placeholder="Full Name" />
             </div>
 
             <div>
-                <input class="p-2" placeholder="Phone number" />
+                <input class="p-2 rounded-md" placeholder="Phone number" />
             </div>
-            <button class="bg-black text-white p-2 rounded-md" >Submit</button>
+            <button class="bg-blue-magenta-900 text-white p-2 rounded-md" >Submit</button>
         </form>
       </div>
     </div>
@@ -62,7 +62,7 @@
         md:ml-0 md:mr-0
         p-8
         overflow-auto
-        bg-blue-50
+        bg-blue-magenta-100
       "
     >
       <form class="space-y-2">
@@ -101,7 +101,7 @@
           />
         </div>
 
-        <button type="submit" class="p-2 bg-black text-white rounded-md">
+        <button type="submit" class="p-2 bg-blue-magenta-900 text-white rounded-md">
           Update
         </button>
       </form>
@@ -118,7 +118,7 @@
         md:ml-0 md:mr-0
         p-8
         overflow-auto
-        bg-blue-50
+        bg-blue-magenta-100
       "
     >
       <form class="space-y-3 col-span-2">
@@ -147,7 +147,7 @@
           <input type="file" class="rounded-md" placeholder="Date of Birth" />
         </div>
 
-        <button type="submit" class="p-2 bg-black text-white rounded-md">
+        <button type="submit" class="p-2 bg-blue-magenta-900 text-white rounded-md">
           Update
         </button>
       </form>

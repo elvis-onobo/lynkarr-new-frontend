@@ -1,6 +1,6 @@
 
 <template>
-  <div class="font-sans">
+  <div class="font-sans text-blue-magenta-900">
     <nav class="p-2 flex items-center place-content-between">
       <div class="w-24 visible md:invisible">
         <img src="../assets/images/assetifyme-logo.png" />
@@ -14,7 +14,7 @@
 
       <!-- Mobile Menu: Hide On Big Screens -->
       <div class="w-24 visible md:invisible">
-        <fa icon="bars" class="bg-purple-200 p-4 rounded-md" />
+        <fa icon="bars" class="bg-blue-magenta-200 p-4 rounded-md" />
       </div>
     </nav>
     <div class="container mx-auto h-screen place-items-center">
@@ -31,7 +31,7 @@
           <div class="grid place-items-center invisible md:visible">
             <img src="../assets/images/assetifyme-logo.png" class="w-32" />
           </div>
-          <p class="text-5xl font-bold">Buy Assets the Easy Way</p>
+          <p class="text-5xl font-extrabold text-blue-magenta-900">Buy Assets the <span class="text-blue-magenta-500">Betarr</span> Way</p>
           <blockquote class="text-sm">
             There's only one way to eat an elephant:
             <strong>a bit at a time</strong> - Desmond Tutu.
@@ -42,13 +42,13 @@
             </p>
           <div class="space-x-2 text-white mt-2">
             <router-link :to="{ name: 'sign-up' }">
-            <button class="p-2 bg-blue-900 rounded-md hover:bg-gray-600">
+            <button class="p-2 bg-blue-magenta-500 rounded-md hover:bg-gray-600">
               Sign Up
             </button>
             </router-link>
 
             <router-link :to="{ name: 'login' }">
-            <button class="p-2 bg-black rounded-md hover:bg-gray-600">
+            <button class="p-2 bg-blue-magenta-900 rounded-md hover:bg-gray-600">
               Login
             </button>
             </router-link>
@@ -61,11 +61,11 @@
     </div>
   </div>
 
-  <div class="grid place-items-center mt-4 bg-blue-900 text-white">
+  <div class="grid place-items-center mt-4 bg-blue-magenta-500 text-white">
     <div class="container">
       <div class="grid place-items-center p-8">
-        <p class="text-3xl">Why AssetifyMe?</p>
-        <p class="text-center">
+        <p class="text-3xl font-extrabold">Why Betarr?</p>
+        <p class="text-center font-bold md:p-8">
           It can be really hard to buy lands and houses upfront, but it is
           really easy to buy lands and houses in installments. With
           AssetifyMe.com you can now buy lands and houses from the most reliable
@@ -76,7 +76,7 @@
           Lousiana.
         </p>
         <button
-          class="p-2 bg-black text-white rounded-md hover:bg-gray-600 mt-2"
+          class="p-2 bg-blue-magenta-900 text-white rounded-md hover:bg-gray-600 mt-2"
         >
           Start Buying
         </button>
@@ -85,10 +85,7 @@
   </div>
 
   <div class="grid md:h-64 m-4 items-center place-items-center">
-    <div class="md:w-64">
-      <img src="../assets/images/buy_house.png" />
-    </div>
-    <p class="text-5xl font-extrabold p-10 text-blue-900">
+    <p class="text-5xl font-extrabold p-10 text-blue-magenta-500">
       Start owning an asset with as little as
       <span>&#8358;1000</span>
     </p>
@@ -106,10 +103,10 @@
         md:space-y-0
       "
     >
-      <div class="p-5 rounded-2xl bg-blue-50">
-        <div class="p-4">
+      <div class="p-5 rounded-2xl bg-blue-magenta-100">
+        <div class="p-4 text-blue-magenta-900">
           <div class="rounded-md">
-            <fa icon="pen" class="bg-blue-900 text-white p-4 rounded-md" />
+            <fa icon="pen" class="bg-blue-magenta-500 text-white p-4 rounded-md" />
           </div>
 
           <p class="text-3xl font-semibold mt-4">Sign Up</p>
@@ -120,16 +117,16 @@
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
-              class="bg-blue-300 text-white p-2 rounded-full"
+              class="bg-blue-magenta-300 text-white p-2 rounded-full"
             />
           </div>
         </div>
       </div>
 
-      <div class="p-5 rounded-2xl bg-blue-50">
-        <div class="p-4">
+      <div class="p-5 rounded-2xl bg-blue-magenta-100">
+        <div class="p-4 text-blue-magenta-900">
           <div class="rounded-md">
-            <fa icon="calendar" class="bg-blue-900 text-white p-4 rounded-md" />
+            <fa icon="calendar" class="bg-blue-magenta-500 text-white p-4 rounded-md" />
           </div>
           <p class="text-3xl font-semibold mt-4">Setup a Plan</p>
           <p>
@@ -139,23 +136,23 @@
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
-              class="bg-blue-300 text-white p-2 rounded-full"
+              class="bg-blue-magenta-300 text-white p-2 rounded-full"
             />
           </div>
         </div>
       </div>
 
-      <div class="p-5 rounded-2xl bg-blue-50">
-        <div class="p-4">
+      <div class="p-5 rounded-2xl bg-blue-magenta-100">
+        <div class="p-4 text-blue-magenta-900">
           <div class="rounded-md">
-            <fa icon="house" class="bg-blue-900 text-white p-4 rounded-md" />
+            <fa icon="house" class="bg-blue-magenta-500 text-white p-4 rounded-md" />
           </div>
           <p class="text-3xl font-semibold mt-4">Claim Your Asset</p>
           <p>Claim your asset and all documents on completion of payment.</p>
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
-              class="bg-blue-300 text-white p-2 rounded-full"
+              class="bg-blue-magenta-300 text-white p-2 rounded-full"
             />
           </div>
         </div>
@@ -176,7 +173,7 @@
     "
   >
     <div class="grid place-items-center">
-      <p class="md:text-2xl text-sm p-4 font-serif">
+      <p class="md:text-2xl text-sm p-4 font-serif text-blue-magenta-900">
         In partnership with some of the best
       </p>
     </div>
@@ -208,7 +205,7 @@
         md:space-y-0
       "
     >
-      <div class="bg-blue-100 rounded-md p-8">
+      <div class="bg-blue-magenta-100 rounded-md p-8 text-blue-magenta-900">
         <p class="font-extrabold">Buy in Bits</p>
         <p class="text-justify text-sm">
           Pay for lands and houses in bits according to your budget daily,
@@ -216,7 +213,7 @@
         </p>
       </div>
 
-      <div class="bg-blue-100 rounded-md p-8">
+      <div class="bg-blue-magenta-100 rounded-md p-8 text-blue-magenta-900">
         <p class="font-extrabold">Asset Padi</p>
         <p class="text-justify text-sm">
           Harness the power of working as a group. Invite your friends, form a
@@ -224,7 +221,7 @@
         </p>
       </div>
 
-      <div class="bg-blue-100 rounded-md p-8">
+      <div class="bg-blue-magenta-100 rounded-md p-8 text-blue-magenta-900">
         <p class="font-extrabold">Spot Swap</p>
         <p class="text-justify text-sm">
           If you are in a fix and need money ASAP, you can swap your spot on the
@@ -232,7 +229,7 @@
         </p>
       </div>
 
-      <div class="bg-blue-100 rounded-md p-8">
+      <div class="bg-blue-magenta-100 rounded-md p-8 text-blue-magenta-900">
         <p class="font-extrabold">Agent A</p>
         <p class="text-justify text-sm">
           Refer your friends and family and if they buy a property from any of
@@ -245,7 +242,7 @@
   <div class="md:grid gap-1 m-10 p-10 rounded-md place-items-center grayscale">
     <div>
       <p class="md:text-2xl text-xs text-center font-semibold">
-        All payments are processed and secured by
+        Payments processed and secured by
       </p>
     </div>
     <div>
@@ -254,7 +251,7 @@
   </div>
 
   <div class="container mx-auto">
-    <footer class="text-xs m-10">
+    <footer class="text-xs m-10 text-blue-magenta-900">
       <div
         class="
           grid grid-cols-2
@@ -304,7 +301,7 @@
           </div>
         </div>
       </div>
-      <div class="grid gap-1 place-items-center mt-4">
+      <div class="grid gap-1 place-items-center mt-4 text-blue-magenta-900">
         <p class="md:p-20 pl-8 pr-8 text-center text-sm">
           AssetifyMe is the leading property marketing and property payment
           collection platform in Nigeria. We operate in partnership with the

@@ -1,17 +1,17 @@
 <template>
     <div class="md:grid grid-cols-3 place-items-center gap-1">
-        <div class="outline outline-solid outline-blue-50 rounded-md m-8">
+        <div class="outline outline-solid outline-blue-magenta-100 rounded-md m-8">
             <form class="space-y-2 p-8">
                 <div>
-                    <input type="text" class="bg-blue-50 p-2 rounded-md" placeholder="Name of Property" />
+                    <input type="text" class="bg-blue-magenta-100 p-2 rounded-md" placeholder="Name of Property" />
                 </div>
 
                 <div>
-                    <input type="text" class="bg-blue-50 p-2 rounded-md" placeholder="Price Per Sqm" />
+                    <input type="text" class="bg-blue-magenta-100 p-2 rounded-md" placeholder="Price Per Sqm" />
                 </div>
 
                 <div>
-                    <input type="text" class="bg-blue-50 p-2 rounded-md" placeholder="Location" />
+                    <input type="text" class="bg-blue-magenta-100 p-2 rounded-md" placeholder="Location" />
                 </div>
 
                 <div>
@@ -21,11 +21,11 @@
                     <input type="file" class="" />
                 </div>
 
-                <button type="submit" class="p-2 bg-black rounded-md text-white">Add Property</button>
+                <button type="submit" class="p-2 bg-blue-magenta-900 rounded-md text-white">Add Property</button>
             </form>
         </div>
 
-        <div class="outline outline-solid outline-blue-50 rounded-md m-8">
+        <div class="outline outline-solid outline-blue-magenta-100 rounded-md m-8">
             <img src="../../assets/images/buy_house.png" class="object-cover h-48 w-96">
             <div class="p-4">
                 <div class="grid grid-cols-4">
@@ -36,15 +36,15 @@
                     </div>
                     <div class="col-span-1 text-white">
                         <router-link :to="{ name: 'setup-plan' }" class="space-x-1">
-                            <button class="p-2 bg-black rounded-md "><fa icon="pen" /></button>
-                            <button class="p-2 bg-black rounded-md "><fa icon="trash" /></button>
+                            <button class="p-2 bg-blue-magenta-900 rounded-md "><fa icon="pen" /></button>
+                            <button class="p-2 bg-blue-magenta-900 rounded-md "><fa icon="trash" /></button>
                         </router-link>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="outline outline-solid outline-blue-50 rounded-md m-8">
+        <div class="outline outline-solid outline-blue-magenta-100 rounded-md m-8">
             <img src="../../assets/images/buy_house.png" class="object-cover h-48 w-96">
             <div class="p-4">
                 <div class="grid grid-cols-4">
@@ -55,8 +55,8 @@
                     </div>
                     <div class="col-span-1 text-white">
                         <router-link :to="{ name: 'setup-plan' }" class="space-x-1">
-                            <button class="p-2 bg-black rounded-md "><fa icon="pen" /></button>
-                            <button class="p-2 bg-black rounded-md "><fa icon="trash" /></button>
+                            <button class="p-2 bg-blue-magenta-900 rounded-md "><fa icon="pen" /></button>
+                            <button class="p-2 bg-blue-magenta-900 rounded-md "><fa icon="trash" /></button>
                         </router-link>
                     </div>
                 </div>

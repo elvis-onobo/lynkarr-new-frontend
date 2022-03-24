@@ -1,6 +1,6 @@
 <template>
     <div class="md:grid grid-cols-8 place-items-center gap-4 m-5 space-y-4 md:space-y-0">
-      <div class="col-span-5 p-5 bg-blue-50 rounded-md text-center w-full">
+      <div class="col-span-5 p-5 bg-blue-magenta-100 rounded-md text-center w-full">
         <line-chart
           :data="[
             ['2020-01-01', 44],
@@ -13,7 +13,7 @@
         <p>Payments</p>
       </div>
 
-      <div class="col-span-3 p-5 bg-blue-50 rounded-md text-center w-full h-full">
+      <div class="col-span-3 p-5 bg-blue-magenta-100 rounded-md text-center w-full h-full">
           <table class="table-auto w-full">
               <tbody class="divide-y-2 divide-gray-200 divide-solid">
                 <tr>
@@ -49,7 +49,7 @@
               </tbody>
           </table>
           <fa icon="arrow-right"
-            class="bg-blue-300 text-white p-2 mt-2 rounded-full" title="See Full List"
+            class="bg-blue-magenta-300 text-white p-2 mt-2 rounded-full" title="See Full List"
           />
       </div>
     </div>

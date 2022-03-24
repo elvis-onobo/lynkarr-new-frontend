@@ -2,7 +2,7 @@
   <div class="md:grid grid-cols-3 md:gap-4">
     <div class="col-span-1 md:space-y-2">
       <div class="w-full p-8 md:p-0">
-        <div class="rounded-md bg-blue-50 p-8 space-y-2">
+        <div class="rounded-md bg-blue-magenta-100 p-8 space-y-2">
           <p class="font-extrabold">Notifications</p>
           <hr />
 
@@ -56,7 +56,7 @@
         md:ml-0 md:mr-0
         p-8
         overflow-auto
-        bg-blue-50
+        bg-blue-magenta-100
       "
     >
       <form class="space-y-2">
@@ -95,7 +95,7 @@
           />
         </div>
 
-        <button type="submit" class="p-2 bg-black text-white rounded-md">
+        <button type="submit" class="p-2 bg-blue-magenta-900 text-white rounded-md">
           Update
         </button>
       </form>
@@ -112,7 +112,7 @@
         mt-4 md:mt-0
         p-8
         overflow-auto
-        bg-blue-50
+        bg-blue-magenta-100
       "
     >
       <form class="space-y-3 col-span-2">
@@ -133,7 +133,7 @@
           <input type="file" class="rounded-md" placeholder="Date of Birth" />
         </div>
 
-        <button type="submit" class="p-2 bg-black text-white rounded-md">
+        <button type="submit" class="p-2 bg-blue-magenta-900 text-white rounded-md">
           Update
         </button>
       </form>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto text-blue-magenta-900">
     <div class="flex items-center justify-between p-2 ">
       <div class="w-20">
         <img src="../../assets/images/assetifyme-logo.png" />
@@ -17,21 +17,21 @@
     <div class="md:grid p-4 place-items-center">
       <ul class="grid grid-cols-3 md:flex">
         <router-link :to="{ name: 'dashboard' }">
-            <li class="hover:bg-blue-50 p-2 rounded-md">Dashboard</li>
+            <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Dashboard</li>
         </router-link>
         <router-link :to="{ name: 'properties' }">
-            <li class="hover:bg-blue-50 p-2 rounded-md">Properties</li>
+            <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Properties</li>
         </router-link>
         <router-link :to="{ name: 'my-assets' }">
-            <li class="hover:bg-blue-50 p-2 rounded-md">My Assets</li>
+            <li class="hover:bg-blue-magenta-100 p-2 rounded-md">My Assets</li>
         </router-link>
         <router-link :to="{ name: 'transactions' }">
-            <li class="hover:bg-blue-50 p-2 rounded-md">Transactions</li>
+            <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Transactions</li>
         </router-link>
         <router-link :to="{ name: 'settings' }">
-            <li class="hover:bg-blue-50 p-2 rounded-md">Settings</li>
+            <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Settings</li>
         </router-link>
-        <li class="hover:bg-blue-50 p-2 rounded-md" @click="showLogoutModal">Logout</li>
+        <li class="hover:bg-blue-magenta-100 p-2 rounded-md" @click="showLogoutModal">Logout</li>
       </ul>
     </div>
 

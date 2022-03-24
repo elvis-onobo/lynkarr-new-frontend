@@ -4,7 +4,7 @@
       <div class="space-y-2 col-span-1">
         <div
           class="
-            bg-blue-50
+            bg-blue-magenta-100
             rounded-md
             p-8
             text-center
@@ -19,13 +19,13 @@
 
         <div>
           <div
-            class="outline outline-solid outline-blue-50 rounded-md m-4 md:m-0"
+            class="outline outline-solid outline-blue-magenta-100 rounded-md m-4 md:m-0"
           >
             <form class="space-y-2 p-8">
               <div>
                 <input
                   type="text"
-                  class="bg-blue-50 p-2 rounded-md w-full"
+                  class="bg-blue-magenta-100 p-2 rounded-md w-full"
                   placeholder="Amount"
                   autofocus
                 />
@@ -34,20 +34,20 @@
               <div>
                 <input
                   type="text"
-                  class="bg-blue-50 p-2 rounded-md w-full"
+                  class="bg-blue-magenta-100 p-2 rounded-md w-full"
                   placeholder="Purpose of Withdrawal"
                 />
               </div>
 
               <div>
-                <select class="bg-blue-50 p-2 w-full">
+                <select class="bg-blue-magenta-100 p-2 w-full">
                   <option value="" disabled>Select Account</option>
                   <option value="">Access Bank</option>
                   <option value="">Zenith Bank</option>
                 </select>
               </div>
 
-              <button type="submit" class="p-2 bg-black rounded-md text-white">
+              <button type="submit" class="p-2 bg-blue-magenta-900 rounded-md text-white">
                 Withdraw
               </button>
             </form>
@@ -57,24 +57,24 @@
 
       <div class="md:col-span-2 md:grid md:grid-cols-2 space-x-2 space-y-2">
         <div class="col-span-1 m-4 md:m-0">
-          <div class="outline outline-solid outline-blue-50 rounded-md">
+          <div class="outline outline-solid outline-blue-magenta-100 rounded-md">
             <form class="space-y-2 p-8">
               <div>
                 <input
                   type="text"
-                  class="bg-blue-50 p-2 rounded-md w-full"
+                  class="bg-blue-magenta-100 p-2 rounded-md w-full"
                   placeholder="Account Number"
                 />
               </div>
 
               <div>
-                <select class="bg-blue-50 p-2 w-full">
+                <select class="bg-blue-magenta-100 p-2 w-full">
                   <option value="">Access Bank</option>
                   <option value="">Zenith Bank</option>
                 </select>
               </div>
 
-              <button type="submit" class="p-2 bg-black rounded-md text-white">
+              <button type="submit" class="p-2 bg-blue-magenta-900 rounded-md text-white">
                 Add Withdrawal Account
               </button>
             </form>
@@ -83,7 +83,7 @@
 
         <div
           class="
-            bg-blue-50
+            bg-blue-magenta-100
             rounded-md
             p-8
             text-center
@@ -100,7 +100,7 @@
 
 <div
           class="
-            bg-blue-50
+            bg-blue-magenta-100
             rounded-md
             p-8
             text-center
@@ -117,7 +117,7 @@
 
         <div
           class="
-            bg-blue-50
+            bg-blue-magenta-100
             rounded-md
             p-8
             text-center
@@ -134,7 +134,7 @@
 
         <div
           class="
-            bg-blue-50
+            bg-blue-magenta-100
             rounded-md
             p-8
             text-center
@@ -151,7 +151,7 @@
 
         <div
           class="
-            bg-blue-50
+            bg-blue-magenta-100
             rounded-md
             p-8
             text-center

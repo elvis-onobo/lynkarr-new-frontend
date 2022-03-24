@@ -1,6 +1,6 @@
 <template>
-    <div class="md:grid grid-cols-3 place-items-center gap-1">
-        <div class="outline outline-solid outline-blue-50 rounded-md m-8">
+    <div class="md:grid grid-cols-3 place-items-center gap-1 text-blue-magenta-900">
+        <div class="outline outline-solid outline-blue-magenta-100 rounded-md m-8">
             <img src="../../assets/images/buy_house.png" class="object-cover h-48 w-96">
             <div class="p-4">
                 <div class="grid grid-cols-4">
@@ -19,7 +19,7 @@
             </div>
         </div>
 
-        <div class="outline outline-solid outline-blue-50 rounded-md m-8">
+        <div class="outline outline-solid outline-blue-magenta-100 rounded-md m-8">
             <img src="../../assets/images/buy_house.png" class="object-cover h-48 w-96">
             <div class="p-4">
                 <div class="grid grid-cols-4">
@@ -38,7 +38,7 @@
             </div>
         </div>
 
-        <div class="outline outline-solid outline-blue-50 rounded-md m-8">
+        <div class="outline outline-solid outline-blue-magenta-100 rounded-md m-8">
             <img src="../../assets/images/buy_house.png" class="object-cover h-48 w-96">
             <div class="p-4">
                 <div class="grid grid-cols-4">

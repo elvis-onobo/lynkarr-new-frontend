@@ -1,10 +1,10 @@
 <template>
-  <div class="grid place-items-center md:gap-4">
+  <div class="grid place-items-center md:gap-4 text-blue-magenta-900">
     <div
       class="
-        bg-blue-50
+        bg-blue-magenta-100
         md:outline
-        outline-solid outline-blue-50
+        outline-solid outline-blue-magenta-100
         h-full
         rounded-md
         md:col-span-3
@@ -24,7 +24,7 @@
                   <th>Reference</th>
               </tr>
           </thead>
-        <tbody class="divide-y-2 divide-gray-200 divide-solid text-center">
+        <tbody class="divide-y-2 divide-blue-magenta-200 divide-solid text-center">
           <tr>
             <td>12 Jan, 2022</td>
             <td>&#8358;2000</td>
