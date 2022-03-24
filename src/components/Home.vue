@@ -13,7 +13,7 @@
       </div> -->
 
       <!-- Mobile Menu: Hide On Big Screens -->
-      <div class="w-24 visible md:invisible">
+      <div class="visible md:invisible">
         <fa icon="bars" class="bg-blue-magenta-200 p-4 rounded-md" />
       </div>
     </nav>
@@ -68,7 +68,7 @@
         <p class="text-center md:p-8">
           It can be really hard to buy lands and houses upfront, but it is
           really easy to buy lands and houses in installments. With
-          AssetifyMe.com you can now buy lands and houses from the most reliable
+          Betarr.com you can now buy lands and houses from the most reliable
           real estate companies in Nigeria at
           <strong>no extra cost</strong>. Our platform allows you to make
           payments installmentally in a way that suits your budget and takes
@@ -233,7 +233,7 @@
         <p class="font-extrabold">Agent A</p>
         <p class="text-justify text-sm">
           Refer your friends and family and if they buy a property from any of
-          our partners AssetifyMe, you will receive a commission.
+          our partners Betarr, you will receive a commission.
         </p>
       </div>
     </div>
@@ -302,11 +302,11 @@
         </div>
       </div>
       <div class="grid gap-1 place-items-center mt-4 text-blue-magenta-900">
-        <p class="md:p-20 pl-8 pr-8 text-center text-sm">
-          AssetifyMe is the leading property marketing and property payment
+        <p class="md:p-20 pl-8 pr-8 text-justify md:text-center text-sm">
+          Betarr is the leading property marketing and property payment
           collection platform in Nigeria. We operate in partnership with the
           elite property firms to bring you the best deals and the ability to
-          pay for them fast and conveniently. AssetifyMe is a property of
+          pay for them fast and conveniently. Betarr is a property of
           DigitalBoss Africa, registered with the Corporate Affairs Commision of
           Nigeria with registration number RC3300055.
         </p>
