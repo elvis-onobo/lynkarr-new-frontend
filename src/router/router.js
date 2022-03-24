@@ -1,10 +1,12 @@
 import { createWebHistory, createRouter } from "vue-router";
+
 import Home from '../components/Home.vue'
 import Login from '../components/Login.vue'
 import SignUp from '../components/SignUp.vue'
 import UsersTemplate from '../components/Users/UsersTemplate.vue'
 import Dashboard from '../components/Users/Dashboard.vue'
 import Properties from '../components/Users/Properties.vue'
+import PropertyDetails from '../components/Users/PropertyDetails.vue'
 import MyAssets from '../components/Users/MyAssets.vue'
 import Transactions from '../components/Users/Transactions.vue'
 import Settings from '../components/Users/Settings.vue'
@@ -34,6 +36,7 @@ const router = createRouter({
         { path: '/user', component: UsersTemplate, name: 'users-template', children: [
             { path: 'dashboard', component: Dashboard, name:'dashboard'},
             { path: 'properties', component: Properties, name:'properties'},
+            { path: 'details', component: PropertyDetails, name:'property-details'},
             { path: 'my-assets', component: MyAssets, name:'my-assets'},
             { path: 'transactions', component: Transactions, name:'transactions'},
             { path: 'settings', component: Settings, name:'settings'},

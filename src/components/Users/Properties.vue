@@ -10,7 +10,10 @@
                     </div>
                     <div class="col-span-1 text-white">
                         <router-link :to="{ name: 'setup-plan' }">
-                            <button class="p-2 bg-blue-magenta-900 rounded-md ">Buy</button>
+                            <button class="p-2 mr-1 bg-blue-magenta-900 rounded-md ">Buy</button>
+                        </router-link>
+                        <router-link :to="{ name: 'property-details' }">
+                            <button class="p-2 bg-blue-magenta-900 rounded-md "><fa icon="eye" /></button>
                         </router-link>
                     </div>
                 </div>
@@ -29,7 +32,12 @@
                         <p class="text-xs">&#8358;10000/sqm</p>
                     </div>
                     <div class="col-span-1 text-white">
-                        <button class="p-2 bg-blue-magenta-900 rounded-md ">Buy</button>
+                        <router-link :to="{ name: 'setup-plan' }">
+                            <button class="p-2 mr-1 bg-blue-magenta-900 rounded-md ">Buy</button>
+                        </router-link>
+                        <router-link :to="{ name: 'property-details' }">
+                            <button class="p-2 bg-blue-magenta-900 rounded-md "><fa icon="eye" /></button>
+                        </router-link>
                     </div>
                 </div>
                 <div>
@@ -47,7 +55,12 @@
                         <p class="text-xs">&#8358;10000/sqm</p>
                     </div>
                     <div class="col-span-1 text-white">
-                        <button class="p-2 bg-blue-magenta-900 rounded-md ">Buy</button>
+                        <router-link :to="{ name: 'setup-plan' }">
+                            <button class="p-2 mr-1 bg-blue-magenta-900 rounded-md ">Buy</button>
+                        </router-link>
+                        <router-link :to="{ name: 'property-details' }">
+                            <button class="p-2 bg-blue-magenta-900 rounded-md "><fa icon="eye" /></button>
+                        </router-link>
                     </div>
                 </div>
                 <div>
