@@ -2,7 +2,7 @@
   <div class="container mx-auto text-blue-magenta-900">
     <div class="flex items-center justify-between p-2 ">
       <div class="w-20">
-        <img src="../../assets/images/assetifyme-logo.png" />
+        <img src="../../assets/images/betar-logo.png" />
       </div>
 
       <div class="">

@@ -3,7 +3,7 @@
   <div class="font-sans text-blue-magenta-900">
     <nav class="p-2 flex items-center place-content-between">
       <div class="w-24 visible md:invisible">
-        <img src="../assets/images/assetifyme-logo.png" />
+        <img src="../assets/images/betar-logo.png" />
       </div>
       <!-- <div class="item-right invisible md:visible">
         <ul class="flex space-x-2">
@@ -29,9 +29,9 @@
       >
         <div>
           <div class="grid place-items-center invisible md:visible">
-            <img src="../assets/images/assetifyme-logo.png" class="w-32" />
+            <img src="../assets/images/betar-logo.png" class="w-32" />
           </div>
-          <p class="text-5xl font-extrabold text-blue-magenta-900">Buy Assets the <span class="text-blue-magenta-500">Betarr</span> Way</p>
+          <p class="text-5xl font-extrabold text-blue-magenta-900">Buy Lands & Houses the <span class="text-blue-magenta-500">Betarr</span> Way</p>
           <blockquote class="text-sm">
             There's only one way to eat an elephant:
             <strong>a bit at a time</strong> - Desmond Tutu.
@@ -55,7 +55,7 @@
           </div>
         </div>
         <div>
-          <img src="../assets/images/assetifyme_mockup.jpeg" />
+          <img src="../assets/images/betar_phone.png" />
         </div>
       </div>
     </div>
@@ -65,7 +65,7 @@
     <div class="container">
       <div class="grid place-items-center p-8">
         <p class="text-3xl font-extrabold">Why Betarr?</p>
-        <p class="text-center font-bold md:p-8">
+        <p class="text-center md:p-8">
           It can be really hard to buy lands and houses upfront, but it is
           really easy to buy lands and houses in installments. With
           AssetifyMe.com you can now buy lands and houses from the most reliable
@@ -263,7 +263,7 @@
         "
       >
         <div class="grid col-span-2 md:col-span-1 place-items-center">
-          <img src="../assets/images/assetifyme-logo.png" class="w-24" />
+          <img src="../assets/images/betar-logo.png" class="w-24" />
         </div>
 
         <div>
