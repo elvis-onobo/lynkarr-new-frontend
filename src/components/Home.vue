@@ -24,71 +24,47 @@
           md:grid-cols-2
           place-items-center
           space-y-2 space-x-2
-          text-center
+          p-4
+          md:p-0
         "
       >
         <div>
-          <div class="grid place-items-center invisible md:visible">
+          <div class="grid invisible md:visible">
             <img src="../assets/images/betar-logo.png" class="w-32" />
           </div>
-          <p class="text-5xl font-extrabold text-blue-magenta-900">Buy Lands & Houses the <span class="text-blue-magenta-500">Betarr</span> Way</p>
-          <blockquote class="text-sm">
-            There's only one way to eat an elephant:
-            <strong>a bit at a time</strong> - Desmond Tutu.
+          <p class="text-5xl font-extrabold text-blue-magenta-900">
+            Change Money the
+            <span class="text-blue-magenta-500">Betarr</span> Way
+          </p>
+          <blockquote class="text-sm mt-2">
+            Change money
+            <strong
+              >faster than ever, at a better price than you ever did.</strong
+            >
           </blockquote>
-          <p class="text-xs p-4 md:p-0">
-            Buy lands and houses in small consistent installments that take the stress away
-            and enforces your plan so that you can achieve your dreams.
-            </p>
           <div class="space-x-2 text-white mt-2">
             <router-link :to="{ name: 'sign-up' }">
-            <button class="p-2 bg-blue-magenta-500 rounded-md hover:bg-gray-600">
-              Sign Up
-            </button>
+              <button
+                class="p-2 bg-blue-magenta-500 rounded-md hover:bg-gray-600"
+              >
+                Sign Up
+              </button>
             </router-link>
 
             <router-link :to="{ name: 'login' }">
-            <button class="p-2 bg-blue-magenta-900 rounded-md hover:bg-gray-600">
-              Login
-            </button>
+              <button
+                class="p-2 bg-blue-magenta-900 rounded-md hover:bg-gray-600"
+              >
+                Login
+              </button>
             </router-link>
           </div>
         </div>
         <div>
-          <img src="../assets/images/betar_phone.png" />
+          <img src="../assets/images/transfer_money.svg" />
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="grid place-items-center mt-4 bg-blue-magenta-500 text-white">
-    <div class="container">
-      <div class="grid place-items-center p-8">
-        <p class="text-3xl font-extrabold">Why Betarr?</p>
-        <p class="text-center md:p-8">
-          It can be really hard to buy lands and houses upfront, but it is
-          really easy to buy lands and houses in installments. With
-          Betarr.com you can now buy lands and houses from the most reliable
-          real estate companies in Nigeria at
-          <strong>no extra cost</strong>. Our platform allows you to make
-          payments installmentally in a way that suits your budget and takes
-          away the pressure from you. Whether you are in Lagos, London or
-          Lousiana.
-        </p>
-        <button
-          class="p-2 bg-blue-magenta-900 text-white rounded-md hover:bg-gray-600 mt-2"
-        >
-          Start Buying
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="grid md:h-64 m-4 items-center place-items-center">
-    <p class="text-5xl font-extrabold p-10 text-blue-magenta-500">
-      Start owning an asset with as little as
-      <span>&#8358;1000</span>
-    </p>
   </div>
 
   <div class="container mx-auto">
@@ -103,17 +79,17 @@
         md:space-y-0
       "
     >
-      <div class="p-5 rounded-2xl bg-blue-magenta-100">
+      <div class="p-5 w-full rounded-2xl bg-blue-magenta-100">
         <div class="p-4 text-blue-magenta-900">
           <div class="rounded-md">
-            <fa icon="pen" class="bg-blue-magenta-500 text-white p-4 rounded-md" />
+            <fa
+              icon="pen"
+              class="bg-blue-magenta-500 text-white p-4 rounded-md"
+            />
           </div>
 
           <p class="text-3xl font-semibold mt-4">Sign Up</p>
-          <p>
-            It all begins with a step. A decision to start and everything else
-            falls in place.
-          </p>
+          <p>Sign up with your e-mail address.</p>
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
@@ -123,16 +99,16 @@
         </div>
       </div>
 
-      <div class="p-5 rounded-2xl bg-blue-magenta-100">
+      <div class="p-5 w-full rounded-2xl bg-blue-magenta-100">
         <div class="p-4 text-blue-magenta-900">
           <div class="rounded-md">
-            <fa icon="calendar" class="bg-blue-magenta-500 text-white p-4 rounded-md" />
+            <fa
+              icon="calendar"
+              class="bg-blue-magenta-500 text-white p-4 rounded-md"
+            />
           </div>
-          <p class="text-3xl font-semibold mt-4">Setup a Plan</p>
-          <p>
-            Setup a daily, weekly, monthly or even yearly payment plan for the
-            asset you want.
-          </p>
+          <p class="text-3xl font-semibold mt-4">Change Your Money</p>
+          <p>Convert your money to Naira or USD.</p>
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
@@ -142,13 +118,16 @@
         </div>
       </div>
 
-      <div class="p-5 rounded-2xl bg-blue-magenta-100">
+      <div class="p-5 w-full rounded-2xl bg-blue-magenta-100">
         <div class="p-4 text-blue-magenta-900">
           <div class="rounded-md">
-            <fa icon="house" class="bg-blue-magenta-500 text-white p-4 rounded-md" />
+            <fa
+              icon="house"
+              class="bg-blue-magenta-500 text-white p-4 rounded-md"
+            />
           </div>
-          <p class="text-3xl font-semibold mt-4">Claim Your Asset</p>
-          <p>Claim your asset and all documents on completion of payment.</p>
+          <p class="text-3xl font-semibold mt-4">Withdraw</p>
+          <p>Withdraw to your bank account.</p>
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
@@ -160,93 +139,113 @@
     </div>
   </div>
 
-  <div
-    class="
-      grid
-      place-items-center
-      rounded-lg
-      p-4
-      v-screen
-      align-middle
-      m-6
-      grayscale
-    "
-  >
-    <div class="grid place-items-center">
-      <p class="md:text-2xl text-sm p-4 font-serif text-blue-magenta-900">
-        In partnership with some of the best
-      </p>
-    </div>
-    <div class="flex gap-2 content-center items-center">
-      <div>
-        <img src="../assets/images/landwey-logo.png" class="w-50" />
-      </div>
-      <div>
-        <img src="../assets/images/adron-logo.png" class="w-20" />
-      </div>
-      <div>
-        <img src="../assets/images/pwan-homes-logo.png" class="w-52" />
-      </div>
-      <div>
-        <img src="../assets/images/revolution-plus-logo.png" class="w-32" />
-      </div>
-    </div>
+  <div class="grid m-4 items-center place-items-center">
+    <p class="text-5xl font-extrabold p-10 text-blue-magenta-900 text-center">
+      Start changing money instantly!
+    </p>
   </div>
 
   <div class="container mx-auto">
     <div
       class="
-        md:grid md:grid-cols-4 md:gap-2
-        text-center
+        md:grid md:grid-cols-2 md:gap-2
         p-8
         rounded-md
         place-items-center
         space-y-4
-        md:space-y-0
+        md:space-y-2
       "
     >
-      <div class="bg-blue-magenta-100 rounded-md p-8 text-blue-magenta-900">
-        <p class="font-extrabold">Buy in Bits</p>
-        <p class="text-justify text-sm">
-          Pay for lands and houses in bits according to your budget daily,
-          weekly, monthly or even yearly with automatic deductions.
-        </p>
+      <div class="w-4/6">
+        <img src="../assets/images/undraw_security_on_re_e491.svg" />
       </div>
+      <div>
+        <p class="text-2xl font-extrabold text-center text-blue-magenta-900">We care about your safety.</p>
+        <div class="md:grid grid-cols-2 gap-2">
+          <div class="rounded-md p-8 text-blue-magenta-900">
+            <fa
+              icon="lock"
+              class="bg-orange-200 rounded-full p-4 text-white"
+            />
+            <p class="font-extrabold text-2xl">Safe</p>
+            <p class="text-sm">
+              All transactions are processed with utmost consideration of the
+              safety of your funds.
+            </p>
+          </div>
 
-      <div class="bg-blue-magenta-100 rounded-md p-8 text-blue-magenta-900">
-        <p class="font-extrabold">Asset Padi</p>
-        <p class="text-justify text-sm">
-          Harness the power of working as a group. Invite your friends, form a
-          clique and purchase assets together.
-        </p>
-      </div>
+          <div class="rounded-md p-8 text-blue-magenta-900">
+            <fa
+              icon="fingerprint"
+              class="bg-purple-300 rounded-full p-4 text-white"
+            />
+            <p class="font-extrabold text-2xl">Secure</p>
+            <p class="text-sm">
+              We don't keep your money. It sits in secure accounts with our
+              payment partners.
+            </p>
+          </div>
 
-      <div class="bg-blue-magenta-100 rounded-md p-8 text-blue-magenta-900">
-        <p class="font-extrabold">Spot Swap</p>
-        <p class="text-justify text-sm">
-          If you are in a fix and need money ASAP, you can swap your spot on the
-          system automatically with another customer.
-        </p>
-      </div>
+          <div class="rounded-md p-8 text-blue-magenta-900">
+            <fa
+              icon="clock"
+              class="bg-blue-magenta-300 rounded-full p-4 text-white"
+            />
+            <p class="font-extrabold text-2xl">Instant</p>
+            <p class="text-sm">
+              Money exchange happens instantly and withdrawing to your bank
+              account is too.
+            </p>
+          </div>
 
-      <div class="bg-blue-magenta-100 rounded-md p-8 text-blue-magenta-900">
-        <p class="font-extrabold">Agent A</p>
-        <p class="text-justify text-sm">
-          Refer your friends and family and if they buy a property from any of
-          our partners Betarr, you will receive a commission.
-        </p>
+          <div class="rounded-md p-8 text-blue-magenta-900">
+            <fa
+              icon="fingerprint"
+              class="bg-green-200 rounded-full p-4 text-white"
+            />
+            <p class="font-extrabold text-2xl">Data Privacy</p>
+            <p class="text-sm">
+              We do not share your data with any person or organization unless
+              you approve.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
+<div class="container mx-auto">
+    <div
+      class="
+        md:grid md:grid-cols-2 md:gap-2
+        p-8
+        rounded-md
+        place-items-center
+        space-y-4
+        md:space-y-2
+        bg-blue-magenta-100
+      "
+    >
+      <div>
+        <p class="md:text-5xl text-sm font-extrabold text-blue-magenta-900 text-right p-4">
+          Better rates than you ever got before!
+        </p>
+      </div>
+      <div class="w-4/6">
+        <img src="../assets/images/undraw_discount_d-4-bd.svg" />
+      </div>
+    </div>
+  </div>
+
+
   <div class="md:grid gap-1 m-10 p-10 rounded-md place-items-center grayscale">
     <div>
-      <p class="md:text-2xl text-xs text-center font-semibold">
+      <p class="md:text-sm text-xs text-center md:font-semibold">
         Payments processed and secured by
       </p>
     </div>
-    <div>
-      <img src="../assets/images/paystack.png" />
+    <div class="md:w-2/6">
+      <img src="../assets/images/Flutterwave Logo.svg" />
     </div>
   </div>
 
@@ -268,10 +267,14 @@
 
         <div>
           <p class="font-extrabold">Products</p>
-          <p>Buy in Bits</p>
-          <p>Asset Padi</p>
-          <p>Spot Swap</p>
-          <p>Agent A</p>
+          <p>Money Exchange</p>
+          <p>Money Transfer</p>
+          <p>
+            Bank Accounts
+            <span class="bg-orange-500 text-white rounded-md"
+              >Coming Soon</span
+            >
+          </p>
         </div>
 
         <div>
@@ -288,14 +291,13 @@
         </div>
 
         <div class="">
-          <p class="font-extrabold">Let's Get Social</p>
+          <p class="font-extrabold">Connect</p>
           <div class="grid">
             <fa icon="facebook" />
             <fa icon="instagram" />
             <fa icon="whatsapp" />
             <div class="text-">
-              <p>16 Ebun Oluwa Street, Shomolu, Lagos</p>
-              <p>service@digitalboss.com</p>
+              <p>help@betarr.com</p>
               <p>+234 803 910 1861</p>
             </div>
           </div>
@@ -303,12 +305,7 @@
       </div>
       <div class="grid gap-1 place-items-center mt-4 text-blue-magenta-900">
         <p class="md:p-20 pl-8 pr-8 text-justify md:text-center text-sm">
-          Betarr is the leading property marketing and property payment
-          collection platform in Nigeria. We operate in partnership with the
-          elite property firms to bring you the best deals and the ability to
-          pay for them fast and conveniently. Betarr is a property of
-          DigitalBoss Africa, registered with the Corporate Affairs Commision of
-          Nigeria with registration number RC3300055.
+          Betarr &copy;{{ year }}.
         </p>
       </div>
     </footer>
@@ -316,6 +313,14 @@
 </template>
 
 <script>
+export default {
+  name: "Home",
+  data() {
+    return {
+      year: new Date().getFullYear(),
+    };
+  },
+};
 </script>
 
 <style scoped>

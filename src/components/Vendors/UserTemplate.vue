@@ -16,19 +16,19 @@
 
     <div class="md:grid p-4 place-items-center">
       <ul class="grid grid-cols-3 md:flex">
-        <router-link :to="{ name: 'dashboard' }">
+        <router-link :to="{ name: 'vendor-dashboard' }">
             <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Dashboard</li>
         </router-link>
-        <router-link :to="{ name: 'properties' }">
-            <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Properties</li>
+        <router-link :to="{ name: 'vendor-properties' }">
+            <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Change Money</li>
         </router-link>
-        <router-link :to="{ name: 'my-assets' }">
-            <li class="hover:bg-blue-magenta-100 p-2 rounded-md">My Assets</li>
+        <router-link :to="{ name: 'vendor-wallet' }">
+            <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Wallet</li>
         </router-link>
-        <router-link :to="{ name: 'transactions' }">
+        <router-link :to="{ name: 'vendor-transactions' }">
             <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Transactions</li>
         </router-link>
-        <router-link :to="{ name: 'settings' }">
+        <router-link :to="{ name: 'vendor-settings' }">
             <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Settings</li>
         </router-link>
         <li class="hover:bg-blue-magenta-100 p-2 rounded-md" @click="showLogoutModal">Logout</li>
