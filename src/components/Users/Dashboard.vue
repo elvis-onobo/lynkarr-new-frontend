@@ -10,7 +10,7 @@
       md:space-y-0
     "
   >
-    <div
+    <!-- <div
       class="
         md:col-span-4
         rounded-md
@@ -21,7 +21,7 @@
         place-items-center
       "
     >
-      <p class="font-extrabold text-5xl">$20,000</p>
+      <p class="font-extrabold md:text-5xl text-2xl">$20,000</p>
     </div>
 
     <div
@@ -35,8 +35,8 @@
         place-items-center
       "
     >
-      <p class="font-extrabold text-5xl">&#8358;20,000</p>
-    </div>
+      <p class="font-extrabold md:text-5xl text-2xl">&#8358;2,000,000</p>
+    </div> -->
 
 
     <div

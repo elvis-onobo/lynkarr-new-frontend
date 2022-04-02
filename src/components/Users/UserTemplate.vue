@@ -1,8 +1,9 @@
 <template>
   <div class="container mx-auto text-blue-magenta-900">
     <div class="flex items-center justify-between p-2 ">
-      <div class="w-20">
+      <div class="w-20 flex items-center space-x-2 font-extrabold text-2xl">
         <img src="../../assets/images/betar-logo.png" />
+        <span>Betarr</span>
       </div>
 
       <div class="">
@@ -16,17 +17,23 @@
 
     <div class="md:grid p-4 place-items-center">
       <ul class="grid grid-cols-3 md:flex">
-        <router-link :to="{ name: 'vendor-dashboard' }">
+        <router-link :to="{ name: 'dashboard' }">
             <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Dashboard</li>
         </router-link>
-        <router-link :to="{ name: 'vendor-properties' }">
+        <router-link :to="{ name: 'send' }">
+            <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Send</li>
+        </router-link>
+        <!-- <router-link :to="{ name: 'change-money' }">
             <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Change Money</li>
         </router-link>
-        <router-link :to="{ name: 'vendor-wallet' }">
-            <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Wallet</li>
-        </router-link>
-        <router-link :to="{ name: 'vendor-transactions' }">
+        <router-link :to="{ name: 'withdraw' }">
+            <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Withdraw</li>
+        </router-link> -->
+        <router-link :to="{ name: 'transactions' }">
             <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Transactions</li>
+        </router-link>
+        <router-link :to="{ name: 'profile' }">
+            <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Profile</li>
         </router-link>
         <router-link :to="{ name: 'vendor-settings' }">
             <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Settings</li>

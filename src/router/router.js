@@ -1,17 +1,19 @@
 import { createWebHistory, createRouter } from 'vue-router'
 
 import Home from '../components/Home.vue'
-import Login from '../components/Login.vue'
-import SignUp from '../components/SignUp.vue'
+import Login from '../components/Auth/Login.vue'
+import SignUp from '../components/Auth/SignUp.vue'
 
 // User
-import UserTemplate from '../components/Vendors/UserTemplate.vue'
-import VendorDashboard from '../components/Vendors/VendorDashboard.vue'
-import VendorProperties from '../components/Vendors/VendorProperties.vue'
-import VendorWallet from '../components/Vendors/VendorWallet.vue'
-import VendorTransactions from '../components/Vendors/VendorTransactions.vue'
-import StaffManagement from '../components/Vendors/StaffManagement.vue'
-import VendorSettings from '../components/Vendors/VendorSettings.vue'
+import UserTemplate from '../components/Users/UserTemplate.vue'
+import Dashboard from '../components/Users/Dashboard.vue'
+import Transactions from '../components/Users/Transactions.vue'
+import UserSettings from '../components/Users/UserSettings.vue'
+
+import ChangeMoney from '../components/Users/ChangeMoney.vue'
+import Withdraw from '../components/Users/Withdraw.vue'
+import Send from '../components/Users/Send.vue'
+import Profile from '../components/Users/Profile.vue'
 // Admin
 import AdminTemplate from '../components/Admin/AdminTemplate.vue'
 import AdminDashboard from '../components/Admin/AdminDashboard.vue'
@@ -29,14 +31,15 @@ const router = createRouter({
   {
    path: '/user',
    component: UserTemplate,
-   name: 'vendor',
+   name: 'user',
    children: [
-    { path: 'dashboard', component: VendorDashboard, name: 'vendor-dashboard' },
-    { path: 'properties', component: VendorProperties, name: 'vendor-properties' },
-    { path: 'wallet', component: VendorWallet, name: 'vendor-wallet' },
-    { path: 'transactions', component: VendorTransactions, name: 'vendor-transactions' },
-    { path: 'staff', component: StaffManagement, name: 'vendor-staff' },
-    { path: 'settings', component: VendorSettings, name: 'vendor-settings' },
+    { path: 'dashboard', component: Dashboard, name: 'dashboard' },
+    { path: 'transactions', component: Transactions, name: 'transactions' },
+    { path: 'settings', component: UserSettings, name: 'vendor-settings' },
+    { path: 'change-money', component: ChangeMoney, name: 'change-money' },
+    { path: 'withdraw', component: Withdraw, name: 'withdraw' },
+    { path: 'send', component: Send, name: 'send' },
+    { path: 'profile', component: Profile, name: 'profile' },
    ],
   },
   {

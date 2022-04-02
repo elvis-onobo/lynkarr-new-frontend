@@ -33,11 +33,11 @@
             <img src="../assets/images/betar-logo.png" class="w-32" />
           </div>
           <p class="text-5xl font-extrabold text-blue-magenta-900">
-            Change Money the
+            Send Money the
             <span class="text-blue-magenta-500">Betarr</span> Way
           </p>
           <blockquote class="text-sm mt-2">
-            Change money
+            Send money to family and friends in Nigeria,
             <strong
               >faster than ever, at a better price than you ever did.</strong
             >
@@ -107,8 +107,8 @@
               class="bg-blue-magenta-500 text-white p-4 rounded-md"
             />
           </div>
-          <p class="text-3xl font-semibold mt-4">Change Your Money</p>
-          <p>Convert your money to Naira or USD.</p>
+          <p class="text-3xl font-semibold mt-4">Send the Money</p>
+          <p>Send the money straight to the recipient's bank account.</p>
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
@@ -126,8 +126,8 @@
               class="bg-blue-magenta-500 text-white p-4 rounded-md"
             />
           </div>
-          <p class="text-3xl font-semibold mt-4">Withdraw</p>
-          <p>Withdraw to your bank account.</p>
+          <p class="text-3xl font-semibold mt-4">Money Received</p>
+          <p>The money gets received instantly.</p>
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
@@ -141,7 +141,7 @@
 
   <div class="grid m-4 items-center place-items-center">
     <p class="text-5xl font-extrabold p-10 text-blue-magenta-900 text-center">
-      Start changing money instantly!
+      Start sending money instantly!
     </p>
   </div>
 
@@ -160,8 +160,30 @@
         <img src="../assets/images/undraw_security_on_re_e491.svg" />
       </div>
       <div>
-        <p class="text-2xl font-extrabold text-center text-blue-magenta-900">We care about your safety.</p>
+        <p class="text-2xl font-extrabold text-center text-blue-magenta-900">Built with your concerns in mind.</p>
         <div class="md:grid grid-cols-2 gap-2">
+          <div class="rounded-md p-8 text-blue-magenta-900">
+            <fa
+              icon="rocket"
+              class="bg-green-200 rounded-full p-4 text-white"
+            />
+            <p class="font-extrabold text-2xl">Easy</p>
+            <p class="text-sm">
+              A simple interface. No confusing features. Send, fast!
+            </p>
+          </div>
+
+          <div class="rounded-md p-8 text-blue-magenta-900">
+            <fa
+              icon="clock"
+              class="bg-blue-magenta-300 rounded-full p-4 text-white"
+            />
+            <p class="font-extrabold text-2xl">Instant</p>
+            <p class="text-sm">
+              We pay immediately, so your family and friends can get on with life.
+            </p>
+          </div>
+          
           <div class="rounded-md p-8 text-blue-magenta-900">
             <fa
               icon="lock"
@@ -181,32 +203,7 @@
             />
             <p class="font-extrabold text-2xl">Secure</p>
             <p class="text-sm">
-              We don't keep your money. It sits in secure accounts with our
-              payment partners.
-            </p>
-          </div>
-
-          <div class="rounded-md p-8 text-blue-magenta-900">
-            <fa
-              icon="clock"
-              class="bg-blue-magenta-300 rounded-full p-4 text-white"
-            />
-            <p class="font-extrabold text-2xl">Instant</p>
-            <p class="text-sm">
-              Money exchange happens instantly and withdrawing to your bank
-              account is too.
-            </p>
-          </div>
-
-          <div class="rounded-md p-8 text-blue-magenta-900">
-            <fa
-              icon="fingerprint"
-              class="bg-green-200 rounded-full p-4 text-white"
-            />
-            <p class="font-extrabold text-2xl">Data Privacy</p>
-            <p class="text-sm">
-              We do not share your data with any person or organization unless
-              you approve.
+              We don't keep your money. It gets paid out to your recipeint.
             </p>
           </div>
         </div>

@@ -2,9 +2,8 @@
   <div class="grid place-items-center md:gap-4">
     <div
       class="
-        bg-blue-magenta-100
         md:outline
-        outline-solid outline-blue-magenta-100
+        outline-solid outline-blue-magenta-900
         h-full
         rounded-md
         md:col-span-3
