@@ -103,7 +103,7 @@ export default {
         })
         .then((result) => {
           if (result.value) {
-            //   send the money
+            // trigger Flutterwave payment modal
             this.logoutUser();
           }
         });
