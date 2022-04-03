@@ -47,26 +47,11 @@
             w-full
           "
         >
-          <option>Select Bank</option>
+          <option>Select Account</option>
+          <option v-on:select="showChargesModal" value="add_account">Add Account</option>
           <option value="">Zenith Bank</option>
           <option value="">FCMB</option>
         </select>
-      </div>
-
-      <div class="space-y-2 w-full">
-        <p class="font-extrabold text-center">Account Number</p>
-        <input
-          type="text"
-          class="
-            outline outline-blue-magenta-900
-            p-2
-            rounded-md
-            md:font-extrabold
-            text-center
-            w-full
-          "
-          placeholder="Recipient account"
-        />
       </div>
 
       <button
@@ -90,7 +75,9 @@
 export default {
   name: "Change-Money",
   data() {
-    return {};
+    return {
+      selected: ''
+    };
   },
   methods: {
     showChargesModal() {

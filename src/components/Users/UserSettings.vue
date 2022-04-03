@@ -16,7 +16,7 @@
             />
           </p>
           <p>
-            Payment Sent
+            Money Sent
             <input
               type="checkbox"
               role="switch"

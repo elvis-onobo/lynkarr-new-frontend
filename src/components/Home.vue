@@ -107,8 +107,8 @@
               class="bg-blue-magenta-500 text-white p-4 rounded-md"
             />
           </div>
-          <p class="text-3xl font-semibold mt-4">Send the Money</p>
-          <p>Send the money straight to the recipient's bank account.</p>
+          <p class="text-3xl font-semibold mt-4">Add Account</p>
+          <p>Add the bank account you wish to send money to.</p>
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
@@ -126,8 +126,8 @@
               class="bg-blue-magenta-500 text-white p-4 rounded-md"
             />
           </div>
-          <p class="text-3xl font-semibold mt-4">Money Received</p>
-          <p>The money gets received instantly.</p>
+          <p class="text-3xl font-semibold mt-4">Send</p>
+          <p>Send straight to the bank account.</p>
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
@@ -167,9 +167,9 @@
               icon="rocket"
               class="bg-green-200 rounded-full p-4 text-white"
             />
-            <p class="font-extrabold text-2xl">Easy</p>
+            <p class="font-extrabold text-2xl">Easy to Use</p>
             <p class="text-sm">
-              A simple interface. No confusing features. Send, fast!
+              A simple interface. No confusing features. Just send, fast!
             </p>
           </div>
 
@@ -235,7 +235,7 @@
   </div>
 
 
-  <div class="md:grid gap-1 m-10 p-10 rounded-md place-items-center grayscale">
+  <!-- <div class="md:grid gap-1 m-10 p-10 rounded-md place-items-center grayscale">
     <div>
       <p class="md:text-sm text-xs text-center md:font-semibold">
         Payments processed and secured by
@@ -244,7 +244,7 @@
     <div class="md:w-2/6">
       <img src="../assets/images/Flutterwave Logo.svg" />
     </div>
-  </div>
+  </div> -->
 
   <div class="container mx-auto">
     <footer class="text-xs m-10 text-blue-magenta-900">
@@ -264,8 +264,12 @@
 
         <div>
           <p class="font-extrabold">Products</p>
-          <p>Money Exchange</p>
-          <p>Money Transfer</p>
+          <p>Send</p>
+          <p>Money Exchange
+            <span class="bg-orange-500 text-white rounded-md"
+              >Coming Soon</span
+            >
+          </p>
           <p>
             Bank Accounts
             <span class="bg-orange-500 text-white rounded-md"

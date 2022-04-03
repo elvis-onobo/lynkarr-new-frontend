@@ -47,7 +47,7 @@
           />
         </div>
 
-        <button type="submit" class="p-2 bg-blue-magenta-900 text-white rounded-md">
+        <button type="submit" class="p-2 bg-blue-magenta-900 hover:bg-gray-400 text-white rounded-md">
           Update
         </button>
       </form>

@@ -38,9 +38,15 @@
       <p class="font-extrabold md:text-5xl text-2xl">&#8358;2,000,000</p>
     </div> -->
 
-
     <div
-      class="col-span-5 p-5 outline outline-blue-magenta-900 rounded-md text-center w-full"
+      class="
+        col-span-5
+        p-5
+        outline outline-blue-magenta-900
+        rounded-md
+        text-center
+        w-full
+      "
     >
       <line-chart
         :data="[
@@ -51,7 +57,7 @@
           ['2020-01-05', 92],
         ]"
       ></line-chart>
-      <p class="font-extrabold">Payments Received</p>
+      <p class="font-extrabold">Money Sent</p>
     </div>
 
     <div
@@ -66,7 +72,25 @@
       "
     >
       <table class="table-auto w-full">
+        <p class="font-extrabold text-2xl">Money Sent</p>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Recipient</th>
+          </tr>
+        </thead>
         <tbody class="divide-y-2 divide-gray-200 divide-solid">
+          <tr>
+            <td>12 Jan, 2022</td>
+            <td>&#8358;2000</td>
+            <td>Deposit</td>
+          </tr>
+          <tr>
+            <td>12 Jan, 2022</td>
+            <td>&#8358;2000</td>
+            <td>Deposit</td>
+          </tr>
           <tr>
             <td>12 Jan, 2022</td>
             <td>&#8358;2000</td>

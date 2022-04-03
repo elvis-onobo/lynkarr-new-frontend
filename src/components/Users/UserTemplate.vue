@@ -1,14 +1,16 @@
 <template>
   <div class="container mx-auto text-blue-magenta-900">
     <div class="flex items-center justify-between p-2 ">
+      <router-link :to="{ name: 'dashboard'}">
       <div class="w-20 flex items-center space-x-2 font-extrabold text-2xl">
         <img src="../../assets/images/betar-logo.png" />
         <span>Betarr</span>
       </div>
+      </router-link>
 
       <div class="">
         <ul class="flex space-x-2">
-          <li class="hover:bg-blue-50 p-2 rounded-md">Hi, Elvis</li>
+          <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Hi, Elvis</li>
         </ul>
       </div>
     </div>
@@ -23,12 +25,9 @@
         <router-link :to="{ name: 'send' }">
             <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Send</li>
         </router-link>
-        <!-- <router-link :to="{ name: 'change-money' }">
-            <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Change Money</li>
+        <router-link :to="{ name: 'accounts' }">
+            <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Accounts</li>
         </router-link>
-        <router-link :to="{ name: 'withdraw' }">
-            <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Withdraw</li>
-        </router-link> -->
         <router-link :to="{ name: 'transactions' }">
             <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Transactions</li>
         </router-link>

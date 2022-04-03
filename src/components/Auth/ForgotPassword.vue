@@ -13,53 +13,22 @@
         "
       >
         <form class="space-y-2">
-          <p class="font-extrabold">Start Your Journey!</p>
-          <div>
-            <input
-              type="text"
-              placeholder="First Name"
-              class="p-2 bg-blue-magenta-100 rounded-md w-full"
-              autofocus
-            />
-          </div>
-
-          <div>
-            <input
-              type="text"
-              placeholder="Last Name"
-              class="p-2 bg-blue-magenta-100 rounded-md w-full"
-            />
-          </div>
-
+          <p class="font-extrabold">We all forget sometimes!</p>
           <div>
             <input
               type="text"
               placeholder="E-mail"
               class="p-2 bg-blue-magenta-100 rounded-md w-full"
-            />
-          </div>
-
-          <div>
-            <input
-              type="text"
-              placeholder="Phone"
-              class="p-2 bg-blue-magenta-100 rounded-md w-full"
-            />
-          </div>
-
-          <div>
-            <input
-              type="password"
-              placeholder="Password"
-              class="p-2 bg-blue-magenta-100 rounded-md w-full"
+              autofocus
             />
           </div>
 
           <router-link :to="{ name: 'dashboard' }">
-            <button type="submit" class="bg-blue-magenta-900 rounded-md p-2 mt-2 text-white hover:bg-gray-600">
-                Sign Up
+            <button type="submit" class="bg-blue-magenta-900 rounded-md mt-2 p-2 text-white hover:bg-gray-600">
+              Send Reset Link
             </button>
           </router-link>
+
         </form>
       </div>
       <router-link :to="{ name: 'home'}">
