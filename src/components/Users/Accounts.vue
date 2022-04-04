@@ -17,7 +17,7 @@
     >
       <form class="md:flex md:space-x-2 md:space-y-0 space-y-2">
         <div class="w-full">
-          <input type="text" class="outline outline-blue-magenta-900 rounded-md p-2 w-full" placeholder="Account number" />
+          <input type="text" class="outline outline-blue-magenta-900 rounded-md p-2 w-full" placeholder="Account number" autofocus />
         </div>
         <div class="w-full">
           <select class="outline outline-blue-magenta-900 rounded-md p-2 w-full">

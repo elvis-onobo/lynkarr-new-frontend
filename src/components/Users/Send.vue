@@ -15,6 +15,7 @@
           "
           value="50"
           placeholder="Amount in Dollars"
+          autofocus
         />
       </div>
 
