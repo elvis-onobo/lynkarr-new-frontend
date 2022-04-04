@@ -1,37 +1,78 @@
 
 <template>
   <div class="font-sans text-blue-magenta-900">
-    <nav class="p-2 flex items-center place-content-between">
-      <div class="w-24 visible md:invisible">
-        <img src="../assets/images/betar-logo.png" />
+    <navbar
+      class="md:px-16 px-6 flex flex-wrap bg-white items-center md-py-0 py-2"
+    >
+      <div class="flex flex-1 justify-between items-center">
+        <img src="../assets/images/betar-logo.png" class="w-24" />
       </div>
-      <!-- <div class="item-right invisible md:visible">
-        <ul class="flex space-x-2">
-          <li>Login</li>
-          <li>About Us</li>
-        </ul>
-      </div> -->
 
-      <!-- Mobile Menu: Hide On Big Screens -->
-      <div class="visible md:invisible">
+      <label for="menu-toggle" class="md:hidden block">
         <fa icon="bars" class="bg-blue-magenta-200 p-4 rounded-md" />
+      </label>
+
+      <input type="checkbox" class="hidden" id="menu-toggle" />
+
+      <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+        <nav>
+          <ul
+            class="
+              lg:flex
+              items-center
+              justify-between
+              text-base text-blue-magenta-900
+              pt-4
+              lg:pt-0
+              md:space-x-5
+            "
+          >
+            <li
+              class="
+                hover:border-blue-magenta-900
+                border-b-2 border-transparent
+              "
+            >
+              <router-link :to="{ name: 'login' }">Products</router-link>
+            </li>
+            <li
+              class="
+                hover:border-blue-magenta-900
+                border-b-2 border-transparent
+              "
+            >
+              <router-link :to="{ name: 'login' }">FAQ</router-link>
+            </li>
+            <router-link :to="{ name: 'login' }">
+              <li
+                class="
+                  rounded-md
+                  p-2
+                  text-white
+                  bg-blue-magenta-900
+                  hover:bg-gray-400
+                "
+              >
+                <fa icon="sign-in" /> Login
+              </li>
+            </router-link>
+          </ul>
+        </nav>
       </div>
-    </nav>
-    <div class="container mx-auto h-screen place-items-center">
+    </navbar>
+
+    <div class="container mx-auto h-screen place-items-center mt-8">
       <div
         class="
           grid
-          md:grid-cols-2
+          md:grid-cols-8
           place-items-center
           space-y-2 space-x-2
-          p-4
+          p-8
           md:p-0
         "
       >
-        <div>
-          <div class="grid invisible md:visible">
-            <img src="../assets/images/betar-logo.png" class="w-32" />
-          </div>
+        <div class="md:col-span-3">
           <p class="text-5xl font-extrabold text-blue-magenta-900">
             Send Money the
             <span class="text-blue-magenta-500">Betarr</span> Way
@@ -39,7 +80,7 @@
           <blockquote class="text-sm mt-2">
             Send money to family and friends in Nigeria,
             <strong
-              >faster than ever, at a better price than you ever did.</strong
+              >faster than ever, and at a better price than you ever did.</strong
             >
           </blockquote>
           <div class="space-x-2 text-white mt-2">
@@ -47,20 +88,12 @@
               <button
                 class="p-2 bg-blue-magenta-500 rounded-md hover:bg-gray-600"
               >
-                Sign Up
-              </button>
-            </router-link>
-
-            <router-link :to="{ name: 'login' }">
-              <button
-                class="p-2 bg-blue-magenta-900 rounded-md hover:bg-gray-600"
-              >
-                Login
+                Get Started
               </button>
             </router-link>
           </div>
         </div>
-        <div>
+        <div class="md:col-span-5">
           <img src="../assets/images/transfer_money.svg" />
         </div>
       </div>
@@ -160,7 +193,9 @@
         <img src="../assets/images/undraw_security_on_re_e491.svg" />
       </div>
       <div>
-        <p class="text-2xl font-extrabold text-center text-blue-magenta-900">Built with your concerns in mind.</p>
+        <p class="text-2xl font-extrabold text-center text-blue-magenta-900">
+          Built with your concerns in mind.
+        </p>
         <div class="md:grid grid-cols-2 gap-2">
           <div class="rounded-md p-8 text-blue-magenta-900">
             <fa
@@ -180,15 +215,13 @@
             />
             <p class="font-extrabold text-2xl">Instant</p>
             <p class="text-sm">
-              We pay immediately, so your family and friends can get on with life.
+              We pay immediately, so your family and friends can get on with
+              life.
             </p>
           </div>
-          
+
           <div class="rounded-md p-8 text-blue-magenta-900">
-            <fa
-              icon="lock"
-              class="bg-orange-200 rounded-full p-4 text-white"
-            />
+            <fa icon="lock" class="bg-orange-200 rounded-full p-4 text-white" />
             <p class="font-extrabold text-2xl">Safe</p>
             <p class="text-sm">
               All transactions are processed with utmost consideration of the
@@ -211,7 +244,7 @@
     </div>
   </div>
 
-<div class="container mx-auto">
+  <div class="container mx-auto">
     <div
       class="
         md:grid md:grid-cols-2 md:gap-2
@@ -224,7 +257,15 @@
       "
     >
       <div>
-        <p class="md:text-5xl text-sm font-extrabold text-blue-magenta-900 text-right p-4">
+        <p
+          class="
+            md:text-5xl
+            text-sm
+            font-extrabold
+            text-blue-magenta-900 text-right
+            p-4
+          "
+        >
           Better rates than you ever got before!
         </p>
       </div>
@@ -233,7 +274,6 @@
       </div>
     </div>
   </div>
-
 
   <!-- <div class="md:grid gap-1 m-10 p-10 rounded-md place-items-center grayscale">
     <div>
@@ -265,16 +305,13 @@
         <div>
           <p class="font-extrabold">Products</p>
           <p>Send</p>
-          <p>Money Exchange
-            <span class="bg-orange-500 text-white rounded-md"
-              >Coming Soon</span
-            >
+          <p>
+            Money Exchange
+            <span class="bg-orange-500 text-white rounded-md">Coming Soon</span>
           </p>
           <p>
             Bank Accounts
-            <span class="bg-orange-500 text-white rounded-md"
-              >Coming Soon</span
-            >
+            <span class="bg-orange-500 text-white rounded-md">Coming Soon</span>
           </p>
         </div>
 
@@ -328,5 +365,9 @@ export default {
 .bgImg {
   background: url("../assets/images/naira.jpeg") no-repeat center center;
   border-radius: 10px;
+}
+
+#menu-toggle:checked + #menu {
+  display: block;
 }
 </style>

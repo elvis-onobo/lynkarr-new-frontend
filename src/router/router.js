@@ -25,6 +25,8 @@ import AdminSecurity from '../components/Admin/AdminSecurity.vue'
 const history = createWebHistory()
 const router = createRouter({
  history,
+ linkActiveClass: "active",
+ linkExactActiveClass: "exact-active",
  routes: [
   { path: '/', name: 'home', component: Home },
   { path: '/login', name: 'login', component: Login },

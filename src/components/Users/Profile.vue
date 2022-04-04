@@ -16,7 +16,7 @@
         <hr />
 
         <div class="form">
-          <input type="text" class="p-2 rounded-md bg-blue-magenta-100" placeholder="Name" />
+          <input type="text" class="p-2 rounded-md bg-blue-magenta-100" placeholder="First Name" />
         </div>
 
         <div class="form">
