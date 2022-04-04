@@ -1,6 +1,9 @@
 <template>
   <div class="md:grid place-items-center m-5">
-    <form class="md:grid space-y-4 place-items-center" @submit.prevent="showChargesModal">
+    <form
+      class="md:grid space-y-4 place-items-center"
+      @submit.prevent="showChargesModal"
+    >
       <p class="font-extrabold">You Send</p>
       <div>
         <input
@@ -47,11 +50,15 @@
             text-center
             w-full
           "
+          @change="setAccount(selected)"
+          v-model="selected"
         >
           <option>Select Account</option>
-          <option v-on:select="showChargesModal" value="add_account">Add Account</option>
-          <option value="">Zenith Bank</option>
-          <option value="">FCMB</option>
+          <option value="add_account">
+            Add Account
+          </option>
+          <option value="zenith">Zenith Bank</option>
+          <option value="fcmb">FCMB</option>
         </select>
       </div>
 
@@ -77,7 +84,7 @@ export default {
   name: "Change-Money",
   data() {
     return {
-      selected: ''
+      selected: "",
     };
   },
   methods: {
@@ -95,6 +102,21 @@ export default {
             this.logoutUser();
           }
         });
+    },
+    setAccount(value) {
+      if (value == "add_account") {
+        console.log('logged >>>>>>', value)
+        this.$swal.fire({
+          text: "The charges below apply. Payment Processor = 3.8%(1,111), Betarr = 1%(200)",
+          icon: "info",
+          showCancelButton: true,
+          confirmButtonText: "Yes, Send!",
+        })
+      }else {
+        console.log('logged 2  >>>>>>')
+
+        this.selected = value
+      }
     },
   },
 };
