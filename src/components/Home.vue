@@ -9,7 +9,7 @@
       </div>
 
       <label for="menu-toggle" class="md:hidden block">
-        <fa icon="bars" class="bg-lynkarr-blue p-4 rounded-md" />
+        <fa icon="bars" class="p-4 rounded-md" />
       </label>
 
       <input type="checkbox" class="hidden" id="menu-toggle" />
@@ -78,9 +78,9 @@
             <span class="text-lynkarr-blue">Lynkarr</span> Way
           </p>
           <blockquote class="text-sm mt-2">
-            Allow your customers to pay you from fintech apps,
+            Allow your customers to pay you from their wallet apps,
             <strong
-              >it's fast and secure5.</strong
+              >it's fast and secure.</strong
             >
           </blockquote>
           <div class="space-x-2 text-white mt-2">
@@ -207,7 +207,7 @@
             />
             <p class="font-extrabold text-2xl">Easy to Use</p>
             <p class="text-sm">
-              A simple interface. No confusing features. Just send, fast!
+              Our interface and APIs are very easy to use!
             </p>
           </div>
 
@@ -218,8 +218,7 @@
             />
             <p class="font-extrabold text-2xl">Instant</p>
             <p class="text-sm">
-              We pay immediately, so your family and friends can get on with
-              life.
+              Your payments are settled immediately.
             </p>
           </div>
 
@@ -227,8 +226,7 @@
             <fa icon="lock" class="bg-orange-200 rounded-full p-4 text-white" />
             <p class="font-extrabold text-2xl">Safe</p>
             <p class="text-sm">
-              All transactions are processed with utmost consideration of the
-              safety of your funds.
+              Built in comformity to financial technology standards.
             </p>
           </div>
 

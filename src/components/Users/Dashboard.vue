@@ -5,7 +5,7 @@
       grid-cols-8
       place-items-center
       gap-4
-      m-5
+      m-7
       space-y-4
       md:space-y-0
     "
@@ -42,7 +42,7 @@
       class="
         col-span-5
         p-5
-        outline outline-blue-magenta-900
+        outline outline-gray-50 outline-1
         rounded-md
         text-center
         w-full
@@ -64,7 +64,7 @@
       class="
         col-span-3
         p-5
-        outline outline-blue-magenta-900
+        outline outline-gray-50 outline-1
         rounded-md
         text-center
         w-full

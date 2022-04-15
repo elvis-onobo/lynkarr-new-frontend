@@ -1,93 +1,128 @@
 <template>
-  <div class="text-blue-magenta-900">
-    <navbar
-      class="
-        md:px-16
-        px-6
-        flex flex-wrap
-        bg-white
-        items-center
-        md-py-0
-      "
-    >
-      <div class="flex flex-1 justify-between items-center">
-        <img src="../../assets/images/betar-logo.png" class="w-24" />
+  <div class="flex min-h-screen">
+    <div class="w-64 border-r border-gray-200 space-y-2 text-sm">
+      <div class="py-2 px-6">
+        <router-link :to="{ name: 'dashboard' }">
+          <img src="../../assets/logo.png" alt="Lynkarr logo" class="w-36" />
+        </router-link>
       </div>
 
-      <label for="menu-toggle" class="md:hidden block">
-        <fa icon="bars" class="bg-blue-magenta-200 p-4 rounded-md" />
-      </label>
+      <router-link :to="{ name: 'dashboard' }">
+        <div class="px-2 pt-5">
+          <div class="hover:bg-blue-100 p-2 rounded">
+            <span class="mx-4 mb-2 text-md text-gray-700"
+              ><fa icon="dashboard" /> Dashboard</span
+            >
+          </div>
+        </div>
+      </router-link>
 
-      <input type="checkbox" class="hidden" id="menu-toggle" />
+      <router-link :to="{ name: 'dashboard' }">
+        <div class="px-2">
+          <div class="hover:bg-blue-100 p-2 rounded">
+            <span class="mx-4 mb-2 text-md text-gray-700"
+              ><fa icon="user" /> Profile</span
+            >
+          </div>
+        </div>
+      </router-link>
 
-      <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
-        <nav>
-          <ul
+      <router-link :to="{ name: 'dashboard' }">
+        <div class="px-2">
+          <div class="hover:bg-blue-100 p-2 rounded">
+            <span class="mx-4 mb-2 text-md text-gray-700"
+              ><fa icon="list" /> Businesses</span
+            >
+          </div>
+        </div>
+      </router-link>
+
+      <router-link :to="{ name: 'dashboard' }">
+        <div class="px-2">
+          <div class="hover:bg-blue-100 p-2 rounded">
+            <span class="mx-4 mb-2 text-md text-gray-700"
+              ><fa icon="wallet" /> Payments</span
+            >
+          </div>
+        </div>
+      </router-link>
+
+      <router-link :to="{ name: 'dashboard' }">
+        <div class="px-2">
+          <div class="hover:bg-blue-100 p-2 rounded">
+            <span class="mx-4 mb-2 text-md text-gray-700"
+              ><fa icon="code" /> API Keys</span
+            >
+          </div>
+        </div>
+      </router-link>
+
+      <router-link :to="{ name: 'dashboard' }">
+        <div class="px-2">
+          <div class="hover:bg-blue-100 p-2 rounded">
+            <span class="mx-4 mb-2 text-md text-gray-700"
+              ><fa icon="cogs" /> Settings</span
+            >
+          </div>
+        </div>
+      </router-link>
+
+      <div class="divide divide-gray-50 divide-y-0"></div>
+
+      <div class="place-items-end">
+        <router-link :to="{ name: 'dashboard' }">
+          <div class="px-2">
+            <div class="hover:bg-blue-100 p-2 rounded">
+              <span class="mx-4 mb-2 text-md text-gray-700"
+                ><fa icon="bell" /> Notifications</span
+              >
+            </div>
+          </div>
+        </router-link>
+
+
+        <router-link :to="{ name: 'dashboard' }">
+          <div class="px-2" @click="showLogoutModal">
+            <div class="hover:bg-blue-100 p-2 rounded">
+              <span class="mx-4 mb-2 text-md text-gray-700"
+                ><fa icon="sign-out" /> Logout</span
+              >
+            </div>
+          </div>
+        </router-link>
+      </div>
+    </div>
+
+    <div class="flex-1">
+      <div class="flex justify-between py-3 px-6 border-b space-x-6">
+        <form>
+          <input
+            type="text"
+            class="p-2 rounded-l-md bg-gray-50"
+            placeholder="Search"
+          />
+          <button
             class="
-              lg:flex
-              items-center
-              justify-between
-              text-base text-blue-magenta-900
-              pt-4
-              lg:pt-0
-              md:space-x-2
+              bg-gradient-to-r
+              from-lynkarr-blue
+              to-lynkarr-green
+              text-white
+              p-2
+              rounded-r-md
             "
           >
-            <router-link :to="{ name: 'profile' }">
-              <li
-                class="
-                  md:hover:border-blue-magenta-900
-                  border-b-2 border-transparent
-                  p-2
-                "
-              >
-                  Profile
-              </li>
-            </router-link>
-            <li
-              class="
-                rounded-md
-                p-2
-                text-white
-                bg-blue-magenta-900
-                hover:bg-gray-400
-              "
-              @click="showLogoutModal"
-            >
-              <fa icon="sign-out" /> Logout
-            </li>
-          </ul>
-        </nav>
+            <fa icon="search" />
+          </button>
+        </form>
       </div>
-    </navbar>
-    <hr />
 
-
-    <div class="md:grid p-4 place-items-center">
-      <ul class="grid grid-cols-3 md:flex md:space-x-2">
-        <router-link :to="{ name: 'dashboard' }">
-          <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Dashboard</li>
-        </router-link>
-        <router-link :to="{ name: 'send' }" router-link-active>
-          <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Send</li>
-        </router-link>
-        <router-link :to="{ name: 'accounts' }">
-          <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Accounts</li>
-        </router-link>
-        <router-link :to="{ name: 'transactions' }">
-          <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Transactions</li>
-        </router-link>
-        <router-link :to="{ name: 'vendor-settings' }">
-          <li class="hover:bg-blue-magenta-100 p-2 rounded-md">Settings</li>
-        </router-link>
-      </ul>
+      <!-- Load content here -->
+      <div>
+        <p class="px-7 pt-4 text-black text-2xl">Hello, Elvis.</p>
+        <router-view></router-view>
+      </div>
+      <!-- Load content here -->
     </div>
-
-    <!-- Load content here -->
-    <div class="container mx-auto">
-      <router-view></router-view>
-    </div>
-    <!-- Load content here -->
   </div>
 </template>
 
@@ -133,13 +168,13 @@ export default {
 }
 
 .active {
-  background-color: #ebe4ff;
+  background-color: #dbeae7;
   border-radius: 5px;
   /* padding: 3px; */
 }
 
 .exact-active {
-  background-color: #ebe4ff;
+  background-color: #dbeae7;
   border-radius: 5px;
   /* padding: 3px; */
 }

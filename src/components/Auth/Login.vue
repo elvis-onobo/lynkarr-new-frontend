@@ -6,7 +6,7 @@
           md:grid
           gap-1
           p-4
-          outline outline-blue-magenta-100
+          outline outline-green-100
           rounded-md
           items-center
           md:w-3/12
@@ -18,7 +18,7 @@
             <input
               type="text"
               placeholder="E-mail"
-              class="p-2 bg-blue-magenta-100 rounded-md w-full"
+              class="p-2 bg-green-100 rounded-md w-full"
               autofocus
             />
           </div>
@@ -27,12 +27,19 @@
             <input
               type="password"
               placeholder="Password"
-              class="p-2 bg-blue-magenta-100 rounded-md w-full"
+              class="p-2 bg-green-100 rounded-md w-full"
             />
           </div>
 
           <router-link :to="{ name: 'dashboard' }">
-          <button type="submit" class="bg-blue-magenta-900 rounded-md mt-2 p-2 text-white hover:bg-gray-600">
+          <button type="submit" 
+            class="bg-gradient-to-r
+            from-lynkarr-blue
+            to-lynkarr-green 
+            rounded-md mt-2 p-2 
+            text-white 
+            hover:bg-gray-600"
+          >
             Login
           </button>
           </router-link>

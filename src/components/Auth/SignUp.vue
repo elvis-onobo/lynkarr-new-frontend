@@ -6,21 +6,20 @@
           md:grid
           gap-1
           p-4
-          outline outline-blue-magenta-100
+          outline outline-green-100
           rounded-md
           items-center
           md:w-3/12
         "
       >
         <form class="space-y-2">
-
           <p class="font-extrabold">Start Your Journey!</p>
           <div>
             <input
               type="text"
               v-model="firstName"
               placeholder="First Name"
-              class="p-2 bg-blue-magenta-100 rounded-md w-full"
+              class="p-2 bg-green-100 rounded-md w-full"
               autofocus
             />
           </div>
@@ -30,7 +29,7 @@
               type="text"
               v-model="lastName"
               placeholder="Last Name"
-              class="p-2 bg-blue-magenta-100 rounded-md w-full"
+              class="p-2 bg-green-100 rounded-md w-full"
             />
           </div>
 
@@ -39,7 +38,7 @@
               type="text"
               v-model="email"
               placeholder="E-mail"
-              class="p-2 bg-blue-magenta-100 rounded-md w-full"
+              class="p-2 bg-green-100 rounded-md w-full"
             />
           </div>
 
@@ -48,7 +47,7 @@
               type="text"
               v-model="phone"
               placeholder="Phone"
-              class="p-2 bg-blue-magenta-100 rounded-md w-full"
+              class="p-2 bg-green-100 rounded-md w-full"
             />
           </div>
 
@@ -57,18 +56,30 @@
               type="password"
               v-model="password"
               placeholder="Password"
-              class="p-2 bg-blue-magenta-100 rounded-md w-full"
+              class="p-2 bg-green-100 rounded-md w-full"
             />
           </div>
 
           <router-link :to="{ name: 'dashboard' }">
-            <button type="submit" class="bg-blue-magenta-900 rounded-md p-2 mt-2 text-white hover:bg-gray-600">
-                Sign Up
+            <button
+              type="submit"
+              class="
+                bg-gradient-to-r
+                from-lynkarr-blue
+                to-lynkarr-green
+                rounded-md
+                p-2
+                mt-2
+                text-white
+                hover:bg-gray-600
+              "
+            >
+              Sign Up
             </button>
           </router-link>
         </form>
       </div>
-      <router-link :to="{ name: 'home'}">
+      <router-link :to="{ name: 'home' }">
         <fa icon="house" /> Go Back Home
       </router-link>
     </div>
@@ -76,31 +87,31 @@
 </template>
 
 <script>
-import useVuelidate from '@vuelidate/core'
-import { required, email, minLength, numeric } from '@vuelidate/validators'
+import useVuelidate from "@vuelidate/core";
+import { required, email, minLength, numeric } from "@vuelidate/validators";
 
 export default {
   name: "Stats",
-  setup () {
-    return { v$: useVuelidate() }
+  setup() {
+    return { v$: useVuelidate() };
   },
   data() {
     return {
-      firstName: '',
-      lastName: '',
-      email: '',
-      phone: '',
-      password:''
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      password: "",
     };
   },
-  validations(){
-    return { 
+  validations() {
+    return {
       firstName: { required, minLength: 3 },
       lastName: { required, minLength: 3 },
-      email: { required, email},
+      email: { required, email },
       phone: { required, numeric },
-      password:{ required, minLength: 7 }
-    }
+      password: { required, minLength: 7 },
+    };
   },
   methods: {
     showLogoutModal() {
