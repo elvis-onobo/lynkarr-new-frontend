@@ -81,7 +81,7 @@
 
 <script>
 export default {
-  name: "Change-Money",
+  name: "Send",
   data() {
     return {
       selected: "",

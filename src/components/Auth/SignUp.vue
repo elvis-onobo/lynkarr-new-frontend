@@ -13,10 +13,12 @@
         "
       >
         <form class="space-y-2">
+
           <p class="font-extrabold">Start Your Journey!</p>
           <div>
             <input
               type="text"
+              v-model="firstName"
               placeholder="First Name"
               class="p-2 bg-blue-magenta-100 rounded-md w-full"
               autofocus
@@ -26,6 +28,7 @@
           <div>
             <input
               type="text"
+              v-model="lastName"
               placeholder="Last Name"
               class="p-2 bg-blue-magenta-100 rounded-md w-full"
             />
@@ -34,6 +37,7 @@
           <div>
             <input
               type="text"
+              v-model="email"
               placeholder="E-mail"
               class="p-2 bg-blue-magenta-100 rounded-md w-full"
             />
@@ -42,6 +46,7 @@
           <div>
             <input
               type="text"
+              v-model="phone"
               placeholder="Phone"
               class="p-2 bg-blue-magenta-100 rounded-md w-full"
             />
@@ -50,6 +55,7 @@
           <div>
             <input
               type="password"
+              v-model="password"
               placeholder="Password"
               class="p-2 bg-blue-magenta-100 rounded-md w-full"
             />
@@ -70,12 +76,31 @@
 </template>
 
 <script>
+import useVuelidate from '@vuelidate/core'
+import { required, email, minLength, numeric } from '@vuelidate/validators'
+
 export default {
   name: "Stats",
+  setup () {
+    return { v$: useVuelidate() }
+  },
   data() {
     return {
-      count: 0,
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      password:''
     };
+  },
+  validations(){
+    return { 
+      firstName: { required, minLength: 3 },
+      lastName: { required, minLength: 3 },
+      email: { required, email},
+      phone: { required, numeric },
+      password:{ required, minLength: 7 }
+    }
   },
   methods: {
     showLogoutModal() {

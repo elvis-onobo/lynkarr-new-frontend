@@ -15,6 +15,7 @@ import {Vue3ProgressPlugin} from '@marcoschulte/vue3-progress';
 import '@marcoschulte/vue3-progress/dist/index.css'
 import store from './store/index'
 
+
 library.add(fas)
 
 // sweet alert button colour config

@@ -12,6 +12,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.0.0",
     "@fortawesome/vue-fontawesome": "^3.0.0-5",
     "@marcoschulte/vue3-progress": "^0.0.6",
+    "@vuelidate/core": "^2.0.0-alpha.40",
+    "@vuelidate/validators": "^2.0.0-alpha.28",
     "axios": "^0.26.0",
     "chart.js": "^3.7.1",
     "un": "^0.0.0",

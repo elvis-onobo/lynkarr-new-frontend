@@ -14,7 +14,9 @@ module.exports = {
         'blue-magenta-400': '#A895FF',
         'blue-magenta-300': '#C0AFFF',
         'blue-magenta-200': '#D6C9FF',
-        'blue-magenta-100': '#EbE4FF'
+        'blue-magenta-100': '#EbE4FF',
+        'lynkarr-green': '#68d4ad',
+        'lynkarr-blue': '#3684a7'
       },
     },
   },

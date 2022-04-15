@@ -1,15 +1,15 @@
 
 <template>
-  <div class="font-sans text-blue-magenta-900">
+  <div class="font-sans text-gray-700">
     <navbar
       class="md:px-16 px-6 flex flex-wrap bg-white items-center md-py-0 py-2"
     >
       <div class="flex flex-1 justify-between items-center">
-        <img src="../assets/images/betar-logo.png" class="w-24" />
+        <img src="../assets/logo.png" class="w-28" />
       </div>
 
       <label for="menu-toggle" class="md:hidden block">
-        <fa icon="bars" class="bg-blue-magenta-200 p-4 rounded-md" />
+        <fa icon="bars" class="bg-lynkarr-blue p-4 rounded-md" />
       </label>
 
       <input type="checkbox" class="hidden" id="menu-toggle" />
@@ -21,7 +21,7 @@
               lg:flex
               items-center
               justify-between
-              text-base text-blue-magenta-900
+              text-base text-gray-700
               pt-4
               lg:pt-0
               md:space-x-5
@@ -29,7 +29,7 @@
           >
             <li
               class="
-                hover:border-blue-magenta-900
+                hover:border-gray-700
                 border-b-2 border-transparent
               "
             >
@@ -37,7 +37,7 @@
             </li>
             <li
               class="
-                hover:border-blue-magenta-900
+                hover:border-gray-700
                 border-b-2 border-transparent
               "
             >
@@ -49,7 +49,7 @@
                   rounded-md
                   p-2
                   text-white
-                  bg-blue-magenta-900
+                  bg-gradient-to-r from-lynkarr-blue to-lynkarr-green
                   hover:bg-gray-400
                 "
               >
@@ -73,32 +73,35 @@
         "
       >
         <div class="md:col-span-3">
-          <p class="text-5xl font-extrabold text-blue-magenta-900">
-            Send Money the
-            <span class="text-blue-magenta-500">Betarr</span> Way
+          <p class="text-5xl font-extrabold text-gray-700">
+            Receive Payments the
+            <span class="text-lynkarr-blue">Lynkarr</span> Way
           </p>
           <blockquote class="text-sm mt-2">
-            Send money to family and friends in Nigeria,
+            Allow your customers to pay you from fintech apps,
             <strong
-              >faster than ever, and at a better price than you ever did.</strong
+              >it's fast and secure5.</strong
             >
           </blockquote>
           <div class="space-x-2 text-white mt-2">
             <router-link :to="{ name: 'sign-up' }">
               <button
-                class="p-2 bg-blue-magenta-500 rounded-md hover:bg-gray-600"
+                class="p-2 bg-gradient-to-r from-lynkarr-blue to-lynkarr-green rounded-md hover:bg-gray-600"
               >
                 Get Started
               </button>
             </router-link>
+            <lynkarr-checkout></lynkarr-checkout>
+
           </div>
         </div>
-        <div class="md:col-span-5">
-          <img src="../assets/images/transfer_money.svg" />
+        <div class="md:col-span-5 fill-lynkarr-green">
+          <img src="../assets/images/transfer_money_blue.svg" />
         </div>
       </div>
     </div>
   </div>
+
 
   <div class="container mx-auto">
     <div
@@ -112,12 +115,12 @@
         md:space-y-0
       "
     >
-      <div class="p-5 w-full rounded-2xl bg-blue-magenta-100">
-        <div class="p-4 text-blue-magenta-900">
+      <div class="p-5 w-full rounded-2xl bg-blue-100">
+        <div class="p-4 text-gray-700">
           <div class="rounded-md">
             <fa
               icon="pen"
-              class="bg-blue-magenta-500 text-white p-4 rounded-md"
+              class="bg-lynkarr-blue text-white p-4 rounded-md"
             />
           </div>
 
@@ -126,45 +129,45 @@
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
-              class="bg-blue-magenta-300 text-white p-2 rounded-full"
+              class="bg-blue-300 text-white p-2 rounded-full"
             />
           </div>
         </div>
       </div>
 
-      <div class="p-5 w-full rounded-2xl bg-blue-magenta-100">
-        <div class="p-4 text-blue-magenta-900">
+      <div class="p-5 w-full rounded-2xl bg-blue-100">
+        <div class="p-4 text-gray-700">
           <div class="rounded-md">
             <fa
-              icon="calendar"
-              class="bg-blue-magenta-500 text-white p-4 rounded-md"
+              icon="check"
+              class="bg-lynkarr-blue text-white p-4 rounded-md"
             />
           </div>
-          <p class="text-3xl font-semibold mt-4">Add Account</p>
-          <p>Add the bank account you wish to send money to.</p>
+          <p class="text-3xl font-semibold mt-4">KYC</p>
+          <p>Submit your legal documents or setup starter business account.</p>
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
-              class="bg-blue-magenta-300 text-white p-2 rounded-full"
+              class="bg-blue-300 text-white p-2 rounded-full"
             />
           </div>
         </div>
       </div>
 
-      <div class="p-5 w-full rounded-2xl bg-blue-magenta-100">
-        <div class="p-4 text-blue-magenta-900">
+      <div class="p-5 w-full rounded-2xl bg-blue-100">
+        <div class="p-4 text-gray-700">
           <div class="rounded-md">
             <fa
-              icon="house"
-              class="bg-blue-magenta-500 text-white p-4 rounded-md"
+              icon="wallet"
+              class="bg-lynkarr-blue text-white p-4 rounded-md"
             />
           </div>
-          <p class="text-3xl font-semibold mt-4">Send</p>
-          <p>Send straight to the bank account.</p>
+          <p class="text-3xl font-semibold mt-4">Receive</p>
+          <p>Start receiving payments on Lynkarr.</p>
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
-              class="bg-blue-magenta-300 text-white p-2 rounded-full"
+              class="bg-blue-300 text-white p-2 rounded-full"
             />
           </div>
         </div>
@@ -173,7 +176,7 @@
   </div>
 
   <div class="grid m-4 items-center place-items-center">
-    <p class="text-5xl font-extrabold p-10 text-blue-magenta-900 text-center">
+    <p class="text-5xl font-extrabold p-10 text-lynkarr-blue text-center">
       Start sending money instantly!
     </p>
   </div>
@@ -190,14 +193,14 @@
       "
     >
       <div class="w-4/6">
-        <img src="../assets/images/undraw_security_on_re_e491.svg" />
+        <img src="../assets/images/security_blue.svg" />
       </div>
       <div>
-        <p class="text-2xl font-extrabold text-center text-blue-magenta-900">
+        <p class="text-2xl font-extrabold text-center text-gray-700">
           Built with your concerns in mind.
         </p>
         <div class="md:grid grid-cols-2 gap-2">
-          <div class="rounded-md p-8 text-blue-magenta-900">
+          <div class="rounded-md p-8 text-gray-700">
             <fa
               icon="rocket"
               class="bg-green-200 rounded-full p-4 text-white"
@@ -208,10 +211,10 @@
             </p>
           </div>
 
-          <div class="rounded-md p-8 text-blue-magenta-900">
+          <div class="rounded-md p-8 text-gray-700">
             <fa
               icon="clock"
-              class="bg-blue-magenta-300 rounded-full p-4 text-white"
+              class="bg-blue-200 rounded-full p-4 text-white"
             />
             <p class="font-extrabold text-2xl">Instant</p>
             <p class="text-sm">
@@ -220,7 +223,7 @@
             </p>
           </div>
 
-          <div class="rounded-md p-8 text-blue-magenta-900">
+          <div class="rounded-md p-8 text-gray-700">
             <fa icon="lock" class="bg-orange-200 rounded-full p-4 text-white" />
             <p class="font-extrabold text-2xl">Safe</p>
             <p class="text-sm">
@@ -229,10 +232,10 @@
             </p>
           </div>
 
-          <div class="rounded-md p-8 text-blue-magenta-900">
+          <div class="rounded-md p-8 text-gray-700">
             <fa
               icon="fingerprint"
-              class="bg-purple-300 rounded-full p-4 text-white"
+              class="bg-violet-200 rounded-full p-4 text-white"
             />
             <p class="font-extrabold text-2xl">Secure</p>
             <p class="text-sm">
@@ -253,7 +256,7 @@
         place-items-center
         space-y-4
         md:space-y-2
-        bg-blue-magenta-100
+        bg-blue-100
       "
     >
       <div>
@@ -262,7 +265,7 @@
             md:text-5xl
             text-sm
             font-extrabold
-            text-blue-magenta-900 text-right
+            text-lynkarr-blue text-right
             p-4
           "
         >
@@ -270,24 +273,13 @@
         </p>
       </div>
       <div class="w-4/6">
-        <img src="../assets/images/undraw_discount_d-4-bd.svg" />
+        <img src="../assets/images/discount_blue.svg" />
       </div>
     </div>
   </div>
 
-  <!-- <div class="md:grid gap-1 m-10 p-10 rounded-md place-items-center grayscale">
-    <div>
-      <p class="md:text-sm text-xs text-center md:font-semibold">
-        Payments processed and secured by
-      </p>
-    </div>
-    <div class="md:w-2/6">
-      <img src="../assets/images/Flutterwave Logo.svg" />
-    </div>
-  </div> -->
-
   <div class="container mx-auto">
-    <footer class="text-xs m-10 text-blue-magenta-900">
+    <footer class="text-xs m-10 text-gray-700">
       <div
         class="
           grid grid-cols-2
@@ -299,19 +291,14 @@
         "
       >
         <div class="grid col-span-2 md:col-span-1 place-items-center">
-          <img src="../assets/images/betar-logo.png" class="w-24" />
+          <img src="../assets/logo.png" class="w-24" />
         </div>
 
         <div>
           <p class="font-extrabold">Products</p>
           <p>Send</p>
           <p>
-            Money Exchange
-            <span class="bg-orange-500 text-white rounded-md">Coming Soon</span>
-          </p>
-          <p>
-            Bank Accounts
-            <span class="bg-orange-500 text-white rounded-md">Coming Soon</span>
+            Negative Balance
           </p>
         </div>
 
@@ -335,15 +322,15 @@
             <fa icon="instagram" />
             <fa icon="whatsapp" />
             <div class="text-">
-              <p>help@betarr.com</p>
+              <p>help@lynkarr.com</p>
               <p>+234 803 910 1861</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="grid gap-1 place-items-center mt-4 text-blue-magenta-900">
+      <div class="grid gap-1 place-items-center mt-4 text-gray-700">
         <p class="md:p-20 pl-8 pr-8 text-justify md:text-center text-sm">
-          Betarr &copy;{{ year }}.
+          Lynkarr &copy;{{ year }}.
         </p>
       </div>
     </footer>
@@ -358,6 +345,8 @@ export default {
       year: new Date().getFullYear(),
     };
   },
+  components:{
+  }
 };
 </script>
 
