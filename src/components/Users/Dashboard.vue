@@ -42,7 +42,7 @@
       class="
         col-span-5
         p-5
-        outline outline-gray-50 outline-1
+        outline outline-gray-50
         rounded-md
         text-center
         w-full
@@ -64,7 +64,7 @@
       class="
         col-span-3
         p-5
-        outline outline-gray-50 outline-1
+        outline outline-gray-50
         rounded-md
         text-center
         w-full
