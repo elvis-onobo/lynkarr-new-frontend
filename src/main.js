@@ -20,12 +20,12 @@ library.add(fas)
 
 // sweet alert button colour config
 const options = {
-  confirmButtonColor: '#68d4ad',
+  confirmButtonColor: '#3684a7',
   cancelButtonColor: '#EA5933',
 };
 
 Chartkick.options = {
-  colors: ["#68d4ad", "#8D7CFF"]
+  colors: ["#3684a7", "#8D7CFF"]
 }
 
 createApp(App)

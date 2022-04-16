@@ -2,47 +2,64 @@
   <div
     class="
       md:grid
-      grid-cols-8
+      grid-cols-12
       place-items-center
       gap-4
       m-7
       space-y-4
       md:space-y-0
+      text-gray-700
     "
   >
-    <!-- <div
+    <div
       class="
         md:col-span-4
         rounded-md
-        outline outline-blue-magenta-900
-        p-8
+        p-8 bg-gradient-to-r from-lynkarr-blue to-lynkarr-green text-white
         w-full
         grid
         place-items-center
       "
     >
-      <p class="font-extrabold md:text-5xl text-2xl">$20,000</p>
+      <p class="font-extrabold md:text-md text-md">&#8358;2,000,000.00</p>
+      <p>Balance</p>
     </div>
 
     <div
       class="
         md:col-span-4
         rounded-md
-        outline outline-blue-magenta-900
+        border border-gray-200
         p-8
         w-full
         grid
         place-items-center
       "
     >
-      <p class="font-extrabold md:text-5xl text-2xl">&#8358;2,000,000</p>
-    </div> -->
+      <p class="font-extrabold md:text-md text-md">&#8358;2,000,000.00</p>
+      <p>Inflow</p>
+    </div>
 
     <div
       class="
-        col-span-5
+        md:col-span-4
+        rounded-md
+        border border-gray-200
+        p-8
+        w-full
+        grid
+        place-items-center
+      "
+    >
+      <p class="font-extrabold md:text-md text-md">&#8358;2,000,000.00</p>
+      <p>Outflow</p>
+    </div>
+
+    <div
+      class="
+        md:col-span-7
         p-5
-        outline outline-gray-50
+        border border-gray-200
         rounded-md
         text-center
         w-full
@@ -62,9 +79,9 @@
 
     <div
       class="
-        col-span-3
+        md:col-span-5
         p-5
-        outline outline-gray-50
+        border border-gray-200
         rounded-md
         text-center
         w-full
@@ -72,12 +89,12 @@
       "
     >
       <table class="table-auto w-full">
-        <p class="font-extrabold text-2xl">Money Sent</p>
+        <p class="font-extrabold text-2xl">Recent Transactions</p>
         <thead>
           <tr>
             <th>Date</th>
             <th>Amount</th>
-            <th>Recipient</th>
+            <th>Type</th>
           </tr>
         </thead>
         <tbody class="divide-y-2 divide-gray-200 divide-solid">
@@ -125,7 +142,7 @@
       </table>
       <fa
         icon="arrow-right"
-        class="bg-blue-magenta-300 text-white p-2 mt-2 rounded-full"
+        class="bg-gray-100 text-white p-2 mt-2 rounded-full bg-gradient-to-r from-lynkarr-blue to-lynkarr-green"
         title="See Full List"
       />
     </div>

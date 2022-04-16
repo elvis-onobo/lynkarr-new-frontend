@@ -269,6 +269,7 @@
         >
           Better rates than you ever got before!
         </p>
+        <p class="text-right p-4 md:text-2xl font-extrabold">&#8358;10 per transaction</p>
       </div>
       <div class="w-4/6">
         <img src="../assets/images/discount_blue.svg" />
@@ -298,6 +299,7 @@
           <p>
             Negative Balance
           </p>
+          <p>Card</p>
         </div>
 
         <div>
