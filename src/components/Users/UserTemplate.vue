@@ -296,7 +296,7 @@
         <router-link :to="{ name: 'dashboard' }">
           <div class="flex justify-between items-center">
             <img src="../../assets/logo.png" alt="Lynkarr logo" class="w-32" />
-            <fa icon="close" />
+            <!-- <fa icon="close" /> -->
           </div>
         </router-link>
       </div>
@@ -484,8 +484,8 @@
             </label>
           </div>
 
-          <div class="p-2">
-            <Menu as="div" class="relative focus:outline-none mt-3">
+          <div>
+            <Menu as="div" class="relative focus:outline-none p-2">
               <MenuButton>
                 <div class="flex items-center space-x-2">
                   <span>Select business</span>
@@ -661,7 +661,7 @@ export default {
   position: relative;
   display: inline-block;
   width: 45px;
-  height: 25px;
+  height: 18px;
 }
 
 /* Hide default HTML checkbox */
@@ -687,8 +687,8 @@ export default {
 .slider:before {
   position: absolute;
   content: "";
-  height: 18px;
-  width: 18px;
+  height: 10px;
+  width: 10px;
   left: 4px;
   bottom: 4px;
   background-color: white;
