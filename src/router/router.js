@@ -15,12 +15,7 @@ import Withdraw from '../components/Users/Withdraw.vue'
 import Send from '../components/Users/Send.vue'
 import Profile from '../components/Users/Profile.vue'
 import Accounts from '../components/Users/Accounts.vue'
-// Admin
-import AdminTemplate from '../components/Admin/AdminTemplate.vue'
-import AdminDashboard from '../components/Admin/AdminDashboard.vue'
-import AdminTransactions from '../components/Admin/AdminTransactions.vue'
-import AdminStaff from '../components/Admin/AdminStaff.vue'
-import AdminSecurity from '../components/Admin/AdminSecurity.vue'
+
 
 const history = createWebHistory()
 const router = createRouter({
@@ -45,17 +40,6 @@ const router = createRouter({
     { path: 'send', component: Send, name: 'send' },
     { path: 'profile', component: Profile, name: 'profile' },
     { path: 'accounts', component: Accounts, name: 'accounts' },
-   ],
-  },
-  {
-   path: '/admin',
-   component: AdminTemplate,
-   name: 'admin',
-   children: [
-    { path: 'dashboard', component: AdminDashboard, name: 'admin-dashboard' },
-    { path: 'transactions', component: AdminTransactions, name: 'admin-transactions' },
-    { path: 'staff', component: AdminStaff, name: 'admin-staff' },
-    { path: 'security', component: AdminSecurity, name: 'admin-security' },
    ],
   },
   // { path: '/:pathMatch(.*)*', name: 'login', component: Login }
