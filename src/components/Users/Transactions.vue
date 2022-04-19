@@ -56,6 +56,12 @@
         </tr>
       </tbody>
     </table>
+    <div class="grid place-items-center mt-2">
+        <div class="flex space-x-2">
+            <button class="bg-gradient-to-r from-lynkarr-blue to-lynkarr-green p-2 rounded-md text-white">Prev</button>
+            <button class="bg-gradient-to-r from-lynkarr-blue to-lynkarr-green p-2 rounded-md text-white">Next</button>
+        </div>
+    </div>
   </div>
 </template>
 
