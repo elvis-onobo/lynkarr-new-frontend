@@ -2,6 +2,12 @@
   <div class="md:grid p-10 rounded-md border border-gray-200 m-5">
     <table class="table-auto w-full text-center">
       <p class="font-extrabold text-center mb-4">Transactions</p>
+        <select class="w-40 p-4 m-2 text-right">
+            <option value="">Select Category</option>
+            <option value="">Inflow</option>
+            <option value="">Outflow</option>
+        </select>
+
       <thead>
         <tr>
           <th>Date</th>

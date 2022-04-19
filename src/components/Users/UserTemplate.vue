@@ -362,7 +362,7 @@
         </div>
       </router-link>
 
-      <router-link :to="{ name: 'dashboard' }">
+      <router-link :to="{ name: 'api-keys' }">
         <div>
           <div
             class="

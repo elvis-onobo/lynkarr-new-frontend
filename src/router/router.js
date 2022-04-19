@@ -9,6 +9,7 @@ import UserTemplate from '../components/Users/UserTemplate.vue'
 import Dashboard from '../components/Users/Dashboard.vue'
 import Profile from '../components/Users/Profile.vue'
 import Transactions from '../components/Users/Transactions.vue'
+import APIkeys from '../components/Users/APIkeys.vue'
 
 const history = createWebHistory()
 const router = createRouter({
@@ -28,6 +29,7 @@ const router = createRouter({
     { path: 'dashboard', component: Dashboard, name: 'dashboard' },
     { path: 'profile', component: Profile, name: 'profile' },
     { path: 'transactions', component: Transactions, name: 'transactions' },
+    { path: 'api-keys', component: APIkeys, name: 'api-keys' },
    ],
   },
   // { path: '/:pathMatch(.*)*', name: 'login', component: Login }
