@@ -356,7 +356,7 @@
             "
           >
             <span class="mx-4 mb-2 text-md"
-              ><fa icon="wallet" /> Transactions</span
+              ><fa icon="arrow-right-arrow-left" /> Transactions</span
             >
           </div>
         </div>
@@ -367,7 +367,7 @@
           <div
             class="
               hover:bg-gradient-to-r
-              from-blue-100
+              from-blue-100 
               to-green-200
               p-2
               hover:p-4
@@ -375,6 +375,40 @@
             "
           >
             <span class="mx-4 mb-2 text-md"><fa icon="key" /> API Keys</span>
+          </div>
+        </div>
+      </router-link>
+
+      <router-link :to="{ name: 'bank-account' }">
+        <div>
+          <div
+            class="
+              hover:bg-gradient-to-r
+              from-blue-100 
+              to-green-200
+              p-2
+              hover:p-4
+              rounded
+            "
+          >
+            <span class="mx-4 mb-2 text-md"><fa icon="bank" /> Bank Account</span>
+          </div>
+        </div>
+      </router-link>
+
+      <router-link :to="{ name: 'api-keys' }">
+        <div>
+          <div
+            class="
+              hover:bg-gradient-to-r
+              from-blue-100 
+              to-green-200
+              p-2
+              hover:p-4
+              rounded
+            "
+          >
+            <span class="mx-4 mb-2 text-md"><fa icon="wallet" /> Funding</span>
           </div>
         </div>
       </router-link>
