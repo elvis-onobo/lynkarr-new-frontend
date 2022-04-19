@@ -343,7 +343,7 @@
         </div>
       </router-link>
 
-      <router-link :to="{ name: 'dashboard' }">
+      <router-link :to="{ name: 'transactions' }">
         <div>
           <div
             class="

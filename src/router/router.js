@@ -8,7 +8,7 @@ import ForgotPassword from '../components/Auth/ForgotPassword.vue'
 import UserTemplate from '../components/Users/UserTemplate.vue'
 import Dashboard from '../components/Users/Dashboard.vue'
 import Profile from '../components/Users/Profile.vue'
-
+import Transactions from '../components/Users/Transactions.vue'
 
 const history = createWebHistory()
 const router = createRouter({
@@ -27,6 +27,7 @@ const router = createRouter({
    children: [
     { path: 'dashboard', component: Dashboard, name: 'dashboard' },
     { path: 'profile', component: Profile, name: 'profile' },
+    { path: 'transactions', component: Transactions, name: 'transactions' },
    ],
   },
   // { path: '/:pathMatch(.*)*', name: 'login', component: Login }
