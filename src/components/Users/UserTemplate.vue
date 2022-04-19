@@ -326,7 +326,7 @@
         </div>
       </router-link>
 
-      <router-link :to="{ name: 'dashboard' }">
+      <router-link :to="{ name: 'profile' }">
         <div>
           <div
             class="
@@ -458,7 +458,7 @@
         <form class="md:ml-64">
           <input
             type="text"
-            class="p-2 rounded-l-md bg-gray-50 md:w-80"
+            class="p-2 rounded-l-md bg-gray-50 md:w-80 focus:outline-none"
             placeholder="Search transactions"
           />
           <button
@@ -557,7 +557,7 @@
 
     </div>
       <!-- Load content here -->
-      <div class="block overflow-y-auto flex-1 md:ml-64 md:pt-24">
+      <div class="block overflow-y-auto flex-1 md:ml-64 md:pt-20">
         <fa
           icon="bars"
           class="
@@ -574,7 +574,6 @@
           "
           @click="sideBarOpened = true"
         />
-        <p class="px-7 pt-4 text-black text-2xl">Hello, Elvis!</p>
         <router-view></router-view>
       </div>
       <!-- Load content here -->

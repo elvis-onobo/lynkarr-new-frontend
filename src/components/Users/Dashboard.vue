@@ -5,12 +5,15 @@
       grid-cols-12
       place-items-center
       gap-4
-      m-7
+      m-5
       space-y-4
       md:space-y-0
       text-gray-700
     "
   >
+    <div class="md:grid col-span-12 place-self-start">
+      <span class="text-2xl font-extrabold">Hello, Elvis!</span>
+    </div>
     <div
       class="
         md:col-span-4
@@ -160,16 +163,6 @@ export default {
     };
   },
   methods: {
-    showLogoutModal() {
-      const progress = this.$progress.start();
-      this.$swal.fire({
-        text: "Are you sure to logout?",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonText: "Yes, Log me out!",
-      });
-      progress.finish();
-    },
   },
 };
 </script>

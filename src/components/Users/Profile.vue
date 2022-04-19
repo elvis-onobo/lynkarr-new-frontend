@@ -1,59 +1,56 @@
 <template>
-  <div class="md:grid place-items-center">
-    <div
-      class="
-        outline 
-        outline-blue-magenta-900
-        rounded-md
-        ml-8
-        mr-8
-        md:ml-0 md:mr-0
-        p-8
-      "
-    >
-      <form class="space-y-2">
-        <p class="font-extrabold">Update Profile</p>
-        <hr />
+    <div class="md:grid grid-cols-4 p-6 space-x-4">
+        <div>
+            <form class="space-y-2 border border-gray-200 p-4 rounded-md">
+                <p class="font-extrabold pb-2">Update Profile</p>
+                <div>
+                    <input type="text" placeholder="First name" class="p-2 w-full bg-green-50 focus:outline-none rounded-md" autofocus />
+                </div>
 
-        <div class="form">
-          <input type="text" class="p-2 rounded-md bg-blue-magenta-100" placeholder="First Name" autofocus />
+                <div>
+                    <input type="text" placeholder="Last name" class="p-2 w-full bg-green-50 focus:outline-none rounded-md" />
+                </div>
+
+                <div>
+                    <input type="text" placeholder="Phone Number" class="p-2 w-full bg-green-50 focus:outline-none rounded-md" />
+                </div>
+
+                <div>
+                    <input type="text" placeholder="Current Password" class="p-2 w-full bg-green-50 focus:outline-none rounded-md" />
+                </div>
+
+                <div>
+                    <input type="text" placeholder="New Password" class="p-2 w-full bg-green-50 focus:outline-none rounded-md" />
+                </div>
+
+                <div>
+                    <input type="text" placeholder="Repeat New Password" class="p-2 w-full bg-green-50 focus:outline-none rounded-md" />
+                </div>
+
+                <button type="button" class="p-2 rounded-md bg-gradient-to-r from-lynkarr-blue to-lynkarr-green text-white">
+                    Update
+                </button>
+            </form>
         </div>
 
-        <div class="form">
-          <input type="text" class="p-2 rounded-md bg-blue-magenta-100" placeholder="Last name" />
+        <div class="grid border border-gray-200 rounded-md space-y-2 place-items-center">
+            <div class="text-center space-y-2">
+                <fa icon="user" class="p-6 bg-gray-50 text-2xl border border-gray-200 rounded-full" />
+                <p>Elvis Onobo</p>
+                <p>08039101861</p>
+            </div>
         </div>
-
-        <div class="form">
-          <input
-            type="password"
-            class="p-2 rounded-md bg-blue-magenta-100"
-            placeholder="Old Password"
-          />
-        </div>
-
-        <div class="form">
-          <input
-            type="password"
-            class="p-2 rounded-md bg-blue-magenta-100"
-            placeholder="New Password"
-          />
-        </div>
-
-        <div class="form">
-          <input
-            type="password"
-            class="p-2 rounded-md bg-blue-magenta-100"
-            placeholder="Confirm New Password"
-          />
-        </div>
-
-        <button type="submit" class="p-2 bg-blue-magenta-900 hover:bg-gray-400 text-white rounded-md">
-          Update
-        </button>
-      </form>
     </div>
-  </div>
 </template>
 
 <script>
+export default {
+  name: "Profile",
+  data() {
+    return {
+    };
+  },
+  methods: {
+  },
+};
 </script>
