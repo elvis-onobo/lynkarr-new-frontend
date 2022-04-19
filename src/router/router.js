@@ -11,6 +11,7 @@ import Profile from '../components/Users/Profile.vue'
 import Transactions from '../components/Users/Transactions.vue'
 import APIkeys from '../components/Users/APIkeys.vue'
 import BankAccount from '../components/Users/BankAccount.vue'
+import Funding from '../components/Users/Funding.vue'
 
 const history = createWebHistory()
 const router = createRouter({
@@ -32,6 +33,7 @@ const router = createRouter({
     { path: 'transactions', component: Transactions, name: 'transactions' },
     { path: 'api-keys', component: APIkeys, name: 'api-keys' },
     { path: 'bank-account', component: BankAccount, name: 'bank-account' },
+    { path: 'funding', component: Funding, name: 'funding' },
    ],
   },
   // { path: '/:pathMatch(.*)*', name: 'login', component: Login }

@@ -396,7 +396,7 @@
         </div>
       </router-link>
 
-      <router-link :to="{ name: 'api-keys' }">
+      <router-link :to="{ name: 'funding' }">
         <div>
           <div
             class="
