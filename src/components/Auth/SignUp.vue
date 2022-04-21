@@ -60,7 +60,7 @@
             />
           </div>
 
-          <router-link :to="{ name: 'dashboard' }">
+          <router-link :to="{ name: 'bvn' }">
             <button
               type="submit"
               class="
