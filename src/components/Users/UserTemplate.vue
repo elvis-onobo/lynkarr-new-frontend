@@ -1,5 +1,7 @@
 <template>
   <div class="flex min-h-screen text-gray-700">
+    <vue3-progress-bar></vue3-progress-bar>
+    
     <!-- Sidebar for mobile screens -->
     <TransitionRoot :show="sideBarOpened">
       <Dialog
@@ -316,7 +318,6 @@
               to-green-200
               p-2
               hover:p-4
-              rounded
             "
           >
             <span class="mx-4 mb-2 text-md"
@@ -335,7 +336,6 @@
               to-green-200
               p-2
               hover:p-4
-              rounded
             "
           >
             <span class="mx-4 mb-2 text-md"><fa icon="user" /> Profile</span>
@@ -352,7 +352,6 @@
               to-green-200
               p-2
               hover:p-4
-              rounded
             "
           >
             <span class="mx-4 mb-2 text-md"
@@ -371,7 +370,6 @@
               to-green-200
               p-2
               hover:p-4
-              rounded
             "
           >
             <span class="mx-4 mb-2 text-md"><fa icon="key" /> API Keys</span>
@@ -388,7 +386,6 @@
               to-green-200
               p-2
               hover:p-4
-              rounded
             "
           >
             <span class="mx-4 mb-2 text-md"><fa icon="bank" /> Bank Account</span>
@@ -405,7 +402,6 @@
               to-green-200
               p-2
               hover:p-4
-              rounded
             "
           >
             <span class="mx-4 mb-2 text-md"><fa icon="wallet" /> Funding</span>
@@ -413,7 +409,39 @@
         </div>
       </router-link>
 
-      <router-link :to="{ name: 'dashboard' }">
+      <router-link :to="{ name: 'webhook' }">
+        <div>
+          <div
+            class="
+              hover:bg-gradient-to-r
+              from-blue-100 
+              to-green-200
+              p-2
+              hover:p-4
+            "
+          >
+            <span class="mx-4 mb-2 text-md"><fa icon="link" /> Webhook</span>
+          </div>
+        </div>
+      </router-link>
+
+      <router-link :to="{ name: 'withdraw' }">
+        <div>
+          <div
+            class="
+              hover:bg-gradient-to-r
+              from-blue-100 
+              to-green-200
+              p-2
+              hover:p-4
+            "
+          >
+            <span class="mx-4 mb-2 text-md"><fa icon="money-bill" /> Withdraw</span>
+          </div>
+        </div>
+      </router-link>
+
+      <router-link :to="{ name: 'settings' }">
         <div>
           <div
             class="
@@ -422,7 +450,6 @@
               to-green-200
               p-2
               hover:p-4
-              rounded
             "
           >
             <span class="mx-4 mb-2 text-md"><fa icon="cogs" /> Settings</span>
@@ -440,7 +467,6 @@
                 to-green-200
                 p-2
                 hover:p-4
-                rounded
               "
             >
               <span class="mx-4 mb-2 text-md"
@@ -459,7 +485,6 @@
                 to-green-200
                 p-2
                 hover:p-4
-                rounded
               "
             >
               <span class="mx-4 mb-2 text-md"
@@ -488,7 +513,7 @@
 
     <!-- Top bar -->
     <div class="flex-1 fixed md:bg-white md:w-full">
-      <div class="md:flex hidden justify-between py-3 px-6 border-b space-x-6">
+      <div class="md:flex hidden justify-between py-3 px-5 border-b space-x-6">
         <form class="md:ml-64">
           <input
             type="text"
@@ -578,7 +603,7 @@
                           from-blue-100
                           to-green-100
                         "
-                        ><fa icon="money-bill" /> Lynkarr</span
+                        ><fa icon="briefcase" /> Lynkarr</span
                       >
                     </router-link>
                   </MenuItem>
@@ -608,7 +633,9 @@
           "
           @click="sideBarOpened = true"
         />
-        <router-view></router-view>
+        <Transition name="fade" :duration="{ enter: 500, leave: 500 }">
+          <router-view></router-view>
+        </Transition>
       </div>
       <!-- Load content here -->
   </div>
@@ -693,7 +720,7 @@ export default {
 .switch {
   position: relative;
   display: inline-block;
-  width: 45px;
+  width: 40px;
   height: 18px;
 }
 
@@ -750,5 +777,15 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
