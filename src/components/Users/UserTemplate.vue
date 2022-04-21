@@ -1,7 +1,7 @@
 <template>
   <div class="flex min-h-screen text-gray-700">
     <vue3-progress-bar></vue3-progress-bar>
-    
+
     <!-- Sidebar for mobile screens -->
     <TransitionRoot :show="sideBarOpened">
       <Dialog
@@ -10,7 +10,8 @@
         @close="sideBarOpened = false"
         class="fixed inset-0 z-40"
       >
-        <TransitionChild as="template"
+        <TransitionChild
+          as="template"
           enter="transition ease-in-out duration-200 transform"
           enter-from="-translate-x-full"
           enter-to="translate-x-0"
@@ -256,7 +257,8 @@
             </div>
           </div>
         </TransitionChild>
-        <TransitionChild as="template"
+        <TransitionChild
+          as="template"
           enter="transition-opacity ease-lineear duration-200"
           enter-from="opacity-0"
           enter-to="opacity-100"
@@ -289,9 +291,7 @@
         border-r border-gray-200
         space-y-2
         text-sm
-        md:fixed md:bg-white
-        md:z-10
-        md:h-screen
+        md:fixed md:bg-white md:z-10 md:h-screen
       "
     >
       <div class="py-2 px-6">
@@ -361,34 +361,20 @@
         </div>
       </router-link>
 
-      <router-link :to="{ name: 'api-keys' }">
-        <div>
-          <div
-            class="
-              hover:bg-gradient-to-r
-              from-blue-100 
-              to-green-200
-              p-2
-              hover:p-4
-            "
-          >
-            <span class="mx-4 mb-2 text-md"><fa icon="key" /> API Keys</span>
-          </div>
-        </div>
-      </router-link>
-
       <router-link :to="{ name: 'bank-account' }">
         <div>
           <div
             class="
               hover:bg-gradient-to-r
-              from-blue-100 
+              from-blue-100
               to-green-200
               p-2
               hover:p-4
             "
           >
-            <span class="mx-4 mb-2 text-md"><fa icon="bank" /> Bank Account</span>
+            <span class="mx-4 mb-2 text-md"
+              ><fa icon="bank" /> Bank Account</span
+            >
           </div>
         </div>
       </router-link>
@@ -398,7 +384,7 @@
           <div
             class="
               hover:bg-gradient-to-r
-              from-blue-100 
+              from-blue-100
               to-green-200
               p-2
               hover:p-4
@@ -409,12 +395,30 @@
         </div>
       </router-link>
 
+      <router-link :to="{ name: 'withdraw' }">
+        <div>
+          <div
+            class="
+              hover:bg-gradient-to-r
+              from-blue-100
+              to-green-200
+              p-2
+              hover:p-4
+            "
+          >
+            <span class="mx-4 mb-2 text-md"
+              ><fa icon="money-bill" /> Withdraw</span
+            >
+          </div>
+        </div>
+      </router-link>
+
       <router-link :to="{ name: 'webhook' }">
         <div>
           <div
             class="
               hover:bg-gradient-to-r
-              from-blue-100 
+              from-blue-100
               to-green-200
               p-2
               hover:p-4
@@ -425,18 +429,52 @@
         </div>
       </router-link>
 
-      <router-link :to="{ name: 'withdraw' }">
+      <router-link :to="{ name: 'api-keys' }">
         <div>
           <div
             class="
               hover:bg-gradient-to-r
-              from-blue-100 
+              from-blue-100
               to-green-200
               p-2
               hover:p-4
             "
           >
-            <span class="mx-4 mb-2 text-md"><fa icon="money-bill" /> Withdraw</span>
+            <span class="mx-4 mb-2 text-md"><fa icon="key" /> API Keys</span>
+          </div>
+        </div>
+      </router-link>
+
+
+      <router-link :to="{ name: 'settings' }">
+        <div>
+          <div
+            class="
+              hover:bg-gradient-to-r
+              from-blue-100
+              to-green-200
+              p-2
+              hover:p-4
+            "
+          >
+            <span class="mx-4 mb-2 text-md"><fa icon="users" /> Teams</span>
+          </div>
+        </div>
+      </router-link>
+
+
+      <router-link :to="{ name: 'settings' }">
+        <div>
+          <div
+            class="
+              hover:bg-gradient-to-r
+              from-blue-100
+              to-green-200
+              p-2
+              hover:p-4
+            "
+          >
+            <span class="mx-4 mb-2 text-md"><fa icon="shield" /> Roles</span>
           </div>
         </div>
       </router-link>
@@ -457,42 +495,18 @@
         </div>
       </router-link>
 
-      <div class="items-end">
-        <router-link :to="{ name: 'dashboard' }">
-          <div>
-            <div
-              class="
-                hover:bg-gradient-to-r
-                from-blue-100
-                to-green-200
-                p-2
-                hover:p-4
-              "
-            >
-              <span class="mx-4 mb-2 text-md"
-                ><fa icon="bell" /> Notifications</span
-              >
-            </div>
-          </div>
-        </router-link>
-
-        <router-link :to="{ name: 'dashboard' }">
-          <div @click="showLogoutModal">
-            <div
-              class="
-                hover:bg-gradient-to-r
-                from-blue-100
-                to-green-200
-                p-2
-                hover:p-4
-              "
-            >
-              <span class="mx-4 mb-2 text-md"
-                ><fa icon="sign-out" /> Logout</span
-              >
-            </div>
-          </div>
-        </router-link>
+      <div @click="showLogoutModal">
+        <div
+          class="
+            hover:bg-gradient-to-r
+            from-blue-100
+            to-green-200
+            p-2
+            hover:p-4
+          "
+        >
+          <span class="mx-4 mb-2 text-md"><fa icon="sign-out" /> Logout</span>
+        </div>
       </div>
 
       <div class="text-center">
@@ -575,7 +589,7 @@
                   "
                 >
                   <MenuItem v-slot="{ active }">
-                    <router-link :to="{ name: 'dashboard' }">
+                    <router-link :to="{ name: 'create-business' }">
                       <span
                         :class="{ 'bg-blue-100': active }"
                         class="
@@ -613,31 +627,30 @@
           </div>
         </div>
       </div>
-
     </div>
-      <!-- Load content here -->
-      <div class="block overflow-y-auto flex-1 md:ml-64 md:pt-20">
-        <fa
-          icon="bars"
-          class="
-            mx-7
-            mt-4
-            p-2
-            md:hidden
-            text-xl
-            bg-gradient-to-r
-            from-lynkarr-blue
-            to-lynkarr-green
-            text-white
-            rounded-md
-          "
-          @click="sideBarOpened = true"
-        />
-        <Transition name="fade" :duration="{ enter: 500, leave: 500 }">
-          <router-view></router-view>
-        </Transition>
-      </div>
-      <!-- Load content here -->
+    <!-- Load content here -->
+    <div class="block overflow-y-auto flex-1 md:ml-64 md:pt-20">
+      <fa
+        icon="bars"
+        class="
+          mx-7
+          mt-4
+          p-2
+          md:hidden
+          text-xl
+          bg-gradient-to-r
+          from-lynkarr-blue
+          to-lynkarr-green
+          text-white
+          rounded-md
+        "
+        @click="sideBarOpened = true"
+      />
+      <Transition name="fade" :duration="{ enter: 500, leave: 500 }">
+        <router-view></router-view>
+      </Transition>
+    </div>
+    <!-- Load content here -->
   </div>
 </template>
 
