@@ -77,7 +77,7 @@
           ['2020-01-05', 92],
         ]"
       ></line-chart>
-      <p class="font-extrabold">Money Sent</p>
+      <p class="font-extrabold">Transactions This Month</p>
     </div>
 
     <div

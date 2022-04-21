@@ -44,7 +44,6 @@
             type="text"
             placeholder="Short Name"
             class="p-2 w-full bg-green-50 focus:outline-none rounded-md"
-            autofocus
           />
         </div>
 
@@ -53,7 +52,6 @@
             type="text"
             placeholder="E-mail"
             class="p-2 w-full bg-green-50 focus:outline-none rounded-md"
-            autofocus
           />
         </div>
 

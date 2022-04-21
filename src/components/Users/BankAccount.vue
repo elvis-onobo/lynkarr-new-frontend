@@ -8,7 +8,7 @@
                 </div>
 
                 <div>
-                    <select class="p-2">
+                    <select class="p-2 bg-green-50 w-full rounded-md">
                         <option value="">Select Bank</option>
                         <option value="">Zenith Bank</option>
                         <option value="">GT Bank</option>
