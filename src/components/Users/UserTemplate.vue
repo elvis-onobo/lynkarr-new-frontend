@@ -446,7 +446,7 @@
       </router-link>
 
 
-      <router-link :to="{ name: 'settings' }">
+      <router-link :to="{ name: 'team' }">
         <div>
           <div
             class="
@@ -457,7 +457,7 @@
               hover:p-4
             "
           >
-            <span class="mx-4 mb-2 text-md"><fa icon="users" /> Teams</span>
+            <span class="mx-4 mb-2 text-md"><fa icon="users" /> Team</span>
           </div>
         </div>
       </router-link>
