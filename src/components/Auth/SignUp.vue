@@ -60,7 +60,7 @@
             />
           </div>
 
-          <router-link :to="{ name: 'bvn' }">
+          <router-link :to="{ name: 'verify-email' }">
             <button
               type="submit"
               class="
