@@ -59,7 +59,7 @@
 
 "@marcoschulte/vue3-progress@^0.0.6":
   version "0.0.6"
-  resolved "https://registry.npmjs.org/@marcoschulte/vue3-progress/-/vue3-progress-0.0.6.tgz"
+  resolved "https://registry.yarnpkg.com/@marcoschulte/vue3-progress/-/vue3-progress-0.0.6.tgz#91474e9be601e7504ab320f4ba23e9c574106ce4"
   integrity sha512-/aaMpm6Jnwex3eu9cm9iDVUiP2nGOjWhiYM489iqWMcy58ReWyrnMsYDqASnZEv1y6vbbSrpoIE4xTHMhr9Nog==
 
 "@nodelib/fs.scandir@2.1.5":

@@ -177,7 +177,7 @@
 
   <div class="grid m-4 items-center place-items-center">
     <p class="text-5xl font-extrabold p-10 text-lynkarr-blue text-center">
-      Start sending money instantly!
+      Start receiving money instantly!
     </p>
   </div>
 
@@ -291,6 +291,7 @@
       >
         <div class="grid col-span-2 md:col-span-1 place-items-center">
           <img src="../assets/logo.png" class="w-24" />
+          <fa icon="facebook" />
         </div>
 
         <div>

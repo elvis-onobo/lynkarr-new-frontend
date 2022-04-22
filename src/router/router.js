@@ -12,6 +12,12 @@ import Transactions from '../components/Users/Transactions.vue'
 import APIkeys from '../components/Users/APIkeys.vue'
 import BankAccount from '../components/Users/BankAccount.vue'
 import Funding from '../components/Users/Funding.vue'
+import Webhook from '../components/Users/Webhook.vue'
+import Withdraw from '../components/Users/Withdraw.vue'
+import Settings from '../components/Users/Settings.vue'
+import BVN from '../components/Users/BVN.vue'
+import CreateBusiness from '../components/Users/CreateBusiness.vue'
+import Team from '../components/Users/Team.vue'
 
 const history = createWebHistory()
 const router = createRouter({
@@ -23,6 +29,8 @@ const router = createRouter({
   { path: '/login', name: 'login', component: Login },
   { path: '/sign-up', name: 'sign-up', component: SignUp },
   { path: '/forgot-password', name: 'forgot', component: ForgotPassword },
+  { path: '/bvn', name: 'bvn', component: BVN },
+  { path: '/create-business', name: 'create-business', component: CreateBusiness },
   {
    path: '/user',
    component: UserTemplate,
@@ -34,6 +42,10 @@ const router = createRouter({
     { path: 'api-keys', component: APIkeys, name: 'api-keys' },
     { path: 'bank-account', component: BankAccount, name: 'bank-account' },
     { path: 'funding', component: Funding, name: 'funding' },
+    { path: 'webhook', component: Webhook, name: 'webhook' },
+    { path: 'withdraw', component: Withdraw, name: 'withdraw' },
+    { path: 'team', component: Team, name: 'team' },
+    { path: 'settings', component: Settings, name: 'settings' },
    ],
   },
   // { path: '/:pathMatch(.*)*', name: 'login', component: Login }

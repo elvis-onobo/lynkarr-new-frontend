@@ -12,9 +12,9 @@
       </thead>
       <tbody class="divide-y-2 divide-gray-200 divide-solid text-center">
         <tr>
-          <td>12 Jan, 2022</td>
-          <td>&#8358;2000</td>
-          <td>Deposit</td>
+          <td>Elvis Onobo</td>
+          <td>Super Admin</td>
+          <td>5 Oct, 2022</td>
           <td class="space-x-2">
             <button class="rounded-md bg-yellow-700 p-1 text-white">
               <fa icon="pen" /> Edit
@@ -25,9 +25,9 @@
           </td>
         </tr>
         <tr>
-          <td>12 Jan, 2022</td>
-          <td>&#8358;2000</td>
-          <td>Deposit</td>
+          <td>Elvis Onobo</td>
+          <td>Super Admin</td>
+          <td>5 Oct, 2022</td>
           <td class="space-x-2">
             <button class="rounded-md bg-yellow-700 p-1 text-white">
               <fa icon="pen" /> Edit
@@ -38,9 +38,9 @@
           </td>
         </tr>
         <tr>
-          <td>12 Jan, 2022</td>
-          <td>&#8358;2000</td>
-          <td>Deposit</td>
+          <td>Elvis Onobo</td>
+          <td>Super Admin</td>
+          <td>5 Oct, 2022</td>
           <td class="space-x-2">
             <button class="rounded-md bg-yellow-700 p-1 text-white">
               <fa icon="pen" /> Edit

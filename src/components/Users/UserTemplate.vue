@@ -509,7 +509,7 @@
         </div>
       </div>
 
-      <div class="text-center">
+      <!-- <div class="text-center">
         <fa
           icon="caret-left"
           class="
@@ -521,7 +521,7 @@
             text-white
           "
         />
-      </div>
+      </div> -->
     </div>
     <!-- End sidebar for large screens -->
 
