@@ -116,7 +116,14 @@
             <form class="px-5 mb-2">
               <input
                 type="text"
-                class="p-2 rounded-l-md bg-gray-50 w-40"
+                class="
+                  p-2
+                  rounded-l-md
+                  bg-gradient-to-r
+                  from-blue-50
+                  to-green-50
+                  w-40
+                "
                 placeholder="Search transactions"
               />
               <button
@@ -230,7 +237,7 @@
                     "
                   >
                     <span class="mx-4 mb-2 text-md"
-                      ><fa icon="cogs" /> Settings</span
+                      ><fa icon="bell" /> Notifications</span
                     >
                   </div>
                 </div>
@@ -445,7 +452,6 @@
         </div>
       </router-link>
 
-
       <router-link :to="{ name: 'team' }">
         <div>
           <div
@@ -462,8 +468,7 @@
         </div>
       </router-link>
 
-
-      <router-link :to="{ name: 'settings' }">
+      <router-link :to="{ name: 'roles' }">
         <div>
           <div
             class="
@@ -479,7 +484,7 @@
         </div>
       </router-link>
 
-      <router-link :to="{ name: 'settings' }">
+      <router-link :to="{ name: 'notifications' }">
         <div>
           <div
             class="
@@ -490,7 +495,9 @@
               hover:p-4
             "
           >
-            <span class="mx-4 mb-2 text-md"><fa icon="cogs" /> Settings</span>
+            <span class="mx-4 mb-2 text-md"
+              ><fa icon="bell" /> Notifications</span
+            >
           </div>
         </div>
       </router-link>
@@ -531,7 +538,16 @@
         <form class="md:ml-64">
           <input
             type="text"
-            class="p-2 rounded-l-md bg-gray-50 md:w-80 focus:outline-none"
+            class="
+              p-2
+              rounded-l-md
+              bg-gray-50
+              md:w-80
+              focus:outline-none
+              bg-gradient-to-r
+              from-blue-50
+              to-green-50
+            "
             placeholder="Search transactions"
           />
           <button
@@ -690,7 +706,6 @@ export default {
       this.$swal
         .fire({
           text: "Are you sure to logout?",
-          icon: "warning",
           showCancelButton: true,
           confirmButtonText: "Yes, log me out!",
         })

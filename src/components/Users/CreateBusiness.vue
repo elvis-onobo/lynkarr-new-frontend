@@ -73,6 +73,7 @@
           />
         </div>
 
+        <router-link :to="{ name: 'dashboard'}">
         <button
           type="button"
           class="
@@ -86,6 +87,7 @@
         >
           Submit
         </button>
+        </router-link>
       </form>
     </div>
   </div>

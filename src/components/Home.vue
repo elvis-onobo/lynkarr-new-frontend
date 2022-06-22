@@ -27,20 +27,10 @@
               md:space-x-5
             "
           >
-            <li
-              class="
-                hover:border-gray-700
-                border-b-2 border-transparent
-              "
-            >
+            <li class="hover:border-gray-700 border-b-2 border-transparent">
               <router-link :to="{ name: 'login' }">Products</router-link>
             </li>
-            <li
-              class="
-                hover:border-gray-700
-                border-b-2 border-transparent
-              "
-            >
+            <li class="hover:border-gray-700 border-b-2 border-transparent">
               <router-link :to="{ name: 'login' }">FAQ</router-link>
             </li>
             <router-link :to="{ name: 'login' }">
@@ -49,7 +39,9 @@
                   rounded-md
                   p-2
                   text-white
-                  bg-gradient-to-r from-lynkarr-blue to-lynkarr-green
+                  bg-gradient-to-r
+                  from-lynkarr-blue
+                  to-lynkarr-green
                   hover:bg-gray-400
                 "
               >
@@ -61,7 +53,9 @@
       </div>
     </navbar>
 
-    <div class="container mx-auto h-screen place-items-center mt-8">
+    <div
+      class="grid container mx-auto h-screen place-items-center items-center"
+    >
       <div
         class="
           grid
@@ -72,36 +66,38 @@
           md:p-0
         "
       >
-        <div class="md:col-span-3">
+        <div class="md:col-span-4">
           <p class="text-5xl font-extrabold text-gray-700">
-            Receive Payments the
-            <span class="text-lynkarr-blue">Lynkarr</span> Way
+            Connecting Wallets &
+            <span class="text-lynkarr-blue">Enabling Cashflow.</span>
           </p>
-          <blockquote class="text-sm mt-2">
-            Allow your customers to pay you from their wallet apps,
-            <strong
-              >it's fast and secure.</strong
-            >
+          <blockquote class="text-sm mt-2 md:pr-10">
+            Reduce your expenditure while increasing your reach
           </blockquote>
           <div class="space-x-2 text-white mt-2">
             <router-link :to="{ name: 'sign-up' }">
               <button
-                class="p-2 bg-gradient-to-r from-lynkarr-blue to-lynkarr-green rounded-md hover:bg-gray-600"
+                class="
+                  p-2
+                  bg-gradient-to-r
+                  from-lynkarr-blue
+                  to-lynkarr-green
+                  rounded-md
+                  hover:bg-gray-600
+                "
               >
                 Get Started
               </button>
             </router-link>
             <lynkarr-checkout></lynkarr-checkout>
-
           </div>
         </div>
-        <div class="md:col-span-5 fill-lynkarr-green">
+        <div class="md:col-span-4 fill-lynkarr-green">
           <img src="../assets/images/transfer_money_blue.svg" />
         </div>
       </div>
     </div>
   </div>
-
 
   <div class="container mx-auto">
     <div
@@ -118,10 +114,7 @@
       <div class="p-5 w-full rounded-2xl bg-blue-100">
         <div class="p-4 text-gray-700">
           <div class="rounded-md">
-            <fa
-              icon="pen"
-              class="bg-lynkarr-blue text-white p-4 rounded-md"
-            />
+            <fa icon="pen" class="bg-lynkarr-blue text-white p-4 rounded-md" />
           </div>
 
           <p class="text-3xl font-semibold mt-4">Sign Up</p>
@@ -206,20 +199,13 @@
               class="bg-green-200 rounded-full p-4 text-white"
             />
             <p class="font-extrabold text-2xl">Easy to Use</p>
-            <p class="text-sm">
-              Our interface and APIs are very easy to use!
-            </p>
+            <p class="text-sm">Our interface and APIs are very easy to use!</p>
           </div>
 
           <div class="rounded-md p-8 text-gray-700">
-            <fa
-              icon="clock"
-              class="bg-blue-200 rounded-full p-4 text-white"
-            />
+            <fa icon="clock" class="bg-blue-200 rounded-full p-4 text-white" />
             <p class="font-extrabold text-2xl">Instant</p>
-            <p class="text-sm">
-              Your payments are settled immediately.
-            </p>
+            <p class="text-sm">Your payments are settled immediately.</p>
           </div>
 
           <div class="rounded-md p-8 text-gray-700">
@@ -269,7 +255,9 @@
         >
           Better rates than you ever got before!
         </p>
-        <p class="text-right p-4 md:text-2xl font-extrabold">&#8358;10 per transaction</p>
+        <p class="text-right p-4 md:text-2xl font-extrabold">
+          &#8358;10 per transaction
+        </p>
       </div>
       <div class="w-4/6">
         <img src="../assets/images/discount_blue.svg" />
@@ -297,10 +285,7 @@
         <div>
           <p class="font-extrabold">Products</p>
           <p>Send</p>
-          <p>
-            Negative Balance
-          </p>
-          <p>Card</p>
+          <p>Overdraft</p>
         </div>
 
         <div>
@@ -346,8 +331,7 @@ export default {
       year: new Date().getFullYear(),
     };
   },
-  components:{
-  }
+  components: {},
 };
 </script>
 
