@@ -452,6 +452,22 @@
         </div>
       </router-link>
 
+      <router-link :to="{ name: 'documents' }">
+        <div>
+          <div
+            class="
+              hover:bg-gradient-to-r
+              from-blue-100
+              to-green-200
+              p-2
+              hover:p-4
+            "
+          >
+            <span class="mx-4 mb-2 text-md"><fa icon="book" /> Documents</span>
+          </div>
+        </div>
+      </router-link>
+
       <router-link :to="{ name: 'team' }">
         <div>
           <div

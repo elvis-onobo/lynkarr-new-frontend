@@ -20,6 +20,7 @@ import CreateBusiness from '../components/Users/CreateBusiness.vue'
 import Team from '../components/Users/Team.vue'
 import VerifyEmail from '../components/Auth/VerifyEmail.vue'
 import Roles from '../components/Users/Roles.vue'
+import Documents from '../components/Users/Documents.vue'
 
 const history = createWebHistory()
 const router = createRouter({
@@ -55,6 +56,7 @@ const router = createRouter({
     { path: '/team', component: Team, name: 'team' },
     { path: '/notifications', component: Notification, name: 'notifications' },
     { path: '/roles', component: Roles, name: 'roles' },
+    { path: '/documents', component: Documents, name: 'documents' },
    ],
   },
   // { path: '/:pathMatch(.*)*', name: 'login', component: Login }

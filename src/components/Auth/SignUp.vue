@@ -12,6 +12,7 @@
           md:w-3/12
         "
       >
+        <img src="../../assets/logo.png" class="w-28" />
         <form class="space-y-2">
           <p class="font-extrabold">Start Your Journey!</p>
           <div>

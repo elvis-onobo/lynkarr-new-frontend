@@ -12,6 +12,7 @@
           md:w-3/12
         "
       >
+        <img src="../../assets/logo.png" class="w-28" />
         <form class="space-y-2">
           <p class="font-extrabold">We all forget sometimes!</p>
           <div>
@@ -24,21 +25,25 @@
           </div>
 
           <router-link :to="{ name: 'dashboard' }">
-            <button type="submit" 
-              class="bg-gradient-to-r 
-              from-lynkarr-blue
-              to-lynkarr-green  
-              rounded-md mt-2 p-2 
-              text-white 
-              hover:bg-gray-600"
+            <button
+              type="submit"
+              class="
+                bg-gradient-to-r
+                from-lynkarr-blue
+                to-lynkarr-green
+                rounded-md
+                mt-2
+                p-2
+                text-white
+                hover:bg-gray-600
+              "
             >
               Send Reset Password Link
             </button>
           </router-link>
-
         </form>
       </div>
-      <router-link :to="{ name: 'home'}">
+      <router-link :to="{ name: 'home' }">
         <fa icon="house" /> Go Back Home
       </router-link>
     </div>

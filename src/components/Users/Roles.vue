@@ -13,66 +13,157 @@
         </div>
 
         <div>
-          <label for="">API Keys</label>
-          <select class="w-full p-2 m-2 bg-green-50 rounded-md">
-            <option value="">Select Category</option>
-            <option value="">Inflow</option>
-            <option value="">Outflow</option>
-          </select>
+          <input
+            type="text"
+            placeholder="Description"
+            class="p-2 w-full bg-green-50 focus:outline-none rounded-md"
+            autofocus
+          />
         </div>
 
         <div>
-          <label for="">Withdraw</label>
-          <select class="w-full p-2 m-2 bg-green-50 rounded-md">
-            <option value="">Select Category</option>
-            <option value="">Inflow</option>
-            <option value="">Outflow</option>
-          </select>
+          <p class="font-bold">API Keys</p>
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can Create</label>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can Update</label>
+          </div>
         </div>
 
         <div>
-          <label for="">Webhook</label>
-          <select class="w-full p-2 m-2 bg-green-50 rounded-md">
-            <option value="">Select Category</option>
-            <option value="">Inflow</option>
-            <option value="">Outflow</option>
-          </select>
+          <p class="font-bold">Withdraw</p>
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can Withdraw</label>
+          </div>
         </div>
 
         <div>
-          <label for="">Team</label>
-          <select class="w-full p-2 m-2 bg-green-50 rounded-md">
-            <option value="">Select Category</option>
-            <option value="">Inflow</option>
-            <option value="">Outflow</option>
-          </select>
+          <p class="font-bold">Webhook</p>
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can Create</label>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can View</label>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can Update</label>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can Delete</label>
+          </div>
         </div>
 
         <div>
-          <label for="">Roles</label>
-          <select class="w-full p-2 m-2 bg-green-50 rounded-md">
-            <option value="">Select Category</option>
-            <option value="">Inflow</option>
-            <option value="">Outflow</option>
-          </select>
+          <p class="font-bold">Team</p>
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can Create</label>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can Update</label>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can View</label>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can Delete</label>
+          </div>
         </div>
 
         <div>
-          <label for="">Notifications</label>
-          <select class="w-full p-2 m-2 bg-green-50 rounded-md">
-            <option value="">Select Category</option>
-            <option value="">Inflow</option>
-            <option value="">Outflow</option>
-          </select>
+          <p class="font-bold">Funding</p>
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can View</label>
+          </div>
         </div>
 
         <div>
-          <label for="">Transactions</label>
-          <select class="w-full p-2 m-2 bg-green-50 rounded-md">
-            <option value="">Select Category</option>
-            <option value="">Inflow</option>
-            <option value="">Outflow</option>
-          </select>
+          <p class="font-bold">Roles</p>
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can Create</label>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can View</label>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can Edit</label>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can Delete</label>
+          </div>
+        </div>
+
+        <div>
+          <p class="font-bold">Notifications</p>
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can Select</label>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can View</label>
+          </div>
+        </div>
+
+        <div>
+          <p class="font-bold">Transactions</p>
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can View</label>
+          </div>
+        </div>
+
+        <div>
+          <p class="font-bold">Bank Account</p>
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can View</label>
+          </div>
+        </div>
+
+        <div>
+          <p class="font-bold">Documents</p>
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can View</label>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can Upload</label>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <input type="checkbox" />
+            <label for="">Can Delete</label>
+          </div>
         </div>
 
         <button

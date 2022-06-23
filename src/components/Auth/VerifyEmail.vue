@@ -1,11 +1,35 @@
 <template>
   <div class="grid place-items-center items-center min-h-screen">
-    <div class="md:grid grid-cols-2 shadow-lg md:rounded-l-md rounded-t-md rounded-b-md ">
-      <div class="grid bg-gradient-to-r from-lynkarr-blue to-lynkarr-green md:rounded-l-md rounded-t-md md:rounded-tr-none text-white items-center place-items-center md:p-10 p-4">
-        <fa icon="envelope" class=" text-9xl" />
+    <div
+      class="
+        md:grid
+        grid-cols-2
+        shadow-lg
+        md:rounded-l-md
+        rounded-t-md rounded-b-md
+      "
+    >
+      <div
+        class="
+          grid
+          bg-gradient-to-r
+          from-lynkarr-blue
+          to-lynkarr-green
+          md:rounded-l-md
+          rounded-t-md
+          md:rounded-tr-none
+          text-white
+          items-center
+          place-items-center
+          md:p-10
+          p-4
+        "
+      >
+        <fa icon="envelope" class="text-9xl" />
       </div>
 
       <form class="space-y-2 p-4 rounded-md">
+        <img src="../../assets/logo.png" class="w-28" />
         <p class="font-extrabold pb-2">Verify Your E-mail</p>
         <div>
           <input
@@ -16,7 +40,7 @@
           />
         </div>
 
-        <router-link :to="{ name: 'bvn'}">
+        <!-- <router-link :to="{ name: 'bvn'}"> -->
         <button
           type="button"
           class="
@@ -30,7 +54,7 @@
         >
           Submit
         </button>
-        </router-link>
+        <!-- </router-link> -->
       </form>
     </div>
   </div>

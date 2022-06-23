@@ -13,6 +13,7 @@
         "
       >
         <form class="space-y-2">
+          <img src="../../assets/logo.png" class="w-28" />
           <p class="font-extrabold">Welcome Back!</p>
           <div>
             <input
@@ -32,24 +33,29 @@
           </div>
 
           <router-link :to="{ name: 'dashboard' }">
-          <button type="submit" 
-            class="bg-gradient-to-r
-            from-lynkarr-blue
-            to-lynkarr-green 
-            rounded-md mt-2 p-2 
-            text-white 
-            hover:bg-gray-600"
-          >
-            Login
-          </button>
+            <button
+              type="submit"
+              class="
+                bg-gradient-to-r
+                from-lynkarr-blue
+                to-lynkarr-green
+                rounded-md
+                mt-2
+                p-2
+                text-white
+                hover:bg-gray-600
+              "
+            >
+              Login
+            </button>
           </router-link>
 
-          <router-link :to="{ name: 'forgot'}">
+          <router-link :to="{ name: 'forgot' }">
             <span class="p-2">Forgot Password</span>
           </router-link>
         </form>
       </div>
-      <router-link :to="{ name: 'home'}">
+      <router-link :to="{ name: 'home' }">
         <fa icon="house" /> Go Back Home
       </router-link>
     </div>
