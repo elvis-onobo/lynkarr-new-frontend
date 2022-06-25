@@ -5,7 +5,8 @@
       class="md:px-16 px-6 flex flex-wrap bg-white items-center md-py-0 py-2"
     >
       <div class="flex flex-1 justify-between items-center">
-        <img src="../assets/logo.png" class="w-28" />
+        <!-- <img src="../assets/logo.png" class="w-28" /> -->
+        <p class="font-extrabold text-dark-blue text-3xl">Brijje</p>
       </div>
 
       <label for="menu-toggle" class="md:hidden block">
@@ -35,15 +36,7 @@
             </li>
             <router-link :to="{ name: 'login' }">
               <li
-                class="
-                  rounded-md
-                  p-2
-                  text-white
-                  bg-gradient-to-r
-                  from-lynkarr-blue
-                  to-lynkarr-green
-                  hover:bg-gray-400
-                "
+                class="rounded-md p-2 text-white bg-green-500 hover:bg-gray-400"
               >
                 <fa icon="sign-in" /> Login
               </li>
@@ -56,46 +49,28 @@
     <div
       class="grid container mx-auto h-screen place-items-center items-center"
     >
-      <div
-        class="
-          grid
-          md:grid-cols-8
-          place-items-center
-          space-y-2 space-x-2
-          p-8
-          md:p-0
-        "
-      >
-        <div class="md:col-span-4">
-          <p class="text-5xl font-extrabold text-gray-700">
-            Connecting Wallets &
-            <span class="text-lynkarr-blue">Enabling Cashflow.</span>
-          </p>
-          <blockquote class="text-sm mt-2 md:pr-10">
-            Reduce your expenditure while increasing your reach
-          </blockquote>
-          <div class="space-x-2 text-white mt-2">
-            <router-link :to="{ name: 'sign-up' }">
-              <button
-                class="
-                  p-2
-                  bg-gradient-to-r
-                  from-lynkarr-blue
-                  to-lynkarr-green
-                  rounded-md
-                  hover:bg-gray-600
-                "
-              >
-                Get Started
-              </button>
-            </router-link>
-            <lynkarr-checkout></lynkarr-checkout>
-          </div>
+      <div class="place-items-center text-center">
+        <p class="md:text-8xl text-2xl font-extrabold text-dark-blue">
+          Connecting People
+        </p>
+        <p class="md:text-8xl text-2xl text-green-500">Through Businesses.</p>
+        <div class="text-sm mt-2 md:px-72">
+          Businesses use Brijje to stay connected in a way that enables their
+          users to perform financial operations that they had never been able to
+          do before.
         </div>
-        <div class="md:col-span-4 fill-lynkarr-green">
-          <img src="../assets/images/transfer_money_blue.svg" />
+        <div class="space-x-2 text-white mt-2">
+          <router-link :to="{ name: 'sign-up' }">
+            <button class="p-2 bg-green-500 rounded-md hover:bg-gray-600">
+              Get Started
+            </button>
+          </router-link>
+          <lynkarr-checkout></lynkarr-checkout>
         </div>
       </div>
+      <!-- <div class="md:col-span-4 col-span-12">
+          <img src="../assets/images/connect-world.png" class="w-3/4" />
+        </div> -->
     </div>
   </div>
 
@@ -114,15 +89,15 @@
       <div class="p-5 w-full rounded-2xl bg-blue-100">
         <div class="p-4 text-gray-700">
           <div class="rounded-md">
-            <fa icon="pen" class="bg-lynkarr-blue text-white p-4 rounded-md" />
+            <fa icon="pen" class="bg-green-500 text-white p-4 rounded-md" />
           </div>
 
-          <p class="text-3xl font-semibold mt-4">Sign Up</p>
+          <p class="text-3xl font-semibold mt-4">Multiple Denominations</p>
           <p>Sign up with your e-mail address.</p>
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
-              class="bg-blue-300 text-white p-2 rounded-full"
+              class="bg-green-300 text-white p-2 rounded-full"
             />
           </div>
         </div>
@@ -131,17 +106,14 @@
       <div class="p-5 w-full rounded-2xl bg-blue-100">
         <div class="p-4 text-gray-700">
           <div class="rounded-md">
-            <fa
-              icon="check"
-              class="bg-lynkarr-blue text-white p-4 rounded-md"
-            />
+            <fa icon="check" class="bg-green-500 text-white p-4 rounded-md" />
           </div>
-          <p class="text-3xl font-semibold mt-4">KYC</p>
+          <p class="text-3xl font-semibold mt-4">Instant Resolution</p>
           <p>Submit your legal documents or setup starter business account.</p>
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
-              class="bg-blue-300 text-white p-2 rounded-full"
+              class="bg-green-300 text-white p-2 rounded-full"
             />
           </div>
         </div>
@@ -150,17 +122,14 @@
       <div class="p-5 w-full rounded-2xl bg-blue-100">
         <div class="p-4 text-gray-700">
           <div class="rounded-md">
-            <fa
-              icon="wallet"
-              class="bg-lynkarr-blue text-white p-4 rounded-md"
-            />
+            <fa icon="wallet" class="bg-green-500 text-white p-4 rounded-md" />
           </div>
           <p class="text-3xl font-semibold mt-4">Receive</p>
           <p>Start receiving payments on Lynkarr.</p>
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
-              class="bg-blue-300 text-white p-2 rounded-full"
+              class="bg-green-300 text-white p-2 rounded-full"
             />
           </div>
         </div>
@@ -169,8 +138,8 @@
   </div>
 
   <div class="grid m-4 items-center place-items-center">
-    <p class="text-5xl font-extrabold p-10 text-lynkarr-blue text-center">
-      Start receiving money instantly!
+    <p class="text-5xl font-extrabold p-10 text-center text-dark-blue">
+      Connecting Businesses Across Borders!
     </p>
   </div>
 
@@ -337,7 +306,8 @@ export default {
 
 <style scoped>
 .bgImg {
-  background: url("../assets/images/naira.jpeg") no-repeat center center;
+  background: url("../assets/images/World_Connection _Two Color.svg") no-repeat
+    center center;
   border-radius: 10px;
 }
 

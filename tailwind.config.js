@@ -3,8 +3,8 @@ module.exports = {
  theme: {
   extend: {
    colors: {
-    'lynkarr-green': '#68d4ad',
-    'lynkarr-blue': '#3684a7',
+    'dark-blue': '#24285b',
+    'sea-blue': '#68e1fb',
    },
    backgroundImage: {
     landingBgImage: "url('./assets/images/Wave-Line.svg')",
