@@ -258,7 +258,7 @@
         place-items-center
         space-y-4
         md:space-y-2
-        bg-green-300
+        bg-green-500
         text-dark-blue
       "
     >
@@ -271,7 +271,7 @@
         </p>
       </div>
       <div class="w-4/6">
-        <img src="../assets/images/discount_blue.svg" />
+        <img src="../assets/images/undraw_golden_gate_bridge_re_e8tc.svg" />
       </div>
     </div>
   </div>
