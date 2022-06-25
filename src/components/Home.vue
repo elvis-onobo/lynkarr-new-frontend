@@ -56,8 +56,8 @@
         <p class="md:text-8xl text-2xl text-green-500">Through Businesses.</p>
         <div class="text-sm mt-2 md:px-72">
           Businesses use Brijje to stay connected in a way that enables their
-          users to perform financial operations that they had never been able to
-          do before.
+          users to perform transactions that they had never been able to do
+          before.
         </div>
         <div class="space-x-2 text-white mt-2">
           <router-link :to="{ name: 'sign-up' }">
@@ -65,7 +65,7 @@
               Get Started
             </button>
           </router-link>
-          <lynkarr-checkout></lynkarr-checkout>
+          <brijje-checkout></brijje-checkout>
         </div>
       </div>
       <!-- <div class="md:col-span-4 col-span-12">
@@ -86,8 +86,8 @@
         md:space-y-0
       "
     >
-      <div class="p-5 w-full rounded-2xl bg-blue-100">
-        <div class="p-4 text-gray-700">
+      <div class="p-5 w-full rounded-2xl bg-green-300">
+        <div class="p-4 text-dark-blue">
           <div class="rounded-md">
             <fa icon="pen" class="bg-green-500 text-white p-4 rounded-md" />
           </div>
@@ -97,14 +97,14 @@
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
-              class="bg-green-300 text-white p-2 rounded-full"
+              class="bg-green-400 text-white p-2 rounded-full"
             />
           </div>
         </div>
       </div>
 
-      <div class="p-5 w-full rounded-2xl bg-blue-100">
-        <div class="p-4 text-gray-700">
+      <div class="p-5 w-full rounded-2xl bg-green-300">
+        <div class="p-4 text-dark-blue">
           <div class="rounded-md">
             <fa icon="check" class="bg-green-500 text-white p-4 rounded-md" />
           </div>
@@ -113,23 +113,23 @@
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
-              class="bg-green-300 text-white p-2 rounded-full"
+              class="bg-green-400 text-white p-2 rounded-full"
             />
           </div>
         </div>
       </div>
 
-      <div class="p-5 w-full rounded-2xl bg-blue-100">
-        <div class="p-4 text-gray-700">
+      <div class="p-5 w-full rounded-2xl bg-green-300">
+        <div class="p-4 text-dark-blue">
           <div class="rounded-md">
             <fa icon="wallet" class="bg-green-500 text-white p-4 rounded-md" />
           </div>
           <p class="text-3xl font-semibold mt-4">Receive</p>
-          <p>Start receiving payments on Lynkarr.</p>
+          <p>Start receiving payments on brijje.</p>
           <div class="mt-4 rounded-md">
             <fa
               icon="arrow-right"
-              class="bg-green-300 text-white p-2 rounded-full"
+              class="bg-green-400 text-white p-2 rounded-full"
             />
           </div>
         </div>
@@ -144,6 +144,46 @@
   </div>
 
   <div class="container mx-auto">
+    <div class="md:grid grid-cols-5 items-center place-items-center">
+      <div>
+        <img
+          src="../assets/images/nigeria-flag.jpeg"
+          alt="Nigeria-Flag"
+          class="rounded-md object-fill h-20 w-auto"
+        />
+      </div>
+      <div>
+        <img
+          src="../assets/images/usa-flag.png"
+          alt="Nigeria-Flag"
+          class="rounded-md object-fill h-20 w-auto"
+        />
+      </div>
+      <div>
+        <img
+          src="../assets/images/Flag_of_Europe.svg.png"
+          alt=""
+          class="rounded-md object-fill h-20 w-auto"
+        />
+      </div>
+      <div>
+        <img
+          src="../assets/images/Flag_of_Great_Britain_(1707–1800).svg.png"
+          alt=""
+          class="rounded-md object-fill h-20 w-auto"
+        />
+      </div>
+      <div>
+        <img
+          src="../assets/images/640px-Flag_of_Ghana.svg.png"
+          alt=""
+          class="rounded-md object-fill h-20 w-auto"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto">
     <div
       class="
         md:grid md:grid-cols-2 md:gap-2
@@ -155,37 +195,46 @@
       "
     >
       <div class="w-4/6">
-        <img src="../assets/images/security_blue.svg" />
+        <img
+          src="../assets/images/undraw_security_on_re_e491.svg"
+          alt="Undraw security image"
+        />
       </div>
       <div>
-        <p class="text-2xl font-extrabold text-center text-gray-700">
+        <p class="text-2xl font-extrabold text-center text-dark-blue">
           Built with your concerns in mind.
         </p>
         <div class="md:grid grid-cols-2 gap-2">
-          <div class="rounded-md p-8 text-gray-700">
+          <div class="rounded-md p-8 text-dark-blue">
             <fa
               icon="rocket"
               class="bg-green-200 rounded-full p-4 text-white"
             />
             <p class="font-extrabold text-2xl">Easy to Use</p>
-            <p class="text-sm">Our interface and APIs are very easy to use!</p>
-          </div>
-
-          <div class="rounded-md p-8 text-gray-700">
-            <fa icon="clock" class="bg-blue-200 rounded-full p-4 text-white" />
-            <p class="font-extrabold text-2xl">Instant</p>
-            <p class="text-sm">Your payments are settled immediately.</p>
-          </div>
-
-          <div class="rounded-md p-8 text-gray-700">
-            <fa icon="lock" class="bg-orange-200 rounded-full p-4 text-white" />
-            <p class="font-extrabold text-2xl">Safe</p>
             <p class="text-sm">
-              Built in comformity to financial technology standards.
+              We have created an interface that is easy for you and an easy
+              checkout for your users!
             </p>
           </div>
 
-          <div class="rounded-md p-8 text-gray-700">
+          <div class="rounded-md p-8 text-dark-blue">
+            <fa icon="clock" class="bg-blue-200 rounded-full p-4 text-white" />
+            <p class="font-extrabold text-2xl">Instant</p>
+            <p class="text-sm">
+              The receiving party gets balanced on the other side immediately.
+            </p>
+          </div>
+
+          <div class="rounded-md p-8 text-dark-blue">
+            <fa icon="lock" class="bg-orange-200 rounded-full p-4 text-white" />
+            <p class="font-extrabold text-2xl">Safe</p>
+            <p class="text-sm">
+              We employ bank grade security to protect all resources shared
+              through Brijje.
+            </p>
+          </div>
+
+          <div class="rounded-md p-8 text-dark-blue">
             <fa
               icon="fingerprint"
               class="bg-violet-200 rounded-full p-4 text-white"
@@ -209,23 +258,16 @@
         place-items-center
         space-y-4
         md:space-y-2
-        bg-blue-100
+        bg-green-300
+        text-dark-blue
       "
     >
       <div>
-        <p
-          class="
-            md:text-5xl
-            text-sm
-            font-extrabold
-            text-lynkarr-blue text-right
-            p-4
-          "
-        >
-          Better rates than you ever got before!
+        <p class="md:text-5xl text-sm font-extrabold px-4">
+          Get on the Brijje now!
         </p>
-        <p class="text-right p-4 md:text-2xl font-extrabold">
-          &#8358;10 per transaction
+        <p class="px-4 font-extrabold">
+          Sign up on Brijje and give your users the power to do more...
         </p>
       </div>
       <div class="w-4/6">
@@ -254,7 +296,7 @@
         <div>
           <p class="font-extrabold">Products</p>
           <p>Send</p>
-          <p>Overdraft</p>
+          <p>SmartExchange</p>
         </div>
 
         <div>
@@ -277,15 +319,21 @@
             <fa icon="instagram" />
             <fa icon="whatsapp" />
             <div class="text-">
-              <p>help@lynkarr.com</p>
+              <p>help@brijje.com</p>
               <p>+234 803 910 1861</p>
             </div>
           </div>
         </div>
       </div>
       <div class="grid gap-1 place-items-center mt-4 text-gray-700">
-        <p class="md:p-20 pl-8 pr-8 text-justify md:text-center text-sm">
-          Lynkarr &copy;{{ year }}.
+        <p class="text-justify md:text-center md:px-32 text-xs">
+          A bridge is a solid connection between two places that enable the flow
+          of people through whatever medium of transport they use. Brijje
+          enables cashflow for individuals through the medium of transport; the
+          app they use.
+        </p>
+        <p class="md:p-20 pl-8 pr-8 text-justify md:text-center text-xs">
+          Brijje &copy;{{ year }}.
         </p>
       </div>
     </footer>
