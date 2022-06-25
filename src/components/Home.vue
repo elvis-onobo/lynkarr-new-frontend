@@ -144,7 +144,9 @@
   </div>
 
   <div class="container mx-auto">
-    <div class="md:grid grid-cols-5 items-center place-items-center">
+    <div
+      class="md:grid grid-cols-2 md:grid-cols-5 items-center place-items-center"
+    >
       <div>
         <img
           src="../assets/images/nigeria-flag.jpeg"
