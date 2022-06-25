@@ -77,14 +77,7 @@
                       <router-link :to="{ name: 'dashboard' }">
                         <span
                           :class="{ 'bg-blue-100': active }"
-                          class="
-                            block
-                            p-2
-                            rounded-md
-                            hover:bg-gradient-to-r
-                            from-blue-100
-                            to-green-100
-                          "
+                          class="block p-2 rounded-md hover:bg-green-300"
                           ><fa icon="plus" /> Add Business</span
                         >
                       </router-link>
@@ -94,14 +87,7 @@
                       <router-link :to="{ name: 'dashboard' }">
                         <span
                           :class="{ 'bg-blue-100': active }"
-                          class="
-                            block
-                            p-2
-                            rounded-md
-                            hover:bg-gradient-to-r
-                            from-blue-100
-                            to-green-100
-                          "
+                          class="block p-2 rounded-md hover:bg-green-300"
                           ><fa icon="money-bill" /> Lynkarr</span
                         >
                       </router-link>
@@ -116,14 +102,7 @@
             <form class="px-5 mb-2">
               <input
                 type="text"
-                class="
-                  p-2
-                  rounded-l-md
-                  bg-gradient-to-r
-                  from-blue-50
-                  to-green-50
-                  w-40
-                "
+                class="p-2 rounded-l-md bg-green-50 w-40"
                 placeholder="Search transactions"
               />
               <button
@@ -147,9 +126,7 @@
                 <div>
                   <div
                     class="
-                      hover:bg-gradient-to-r
-                      from-blue-100
-                      to-green-200
+                      hover:bg-green-300
                       p-2
                       hover:p-4
                       rounded
@@ -167,9 +144,7 @@
                 <div>
                   <div
                     class="
-                      hover:bg-gradient-to-r
-                      from-blue-100
-                      to-green-200
+                      hover:bg-green-300
                       p-2
                       hover:p-4
                       rounded
@@ -187,9 +162,7 @@
                 <div>
                   <div
                     class="
-                      hover:bg-gradient-to-r
-                      from-blue-100
-                      to-green-200
+                      hover:bg-green-300
                       p-2
                       hover:p-4
                       rounded
@@ -207,9 +180,7 @@
                 <div>
                   <div
                     class="
-                      hover:bg-gradient-to-r
-                      from-blue-100
-                      to-green-200
+                      hover:bg-green-300
                       p-2
                       hover:p-4
                       rounded
@@ -227,9 +198,7 @@
                 <div>
                   <div
                     class="
-                      hover:bg-gradient-to-r
-                      from-blue-100
-                      to-green-200
+                      hover:bg-green-300
                       p-2
                       hover:p-4
                       rounded
@@ -245,16 +214,7 @@
 
               <router-link :to="{ name: 'dashboard' }">
                 <div @click="showLogoutModal">
-                  <div
-                    class="
-                      hover:bg-gradient-to-r
-                      from-blue-100
-                      to-green-200
-                      p-2
-                      hover:p-4
-                      rounded
-                    "
-                  >
+                  <div class="hover:bg-green-300 p-2 hover:p-4 rounded">
                     <span class="mx-4 mb-2 text-md"
                       ><fa icon="sign-out" /> Logout</span
                     >
@@ -311,22 +271,12 @@
       </div>
 
       <div class="px-4">
-        <p class="bg-gradient-to-r from-blue-50 to-green-50 p-8 rounded-md">
-          Starter Business
-        </p>
+        <p class="bg-green-100 p-8 rounded-md">Starter Business</p>
       </div>
 
       <router-link :to="{ name: 'dashboard' }">
         <div class="pt-5">
-          <div
-            class="
-              hover:bg-gradient-to-r
-              from-blue-100
-              to-green-200
-              p-2
-              hover:p-4
-            "
-          >
+          <div class="hover:bg-green-300 p-2 hover:p-4">
             <span class="mx-4 mb-2 text-md"
               ><fa icon="dashboard" /> Dashboard</span
             >
@@ -336,15 +286,7 @@
 
       <router-link :to="{ name: 'profile' }">
         <div>
-          <div
-            class="
-              hover:bg-gradient-to-r
-              from-blue-100
-              to-green-200
-              p-2
-              hover:p-4
-            "
-          >
+          <div class="hover:bg-green-300 p-2 hover:p-4">
             <span class="mx-4 mb-2 text-md"><fa icon="user" /> Profile</span>
           </div>
         </div>
@@ -352,15 +294,7 @@
 
       <router-link :to="{ name: 'transactions' }">
         <div>
-          <div
-            class="
-              hover:bg-gradient-to-r
-              from-blue-100
-              to-green-200
-              p-2
-              hover:p-4
-            "
-          >
+          <div class="hover:bg-green-300 p-2 hover:p-4">
             <span class="mx-4 mb-2 text-md"
               ><fa icon="arrow-right-arrow-left" /> Transactions</span
             >
@@ -370,15 +304,7 @@
 
       <router-link :to="{ name: 'bank-account' }">
         <div>
-          <div
-            class="
-              hover:bg-gradient-to-r
-              from-blue-100
-              to-green-200
-              p-2
-              hover:p-4
-            "
-          >
+          <div class="hover:bg-green-300 p-2 hover:p-4">
             <span class="mx-4 mb-2 text-md"
               ><fa icon="bank" /> Bank Account</span
             >
@@ -388,15 +314,7 @@
 
       <router-link :to="{ name: 'funding' }">
         <div>
-          <div
-            class="
-              hover:bg-gradient-to-r
-              from-blue-100
-              to-green-200
-              p-2
-              hover:p-4
-            "
-          >
+          <div class="hover:bg-green-300 p-2 hover:p-4">
             <span class="mx-4 mb-2 text-md"><fa icon="wallet" /> Funding</span>
           </div>
         </div>
@@ -404,15 +322,7 @@
 
       <router-link :to="{ name: 'withdraw' }">
         <div>
-          <div
-            class="
-              hover:bg-gradient-to-r
-              from-blue-100
-              to-green-200
-              p-2
-              hover:p-4
-            "
-          >
+          <div class="hover:bg-green-300 p-2 hover:p-4">
             <span class="mx-4 mb-2 text-md"
               ><fa icon="money-bill" /> Withdraw</span
             >
@@ -422,15 +332,7 @@
 
       <router-link :to="{ name: 'webhook' }">
         <div>
-          <div
-            class="
-              hover:bg-gradient-to-r
-              from-blue-100
-              to-green-200
-              p-2
-              hover:p-4
-            "
-          >
+          <div class="hover:bg-green-300 p-2 hover:p-4">
             <span class="mx-4 mb-2 text-md"><fa icon="link" /> Webhook</span>
           </div>
         </div>
@@ -438,15 +340,7 @@
 
       <router-link :to="{ name: 'api-keys' }">
         <div>
-          <div
-            class="
-              hover:bg-gradient-to-r
-              from-blue-100
-              to-green-200
-              p-2
-              hover:p-4
-            "
-          >
+          <div class="hover:bg-green-300 p-2 hover:p-4">
             <span class="mx-4 mb-2 text-md"><fa icon="key" /> API Keys</span>
           </div>
         </div>
@@ -454,15 +348,7 @@
 
       <router-link :to="{ name: 'documents' }">
         <div>
-          <div
-            class="
-              hover:bg-gradient-to-r
-              from-blue-100
-              to-green-200
-              p-2
-              hover:p-4
-            "
-          >
+          <div class="hover:bg-green-300 p-2 hover:p-4">
             <span class="mx-4 mb-2 text-md"><fa icon="book" /> Documents</span>
           </div>
         </div>
@@ -470,15 +356,7 @@
 
       <router-link :to="{ name: 'team' }">
         <div>
-          <div
-            class="
-              hover:bg-gradient-to-r
-              from-blue-100
-              to-green-200
-              p-2
-              hover:p-4
-            "
-          >
+          <div class="hover:bg-green-300 p-2 hover:p-4">
             <span class="mx-4 mb-2 text-md"><fa icon="users" /> Team</span>
           </div>
         </div>
@@ -486,15 +364,7 @@
 
       <router-link :to="{ name: 'roles' }">
         <div>
-          <div
-            class="
-              hover:bg-gradient-to-r
-              from-blue-100
-              to-green-200
-              p-2
-              hover:p-4
-            "
-          >
+          <div class="hover:bg-green-300 p-2 hover:p-4">
             <span class="mx-4 mb-2 text-md"><fa icon="shield" /> Roles</span>
           </div>
         </div>
@@ -502,15 +372,7 @@
 
       <router-link :to="{ name: 'notifications' }">
         <div>
-          <div
-            class="
-              hover:bg-gradient-to-r
-              from-blue-100
-              to-green-200
-              p-2
-              hover:p-4
-            "
-          >
+          <div class="hover:bg-green-300 p-2 hover:p-4">
             <span class="mx-4 mb-2 text-md"
               ><fa icon="bell" /> Notifications</span
             >
@@ -519,15 +381,7 @@
       </router-link>
 
       <div @click="showLogoutModal">
-        <div
-          class="
-            hover:bg-gradient-to-r
-            from-blue-100
-            to-green-200
-            p-2
-            hover:p-4
-          "
-        >
+        <div class="hover:bg-green-300 p-2 hover:p-4">
           <span class="mx-4 mb-2 text-md"><fa icon="sign-out" /> Logout</span>
         </div>
       </div>
@@ -554,28 +408,10 @@
         <form class="md:ml-64">
           <input
             type="text"
-            class="
-              p-2
-              rounded-l-md
-              bg-gray-50
-              md:w-80
-              focus:outline-none
-              bg-gradient-to-r
-              from-blue-50
-              to-green-50
-            "
+            class="p-2 rounded-l-md bg-gray-50 md:w-80 focus:outline-none"
             placeholder="Search transactions"
           />
-          <button
-            class="
-              bg-gradient-to-r
-              from-lynkarr-blue
-              to-lynkarr-green
-              text-white
-              p-2
-              rounded-r-md
-            "
-          >
+          <button class="bg-green-500 text-white p-2 rounded-r-md">
             <fa icon="search" />
           </button>
         </form>
@@ -624,14 +460,7 @@
                     <router-link :to="{ name: 'create-business' }">
                       <span
                         :class="{ 'bg-blue-100': active }"
-                        class="
-                          block
-                          p-2
-                          rounded-md
-                          hover:bg-gradient-to-r
-                          from-blue-100
-                          to-green-100
-                        "
+                        class="block p-2 rounded-md hover:bg-green-100"
                         ><fa icon="plus" /> Add Business</span
                       >
                     </router-link>
@@ -641,14 +470,7 @@
                     <router-link :to="{ name: 'dashboard' }">
                       <span
                         :class="{ 'bg-blue-100': active }"
-                        class="
-                          block
-                          p-2
-                          rounded-md
-                          hover:bg-gradient-to-r
-                          from-blue-100
-                          to-green-100
-                        "
+                        class="block p-2 rounded-md hover:bg-green-100"
                         ><fa icon="briefcase" /> Lynkarr</span
                       >
                     </router-link>

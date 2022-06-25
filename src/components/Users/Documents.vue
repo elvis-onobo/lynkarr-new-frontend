@@ -11,7 +11,7 @@
           <label>CAC Document</label>
           <input
             type="file"
-            class="p-2 w-full bg-green-50 focus:outline-none rounded-md"
+            class="p-2 w-full bg-gray-50 focus:outline-none rounded-md"
             autofocus
           />
         </div>
@@ -20,21 +20,11 @@
           <label>Other Legal Document</label>
           <input
             type="file"
-            class="p-2 w-full bg-green-50 focus:outline-none rounded-md"
+            class="p-2 w-full bg-gray-50 focus:outline-none rounded-md"
           />
         </div>
 
-        <button
-          type="button"
-          class="
-            p-2
-            rounded-md
-            bg-gradient-to-r
-            from-lynkarr-blue
-            to-lynkarr-green
-            text-white
-          "
-        >
+        <button type="button" class="p-2 rounded-md bg-green-500 text-white">
           Upload
         </button>
       </form>

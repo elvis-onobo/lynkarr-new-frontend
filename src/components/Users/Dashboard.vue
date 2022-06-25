@@ -18,7 +18,9 @@
       class="
         md:col-span-4
         rounded-md
-        p-8 bg-gradient-to-r from-lynkarr-blue to-lynkarr-green text-white
+        p-8
+        bg-green-500
+        text-white
         w-full
         grid
         place-items-center
@@ -145,7 +147,7 @@
       </table>
       <fa
         icon="arrow-right"
-        class="bg-gray-100 text-white p-2 mt-2 rounded-full bg-gradient-to-r from-lynkarr-blue to-lynkarr-green"
+        class="bg-gray-100 text-white p-2 mt-2 rounded-full bg-green-500"
         title="See Full List"
       />
     </div>
@@ -162,7 +164,6 @@ export default {
       count: 0,
     };
   },
-  methods: {
-  },
+  methods: {},
 };
 </script>

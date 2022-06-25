@@ -144,9 +144,7 @@
   </div>
 
   <div class="container mx-auto">
-    <div
-      class="md:grid grid-cols-2 md:grid-cols-5 items-center place-items-center"
-    >
+    <div class="md:grid md:grid-cols-5 items-center place-items-center">
       <div>
         <img
           src="../assets/images/nigeria-flag.jpeg"
@@ -264,13 +262,14 @@
         text-dark-blue
       "
     >
-      <div>
-        <p class="md:text-5xl text-sm font-extrabold px-4">
-          Get on the Brijje now!
-        </p>
-        <p class="px-4 font-extrabold">
+      <div class="space-y-1">
+        <p class="md:text-5xl text-sm font-extrabold">Get on the Brijje now!</p>
+        <p class="font-extrabold">
           Sign up on Brijje and give your users the power to do more...
         </p>
+        <button class="bg-dark-blue rounded-md p-2 text-white">
+          Get Started
+        </button>
       </div>
       <div class="w-4/6">
         <img src="../assets/images/undraw_golden_gate_bridge_re_e8tc.svg" />

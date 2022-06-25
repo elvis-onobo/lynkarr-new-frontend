@@ -7,7 +7,7 @@
           <input
             type="text"
             placeholder="Role"
-            class="p-2 w-full bg-green-50 focus:outline-none rounded-md"
+            class="p-2 w-full bg-gray-50 focus:outline-none rounded-md"
             autofocus
           />
         </div>
@@ -16,7 +16,7 @@
           <input
             type="text"
             placeholder="Description"
-            class="p-2 w-full bg-green-50 focus:outline-none rounded-md"
+            class="p-2 w-full bg-gray-50 focus:outline-none rounded-md"
             autofocus
           />
         </div>
@@ -166,17 +166,7 @@
           </div>
         </div>
 
-        <button
-          type="button"
-          class="
-            p-2
-            rounded-md
-            bg-gradient-to-r
-            from-lynkarr-blue
-            to-lynkarr-green
-            text-white
-          "
-        >
+        <button type="button" class="p-2 rounded-md bg-green-500 text-white">
           Add Role
         </button>
       </form>
